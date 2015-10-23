@@ -1,5 +1,5 @@
 <?php
-include('header.html');
+    include 'header.php';
 ?>
  
  
@@ -82,5 +82,5 @@ include('header.html');
 
 
 <?php
-include('foot.html');
+    require 'foot.php';
 ?>

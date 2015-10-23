@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html> 
     <head>
         <meta charset="utf-8">
-        <title>Homework one</title>
+        <title>Welcome to Vinkaiyang-Fenni Service Website!</title>
         <link type="text/css" rel="stylesheet" href="main.css">
     </head>
     
@@ -15,13 +14,13 @@
             <ul>
                 <li>Log IN</li>
                 <li>Account</li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="cart.php">Cart</a></li>
             </ul>
         </div>
            
        <div id="menubar">
            <ul>
-               <li><a href="index.html">HOME</a></li>
+               <li><a href="index.php">HOME</a></li>
                <li><a href="about.html">ABOUT US</a>
                    <ul>
                         <li>Company History</li>
@@ -29,31 +28,38 @@
                         <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
                </li>
-               <li><a href="list.html">SERVICE</a>
+               <li><a href="list.php">SERVICE</a>
                    <ul>
                         <li>House
                             <ul>
-                                <li>House Cleaning</li>
-                                <li>Gardening</li>
-                                <li>Plumbing</li>
-                                <li>Repairing</li>
+                                <li><a href="list.php">House Cleaning</a></li>
+                                <li><a href="list.php">Gardening</a></li>
+                                <li><a href="list.php">Plumbing</a></li>
+                                <li><a href="list.php">Repairing</a></li>
                             </ul> 
                         </li>
                         <li>Service
                             <ul>
-                                <li>Walking Dog</li>
-                                <li>Drive Instead</li>
-                                <li>Grocery Purchase</li>
-                                <li>Move in &#124; Move out</li>
+                                <li><a href="list.php">Walking Dog</a></li>
+                                <li><a href="list.php">Drive Instead</a></li>
+                                <li><a href="list.php">Grocery Purchase</a></li>
+                                <li><a href="list.php">Move in &#124; Move out</a></li>
                             </ul> 
                         </li>
-                        <li>Cooking</li>
+                        <li>Cooking
+                             <ul>
+                                <li><a href="list.php">French</a></li>
+                                <li><a href="list.php">Japanese</a></li>
+                                <li><a href="list.php">Chinese</a></li>
+                                <li><a href="list.php">Indian</a></li>
+                            </ul> 
+                        </li>
                         <li>Tutor
                              <ul>
-                                <li>Spanish</li>
-                                <li>Swim</li>
-                                <li>Drive</li>
-                                <li>Computer</li>
+                                <li><a href="list.php">Spanish</a></li>
+                                <li><a href="list.php">Swim</a></li>
+                                <li><a href="list.php">Drive</a></li>
+                                <li><a href="list.php">Computer</a></li>
                             </ul>   
                         </li>
                     </ul>  
