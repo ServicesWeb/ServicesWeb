@@ -23,7 +23,7 @@
         
         echo "<div class='listseller'>";
                 echo "<h1>" . $name . "</h1>";
-                echo "<img class='logo' src='" . $img .  "' alt='sellers' width='300' height='300'>";
+                echo "<a href = 'profile.php?id=".$name."'><img class='logo' src='" . $img .  "' alt='sellers' width='300' height='300'></a>";
                 echo $description;
         echo "</div>";
         

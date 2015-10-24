@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Oct 24, 2015 at 08:37 AM
+-- Generation Time: Oct 25, 2015 at 01:32 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -38,9 +38,9 @@ CREATE TABLE `info` (
 --
 
 INSERT INTO `info` (`ID`, `name`, `hour`, `price`) VALUES
-(101, 'Merry House Cleaning', '08:00-10:00', 240),
-(102, 'Merry House Cleaning', '11:00-13:00', 250),
-(103, 'Merry House Cleaning', '15:00-18:00', 300);
+(101, 'Danny Clean', '08:00-10:00', 240),
+(102, 'Danny Clean', '11:00-13:00', 250),
+(103, 'Danny Clean', '15:00-18:00', 300);
 
 -- --------------------------------------------------------
 
