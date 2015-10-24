@@ -32,7 +32,7 @@
                    <ul>
                         <li>House
                             <ul>
-                                <li><a href="list.php">House Cleaning</a></li>
+                                <li><a href="list.php?id=HC">House Cleaning</a></li>
                                 <li><a href="list.php">Gardening</a></li>
                                 <li><a href="list.php">Plumbing</a></li>
                                 <li><a href="list.php">Repairing</a></li>
@@ -41,7 +41,7 @@
                         <li>Service
                             <ul>
                                 <li><a href="list.php">Walking Dog</a></li>
-                                <li><a href="list.php">Drive Instead</a></li>
+                                <li><a href="list.php">Chauffeur Drive</a></li>
                                 <li><a href="list.php">Grocery Purchase</a></li>
                                 <li><a href="list.php">Move in &#124; Move out</a></li>
                             </ul> 
