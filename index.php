@@ -1,18 +1,18 @@
 <?php
     include 'header.php';
 ?>
- 
- 
-    
+
+
+
         <!-- this is main body beginning -->
         <div id="mainbody" >
 
-            
+
             <div id="banner">
                 <img src="img/banner.jpg">
             </div>
 
-            
+
             <div class="topbanner">
                 <h1>WHY US</h1>
                 <ul>
@@ -28,7 +28,7 @@
                     <li>Search</li>
                     <li>Order</li>
                     <li>Get service!</li>
-                </ul>            
+                </ul>
             </div>
             <div class="topbanner">
                 <h1>COUPONS</h1>
@@ -37,12 +37,12 @@
                     <li>House Cleaning</li>
                 </ul>
             </div>
-            
+
             <div class="bottombanner">
                 <h2>House Services</h2>
                 <ul>
-                    <li>House Cleaning</li>
-                    <li>Gardening</li>
+                    <li><a href="list.php?id=HC">House Cleaning</a></li>
+                    <li><a href="list.php?id=GD">Gardening</a></li>
                     <li>Plumbing</li>
                     <li>Repairing</li>
                     <li>More..</li>
@@ -75,9 +75,9 @@
                     <li>Drive</li>
                     <li>Computer</li>
                     <li>More..</li>
-                </ul>    
-            </div>          
-        </div>   
+                </ul>
+            </div>
+        </div>
         <!-- this is main body end -->
 
 

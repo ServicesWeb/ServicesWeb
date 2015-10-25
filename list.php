@@ -2,7 +2,7 @@
     include 'header.php';
     require 'connection.php';
 ?>
- 
+
 
 <?php
     $param = explode('=', $_SERVER["QUERY_STRING"]); //get the parameter from url in this page after "?"
@@ -18,15 +18,15 @@
     echo "<div id='mainbody'>";
 
 
-    while(list($category,$name,$description,$img) = $result->fetch_row()) {  //getting all the seller profile information 
- 
-        
+    while(list($category,$name,$description,$img) = $result->fetch_row()) {  //getting all the seller profile information
+
+
         echo "<div class='listseller'>";
                 echo "<h1>" . $name . "</h1>";
                 echo "<a href = 'profile.php?id=".$name."'><img class='logo' src='" . $img .  "' alt='sellers' width='300' height='300'></a>";
                 echo $description;
         echo "</div>";
-        
+
 
     }
 

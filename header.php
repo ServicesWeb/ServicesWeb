@@ -1,10 +1,10 @@
-<html> 
+<html>
     <head>
         <meta charset="utf-8">
         <title>Welcome to Vinkaiyang-Fenni Service Website!</title>
         <link type="text/css" rel="stylesheet" href="main.css">
     </head>
-    
+
     <body>
 
         <!-- this is headers beginning -->
@@ -12,12 +12,12 @@
         <div id="header">
             <img class="logo" src="img/logo.png" alt="logo">
             <ul>
-                <li>Log IN</li>
-                <li>Account</li>
+                <li><a href="login.php">Log IN</a></li>
+                <li><a href="account.php">Account</a></li>
                 <li><a href="cart.php">Cart</a></li>
             </ul>
         </div>
-           
+
        <div id="menubar">
            <ul>
                <li><a href="index.php">HOME</a></li>
@@ -33,10 +33,10 @@
                         <li>House
                             <ul>
                                 <li><a href="list.php?id=HC">House Cleaning</a></li>
-                                <li><a href="list.php">Gardening</a></li>
+                                <li><a href="list.php?id=GD">Gardening</a></li>
                                 <li><a href="list.php">Plumbing</a></li>
                                 <li><a href="list.php">Repairing</a></li>
-                            </ul> 
+                            </ul>
                         </li>
                         <li>Service
                             <ul>
@@ -44,7 +44,7 @@
                                 <li><a href="list.php">Chauffeur Drive</a></li>
                                 <li><a href="list.php">Grocery Purchase</a></li>
                                 <li><a href="list.php">Move in &#124; Move out</a></li>
-                            </ul> 
+                            </ul>
                         </li>
                         <li>Cooking
                              <ul>
@@ -52,7 +52,7 @@
                                 <li><a href="list.php">Japanese</a></li>
                                 <li><a href="list.php">Chinese</a></li>
                                 <li><a href="list.php">Indian</a></li>
-                            </ul> 
+                            </ul>
                         </li>
                         <li>Tutor
                              <ul>
@@ -60,19 +60,18 @@
                                 <li><a href="list.php">Swim</a></li>
                                 <li><a href="list.php">Drive</a></li>
                                 <li><a href="list.php">Computer</a></li>
-                            </ul>   
+                            </ul>
                         </li>
-                    </ul>  
+                    </ul>
                 </li>
                <li><a href="search.html">SEARCH</a></li>
-               <li><a href="help.html">HELP</a></li>
+               <li><a href="help.php">HELP</a></li>
                    <ul>
                         <li>FAQ</li>
                         <li>Rating System</li>
                         <li>Sitemap</li>
                         <li>Service Locations</li>
-                    </ul>              
+                    </ul>
             </ul>
         </div>
         <!-- this is headers end -->
- 

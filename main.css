@@ -26,33 +26,36 @@ img.imagenews{
     display: inline;
     margin-right: 30px;
     color: #002714;
-    font-family: sans-serif;  
+    font-family: sans-serif;
 }
 
 #header a{
+    background-color: orange;
     color: black;
     text-decoration: none;
+    padding: 4px 4px;
+    border-radius: 4px;
 }
 
 #header a:hover{
     background-color:orange;
 }
- 
+
 /* menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar */
-#menubar ul { 
-    padding:0; 
-    margin:0; 
+#menubar ul {
+    padding:0;
+    margin:0;
     list-style:none;
 }
-#menubar li { 
-    float:left; 
+#menubar li {
+    float:left;
     width:200px;
     font-family: "sans-serif";
     font-size: 25px;
     float: left;
 }
 #menubar{
-    background-color: #2369b8; 
+    background-color: #2369b8;
     height: 30px;
     font-family: "sans-serif";
     font-size: 25px;
@@ -69,8 +72,8 @@ ul li  a:hover, a:active {
     color: #ffffff;
 }
 ul li:hover > ul {
-    display: block; 
-    background-color: #2369b8;  
+    display: block;
+    background-color: #2369b8;
 }
 ul ul {
     position: absolute;
@@ -99,7 +102,7 @@ ul ul ul {
 div.topbanner{
     margin-left: 30px;
     margin-top: 10px;
-    margin-right: 10px; 
+    margin-right: 10px;
     border: #c1c1c1;
     border-style: solid;
     width: 300px;
@@ -119,7 +122,7 @@ div.topbanner h1{
 
 .topbanner ul li{
     color: #666666;
-    font-family: sans-serif;  
+    font-family: sans-serif;
     padding-bottom: 20px;
 }
 
@@ -152,6 +155,19 @@ div.bottombanner h2{
     font-family: sans-serif;
     padding-bottom: 20px;
 }
+
+.bottombanner li a{
+  background-color: #AFEEEE;
+  color:black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+.bottombanner li a:hover{
+  background-color:#DB7093;
+}
+
 /* mainbody mainbody mainbody mainbody mainbody mainbody mainbody mainbody mainbody  end end*/
 
 /* footbar css style footbar css style footbar css style */
@@ -172,7 +188,7 @@ div.bottombanner h2{
 div.listseller{
     margin-left: 30px;
     margin-top: 10px;
-    margin-right: 10px; 
+    margin-right: 10px;
     border: #c1c1c1;
     border-style: solid;
     width: 300px;
@@ -180,7 +196,7 @@ div.listseller{
     float:left;
     color: #666666;
     font-family: "arial";
-    padding-top: 10px;    
+    padding-top: 10px;
 }
 
 div.listseller h1{
@@ -191,4 +207,24 @@ div.listseller h1{
     font-size: 35px;
     margin: 0;
     text-align:center;
+}
+
+/* css for login.php */
+form#login{
+  background-color: ivory;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+}
+
+/* css for help.php */
+#contact{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
