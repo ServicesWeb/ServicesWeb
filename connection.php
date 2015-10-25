@@ -10,7 +10,7 @@ $mysqli = mysqli_init();
 $mysqli->options(MYSQLI_OPT_CONNECT_TIMEOUT, 2);
 $mysqli->real_connect($host, $user, $password, $db);
 
-if(mysqli_connect_error())
+if(mysqli_connect_errno())
 {
     echo mysqli_connect_error();
 }

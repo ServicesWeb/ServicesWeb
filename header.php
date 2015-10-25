@@ -25,7 +25,7 @@
                    <ul>
                         <li>Company History</li>
                         <li>Special Offers</li>
-                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="contactus.php">Contact Us</a></li>
                     </ul>
                </li>
                <li><a href="list.php">SERVICE</a>
