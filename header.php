@@ -32,8 +32,8 @@
                    <ul>
                         <li>House
                             <ul>
-                                <li><a href="list.php?id=HC">House Cleaning</a></li>
-                                <li><a href="list.php?id=GD">Gardening</a></li>
+                                <li><a href="list.php?category=HC">House Cleaning</a></li>
+                                <li><a href="list.php?category=GD">Gardening</a></li>
                                 <li><a href="list.php">Plumbing</a></li>
                                 <li><a href="list.php">Repairing</a></li>
                             </ul>

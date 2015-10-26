@@ -5,8 +5,8 @@
 
 
 <?php
-    $param = explode('=', $_SERVER["QUERY_STRING"]); //get the parameter from url in this page after "?"
-    $sql = "SELECT * FROM seller where category='".$param[1]."'"; // sql = from table "seller" and category = $param
+    $param = $_GET["category"]; //get the parameter from url in this page after "?"
+    $sql = "SELECT * FROM seller where category='".$param."'"; // sql = from table "seller" and category = $param
     $result = $mysqli->query($sql); // error detection
     if(!$result){
         echo $mysqli->error;
