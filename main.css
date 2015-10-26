@@ -228,3 +228,32 @@ form#login{
   margin-right: auto;
   width: 50%;
 }
+
+
+/* css for search.php */
+#searchdiv{
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+#searchdiv h1{
+    color: #2369b8;
+}
+
+.searchform, .searchsubmit{
+    color: #2369b8;
+    height: 30px;
+    font-size: 16px;
+    border: solid #2369b8 2px;
+}
+
+.searchform{
+    width: 450px;
+}
+
+.searchsubmit{
+    width: 100px;
+    border-radius: 5px;
+    cursor:hand;
+    background-color: azure;
+}

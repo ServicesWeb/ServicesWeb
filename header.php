@@ -64,7 +64,7 @@
                         </li>
                     </ul>
                 </li>
-               <li><a href="search.html">SEARCH</a></li>
+               <li><a href="search.php">SEARCH</a></li>
                <li><a href="help.php">HELP</a></li>
                    <ul>
                         <li>FAQ</li>

@@ -13,27 +13,24 @@
     }
 ?>
 
+    <div id='mainbody'>
+
+        
+        
 <?php
-// below is listing of sellers in one category
-    echo "<div id='mainbody'>";
-
-
-    while(list($category,$name,$description,$img) = $result->fetch_row()) {  //getting all the seller profile information
-
-
-        echo "<div class='listseller'>";
-                echo "<h1>" . $name . "</h1>";
-                echo "<a href = 'profile.php?id=".$name."'><img class='logo' src='" . $img .  "' alt='sellers' width='300' height='300'></a>";
-                echo $description;
-        echo "</div>";
-
-
-    }
-
-
-
-    echo "</div>";
+    while(list($category,$name,$description,$img) = $result->fetch_row()) {  
 ?>
+        <div class='listseller'>
+        <h1><?= $name ?></h1>
+        <a href = "profile.php?name=<?=$name?>"><img class='logo' src="<?= $img ?>" alt='sellers' width='300' height='300'></a>
+        <?=$description?>
+        </div>
+<?php
+    }
+?>
+
+
+    </div>
 
 
 
