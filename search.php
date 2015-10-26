@@ -34,7 +34,7 @@
         while(list($category,$name,$description,$img) = $result->fetch_row()) { 
     ?>
             <ol>
-            <li><p><a href = 'profile.php?name=".$name."'><?= $name ?></a></p>
+            <li><p><a href = "profile.php?name=<?=$name?>"><?= $name ?></a></p>
             <p><?= $description ?></p></li>
             </ol>
     <?php
