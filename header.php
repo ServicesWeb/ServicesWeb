@@ -21,14 +21,14 @@
        <div id="menubar">
            <ul>
                <li><a href="index.php">HOME</a></li>
-               <li><a href="about.html">ABOUT US</a>
+               <li>ABOUT US
                    <ul>
                         <li>Company History</li>
                         <li>Special Offers</li>
                         <li><a href="contactus.php">Contact Us</a></li>
                     </ul>
                </li>
-               <li><a href="list.php">SERVICE</a>
+               <li>SERVICE
                    <ul>
                         <li>House
                             <ul>

@@ -230,13 +230,13 @@ form#login{
 }
 
 
-/* css for search.php */
+/* css for search.php and help.php*/
 #searchdiv{
     padding-left: 100px;
     padding-right: 150px;
 }
 
-#searchdiv h1{
+#searchdiv ,#helpdiv h1{
     color: #2369b8;
 }
 
@@ -256,4 +256,28 @@ form#login{
     border-radius: 5px;
     cursor:hand;
     background-color: azure;
+}
+
+#helpdiv{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 100px
+}
+
+#helpdiv h2 {
+        color: #2369b8;
+}
+
+p.helpquestions{
+    font-size: 18px;
+    color: #666666;
+    font-family: sans-serif;
+}
+
+p.helpanswers{
+    padding-left: 20px;
+    font-size: 14px;
+    color: #666666;
+    font-family: sans-serif;
 }
