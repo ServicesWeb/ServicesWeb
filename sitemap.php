@@ -1,24 +1,9 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Welcome to Vinkaiyang-Fenni Service Website!</title>
-        <link type="text/css" rel="stylesheet" href="main.css">
-    </head>
+<?php
+    include 'header.php';
+?>
 
-    <body>
-
-        <!-- this is headers beginning -->
-
-        <div id="header">
-            <img class="logo" src="img/logo.png" alt="logo">
-            <ul>
-                <li><a href="login.php">Log IN</a></li>
-                <li><a href="account.php">Account</a></li>
-                <li><a href="cart.php">Cart</a></li>
-            </ul>
-        </div>
-
-       <div id="menubar">
+<div id="helpdiv">
+    <h1>Site Map</h1>
            <ul>
                <li><a href="index.php">HOME</a></li>
                <li>ABOUT US
@@ -74,5 +59,7 @@
                         <li>Service Locations</li>
                     </ul>
             </ul>
-        </div>
-        <!-- this is headers end -->
+</div>
+<?php
+    require 'foot.php';
+?>

@@ -64,24 +64,24 @@ img.imagenews{
     color: #ffa036;
     width:1030px;
 }
-ul li {
+#menubar ul li {
     position: relative;
     width: 200px;
 }
-ul li  a:hover, a:active {
+#menubar ul li  a:hover, a:active {
     color: #ffffff;
 }
-ul li:hover > ul {
+#menubar ul li:hover > ul {
     display: block;
     background-color: #2369b8;
 }
-ul ul {
+#menubar ul ul {
     position: absolute;
     top: 100%;
     list-style: none;
     display: none;
 }
-ul ul ul {
+#menubar ul ul ul {
   position: absolute;
   left: 100%;
   top: 0;
@@ -230,7 +230,7 @@ form#login{
 }
 
 
-/* css for search.php and help.php*/
+/* css for search.php and help.php and sitemap.php*/
 #searchdiv{
     padding-left: 100px;
     padding-right: 150px;
@@ -268,7 +268,7 @@ form#login{
 #helpdiv h2 {
         color: #2369b8;
 }
-
+/*for help page <p> style*/
 p.helpquestions{
     font-size: 18px;
     color: #666666;
@@ -280,4 +280,13 @@ p.helpanswers{
     font-size: 14px;
     color: #666666;
     font-family: sans-serif;
+}
+/* for sitemap page ul li font style*/
+#helpdiv ul li{
+    color: #666666;
+    font-family: sans-serif;
+}
+/*for sitemap page link*/
+#helpdiv a{
+        color: #666666;
 }
