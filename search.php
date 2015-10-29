@@ -6,7 +6,7 @@
 <?php
     $param = $_GET["search"]; //get the parameter from url in this page after "?"
     $name = str_replace('+',' ',$param);
-    $sql = "SELECT * FROM seller where name='".$name."'"; // sql = from table "seller" and category = $param
+    $sql = "SELECT * FROM seller where name LIKE '%".$name."%'"; 
     $result = $mysqli->query($sql); 
     if(!$result){  // error detection
         echo $mysqli->error;
@@ -29,7 +29,7 @@
     }
     ?>
     
-    <!-- show result as ol list ,  right now we can only match complete identical "seller name" -->
+    <!-- show result as ol list ,  right now we support fuzzy search "seller name" such as clean, garden etc  -->
     <?php
         while(list($category,$name,$description,$img) = $result->fetch_row()) { 
     ?>
