@@ -12,8 +12,11 @@
         echo $mysqli->error;
     }
 ?>
-
     <div id='mainbody'>
+        
+        
+        
+        <!-- left side of mainbody, showing categories -->
         <div id="categoryleft">  
             <h2>House</h2>
                 <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=HC">House Cleaning</a></p>
@@ -38,28 +41,33 @@
                 <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php">Swim</a></p>
                 <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php">Drive</a></p>
                 <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php">Computer</a></p>
-            
-
         </div>
+        
+        
+        
+        <!-- right of mainbody showing seller list in one category -->
         <div id="categoryright">
+            <img src="img/<?=$param ?>.jpg" width="830" height="150"/>
+             <p>You are browsing category: <?=$param ?></p>
+
 <?php
-        while(list($category,$name,$description,$img) = $result->fetch_row()) {  
+        while(list($category,$name,$description,$img) = $result->fetch_row()) { //fetch seller's information from sql "seller"
 ?>
+         <!-- right of mainbody showing seller list in one category, one div has one seller-->       
         <div class='listseller'>
-        <h1><?= $name ?></h1>
-        <a href = "profile.php?name=<?=$name?>"><img class='logo' src="<?= $img ?>" alt='sellers' width='50' height='50'></a>
-        <?=$description?>
+            <a href = "profile.php?name=<?=$name?>"><img class='logo' src="<?= $img ?>" alt='sellers' width='180' height='130'></a>
+            <p><a href = "profile.php?name=<?=$name?>"><?= $name ?></a></p>
         </div>
 <?php
     }
 ?>
-        </div>
+        </div><!-- end of categoryright div -->
 
-    </div>
-
-
-
-
+        
+        
+        
+        
+    </div> <!-- end of mainbody div -->
 <?php
     include 'foot.php';
     require 'close.php';

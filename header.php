@@ -12,6 +12,7 @@
         <div id="header">
             <img class="logo" src="img/logo.png" alt="logo">
             <ul>
+                <li><a href="search.php">Search</a></li>
                 <li><a href="login.php">Log IN</a></li>
                 <li><a href="account.php">Account</a></li>
                 <li><a href="cart.php">Cart</a></li>
