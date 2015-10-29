@@ -21,7 +21,7 @@
        <div id="menubar">
            <ul>
                <li><a href="index.php">HOME</a></li>
-               <li>ABOUT US
+               <!--<li>ABOUT US
                    <ul>
                         <li>Company History</li>
                         <li>Special Offers</li>
@@ -30,7 +30,7 @@
                     </ul>
                </li>
                <li>SERVICE
-                   <ul>
+                   <ul> -->
                         <li>House
                             <ul>
                                 <li><a href="list.php?category=HC">House Cleaning</a></li>
@@ -63,7 +63,7 @@
                                 <li><a href="list.php">Computer</a></li>
                             </ul>
                         </li>
-                    </ul>
+               <!--     </ul>
                 </li>
                <li><a href="search.php">SEARCH</a></li>
                <li><a href="help.php">HELP</a></li>
@@ -72,7 +72,7 @@
                         <li>Rating System</li>
                         <li>Sitemap</li>
                         <li>Service Locations</li>
-                    </ul>
+                    </ul>-->
             </ul>
         </div>
         <!-- this is headers end -->

@@ -5,11 +5,13 @@
 
 <?php
     $param = $_GET["search"]; //get the parameter from url in this page after "?"
-    $name = str_replace('+',' ',$param);
-    $sql = "SELECT * FROM seller where name LIKE '%".$name."%'"; 
-    $result = $mysqli->query($sql); 
-    if(!$result){  // error detection
-        echo $mysqli->error;
+    if ($param) {
+        $name = str_replace('+',' ',$param);
+        $sql = "SELECT * FROM seller where name LIKE '%".$name."%'"; 
+        $result = $mysqli->query($sql); 
+        if(!$result){  // error detection
+            echo $mysqli->error;
+        }
     }
 ?>
 
@@ -31,14 +33,15 @@
     
     <!-- show result as ol list ,  right now we support fuzzy search "seller name" such as clean, garden etc  -->
     <?php
+        if ($param){
         while(list($category,$name,$description,$img) = $result->fetch_row()) { 
     ?>
-            <ol>
-            <li><p><a href = "profile.php?name=<?=$name?>"><?= $name ?></a></p>
-            <p><?= $description ?></p></li>
-            </ol>
-    <?php
-        }
+        <ol>
+        <li><p><a href = "profile.php?name=<?=$name?>"><?= $name ?></a></p>
+        <p><?= $description ?></p></li>
+        </ol>
+    <?php 
+        }}
     ?>
 
 </div>
