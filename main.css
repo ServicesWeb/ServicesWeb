@@ -269,6 +269,24 @@ div.bottombanner h2{
     font-family: sans-serif;
 }
 
+/*css for profile.php*/
+img.sellerprofileimg{
+    border-radius: 10px;
+    border: 1px solid #2369b8;
+    float: left;
+    clear: right;
+    margin-right: 15px;
+}
+.sellerprofiledescription p{
+    clear: both;
+    padding-top: 20px;
+}
+
+#categoryright h1{
+    color: #ffa036;
+    font-size: 30px;
+    padding-top: 8px;
+}
 /* css for login.php */
 form#login{
   background-color: ivory;

@@ -21,26 +21,26 @@
             <h2>House</h2>
                 <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=HC">House Cleaning</a></p>
                 <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=GD">Gardening</a></p>
-                <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php">Plumbing</a></p>
-                <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php">Repairing</a></p>
+                <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=PB">Plumbing</a></p>
+                <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=RP">Repairing</a></p>
 
             <h2>Service</h2>
-                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php">Walking Dog</a></p>
-                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php">Chauffeur Drive</a></p>
-                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php">Grocery Purchase</a></p>
-                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php">Move in &#124; out</a></p>
+                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php?category=WD">Walking Dog</a></p>
+                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php?category=CD">Chauffeur Drive</a></p>
+                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php?category=GP">Grocery Purchase</a></p>
+                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php?category=MM">Move in &#124; out</a></p>
             
             <h2>Cooking</h2>
-                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php">French</a></p>
-                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php">Japanese</a></p>
-                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php">Chinese</a></p>
-                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php">Indian</a></p>
+                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php?category=FR">French</a></p>
+                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php?category=JA">Japanese</a></p>
+                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php?category=CH">Chinese</a></p>
+                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php?category=IN">Indian</a></p>
             
             <h2>Tutor</h2>
-                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php">Spanish</a></p>
-                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php">Swim</a></p>
-                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php">Drive</a></p>
-                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php">Computer</a></p>
+                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=SP">Spanish</a></p>
+                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=SW">Swim</a></p>
+                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=DR">Drive</a></p>
+                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=CO">Computer</a></p>
         </div>
         
         
