@@ -8,44 +8,44 @@
                <li><a href="index.php">HOME</a></li>
                <li>ABOUT US
                    <ul>
-                        <li>Company History</li>
-                        <li>Special Offers</li>
+                        <li><a href="contactus.php">Company History</a></li>
+                        <li><a href="contactus.php">Special Offers</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>
                         <li><a href="sitemap.php">Site Map</a></li>                    
                     </ul>
                </li>
                <li>SERVICE
                    <ul>
-                        <li>House
+                      <li>House
                             <ul>
                                 <li><a href="list.php?category=HC">House Cleaning</a></li>
                                 <li><a href="list.php?category=GD">Gardening</a></li>
-                                <li><a href="list.php">Plumbing</a></li>
-                                <li><a href="list.php">Repairing</a></li>
+                                <li><a href="list.php?category=PB">Plumbing</a></li>
+                                <li><a href="list.php?category=RP">Repairing</a></li>
                             </ul>
                         </li>
                         <li>Service
                             <ul>
-                                <li><a href="list.php">Walking Dog</a></li>
-                                <li><a href="list.php">Chauffeur Drive</a></li>
-                                <li><a href="list.php">Grocery Purchase</a></li>
-                                <li><a href="list.php">Move in &#124; Move out</a></li>
+                                <li><a href="list.php?category=WD">Walking Dog</a></li>
+                                <li><a href="list.php?category=CD">Chauffeur Drive</a></li>
+                                <li><a href="list.php?category=GP">Grocery Purchase</a></li>
+                                <li><a href="list.php?category=MM">Move in &#124; Move out</a></li>
                             </ul>
                         </li>
                         <li>Cooking
                              <ul>
-                                <li><a href="list.php">French</a></li>
-                                <li><a href="list.php">Japanese</a></li>
-                                <li><a href="list.php">Chinese</a></li>
-                                <li><a href="list.php">Indian</a></li>
+                                <li><a href="list.php?category=FR">French</a></li>
+                                <li><a href="list.php?category=JA">Japanese</a></li>
+                                <li><a href="list.php?category=CH">Chinese</a></li>
+                                <li><a href="list.php?category=IN">Indian</a></li>
                             </ul>
                         </li>
                         <li>Tutor
                              <ul>
-                                <li><a href="list.php">Spanish</a></li>
-                                <li><a href="list.php">Swim</a></li>
-                                <li><a href="list.php">Drive</a></li>
-                                <li><a href="list.php">Computer</a></li>
+                                <li><a href="list.php?category=SP">Spanish</a></li>
+                                <li><a href="list.php?category=SW">Swim</a></li>
+                                <li><a href="list.php?category=DR">Drive</a></li>
+                                <li><a href="list.php?category=CO">Computer</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -53,10 +53,10 @@
                <li><a href="search.php">SEARCH</a></li>
                <li><a href="help.php">HELP</a></li>
                    <ul>
-                        <li>FAQ</li>
-                        <li>Rating System</li>
-                        <li>Sitemap</li>
-                        <li>Service Locations</li>
+                        <li><a href="help.php">FAQ</a></li>
+                        <li><a href="help.php">Rating System</a></li>
+                        <li><a href="sitemap.php">Sitemap</a></li>
+                        <li><a href="help.php">Service Locations</a></li>
                     </ul>
             </ul>
 </div>
