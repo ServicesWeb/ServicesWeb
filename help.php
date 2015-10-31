@@ -7,20 +7,20 @@
     <h2>- Shop -</h2>
     <p class="helpquestions">How do I search service I need?</p>
     <p class="helpanswers">Just click the "Service" on the menubar of our page, and then search the services by category,  if you like any seller, you can browse their profile page and add the service to the cart.</p>
-    
+
     <p class="helpquestions">Can I add different seller's service in the same cart?</p>
     <p class="helpanswers">Absolutely! You can add any service if you want!</p>
-   
+
     <p class="helpquestions">How long will one service last?</p>
     <p class="helpanswers">Usually if you purchase one service, the time for the service will be for one calendar month.</p>
-    
+
     <h2>- Checkout &amp; Payment -</h2>
     <p class="helpquestions">How to checkout my services in cart?</p>
     <p class="helpanswers">Just click "Check out" button, and follow the steps, it's easy and safe!</p>
-    
+
     <p class="helpquestions">Which payment method do you support?</p>
     <p class="helpanswers">We support credit card and debit card, and soonly we will support Apple Pay and PayPal.</p>
-    
+
     <p class="helpquestions">Will my credit card information safe?</p>
     <p class="helpanswers">Absolutely! Right now we store all your information in a laptop, and the laptop is locked in a cabinet with three locks, the three keys are kept by three different specialist. So don't worry your information safey!</p>
 

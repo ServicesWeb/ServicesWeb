@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Welcome to Vinkaiyang-Fenni Service Website!</title>
+        <title>Vinkaiyang-Fenni Service Website</title>
         <link type="text/css" rel="stylesheet" href="main.css">
     </head>
 
@@ -15,7 +15,7 @@
                 <li><a href="search.php">Search</a></li>
                 <li><a href="login.php">Log IN</a></li>
                 <li><a href="account.php">Account</a></li>
-                <li><a href="cart.php">Cart</a></li>
+                <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
             </ul>
         </div>
 
@@ -27,7 +27,7 @@
                         <li>Company History</li>
                         <li>Special Offers</li>
                         <li><a href="contactus.php">Contact Us</a></li>
-                        <li><a href="sitemap.php">Site Map</a></li>                    
+                        <li><a href="sitemap.php">Site Map</a></li>
                     </ul>
                </li>
                <li>SERVICE
@@ -45,7 +45,7 @@
                                 <li><a href="list.php?category=WD">Walking Dog</a></li>
                                 <li><a href="list.php?category=CD">Chauffeur Drive</a></li>
                                 <li><a href="list.php?category=GP">Grocery Purchase</a></li>
-                                <li><a href="list.php?category=MM">Move in &#124; Move out</a></li>
+                                <li><a href="list.php?category=MM">Move in &#47; Move out</a></li>
                             </ul>
                         </li>
                         <li>Cooking

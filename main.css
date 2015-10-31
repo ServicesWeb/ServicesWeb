@@ -33,7 +33,7 @@ img.imagenews{
     font-family: sans-serif;
 }
 
-#header a{
+#header a {
     background-color: orange;
     color: black;
     padding: 4px 4px;
@@ -41,7 +41,17 @@ img.imagenews{
 }
 
 #header a:hover{
-    background-color:orange;
+    background-color:lightblue;
+}
+
+#header a.cart {
+  background-color: white;
+}
+
+#header ul img {
+  width: 26px;
+  height: 22px;
+  position: absolute;
 }
 
 /* menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar */
@@ -181,7 +191,7 @@ div.bottombanner h2{
     font-size: 12px;
     padding-left: 30px;
     text-align: center;
-    color: #333;    
+    color: #333;
     border: 1px #dfdfdf  solid;
 }
 
@@ -190,7 +200,7 @@ div.bottombanner h2{
     float: left;
     clear: right;
     text-align: left;
-    color: #333;    
+    color: #333;
     margin-bottom: 20px;
 }
 .footbarmadeby{
@@ -205,14 +215,14 @@ div.bottombanner h2{
     margin-left: -30px;
 }
 .footbardiv a{
-    color: #333;    
+    color: #333;
 }
 
 /* list.php  css style*/
 .listseller{
     width: 180px;
-    float:left; 
-    padding-top: 10px; 
+    float:left;
+    padding-top: 10px;
     color: #2369b8;
     font-family: "arial";
     margin-right: 20px;
@@ -244,7 +254,7 @@ div.bottombanner h2{
     float: right;
     padding-top: 10px;
     font-size: 20px;
-    color: #666666;   
+    color: #666666;
     font-family: sans-serif;
 }
 
@@ -367,4 +377,44 @@ p.helpanswers{
 /*for sitemap page link*/
 #helpdiv a{
         color: #666666;
+}
+
+/*for list.php */
+#categoryleft img{
+  width: 30px;
+  height: 30px;
+}
+
+/*for fixed position lable in profile.php*/
+a.fixP {
+  background-color: yellow;
+  position: fixed;
+  right:10px;
+  bottom:100px;
+}
+
+a.fixP img{
+  width: 26px;
+  height: 22px;
+}
+
+/*for table in cart.php */
+#carttable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+
+#carttable, th, td {
+  background-color: lightblue;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#ckbutton {
+  float: right;
+  margin-right: 240px;
+  background-color: red;
+  font-size: 15px;
 }

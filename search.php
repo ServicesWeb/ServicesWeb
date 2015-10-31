@@ -7,8 +7,8 @@
     $param = $_GET["search"]; //get the parameter from url in this page after "?"
     if ($param) {
         $name = str_replace('+',' ',$param);
-        $sql = "SELECT * FROM seller where name LIKE '%".$name."%'"; 
-        $result = $mysqli->query($sql); 
+        $sql = "SELECT * FROM seller where name LIKE '%".$name."%'";
+        $result = $mysqli->query($sql);
         if(!$result){  // error detection
             echo $mysqli->error;
         }
@@ -21,26 +21,26 @@
     <form action="search.php">
         <input type="text" name="search" class="searchform"> <input type="submit" value="Search" class="searchsubmit">
     </form>
-      
+
     <!-- if no result, do not show below -->
     <?php
     if($param){
     ?>
-        <p>Result for"<?= $param ?>":</p>  
+        <p>Result for"<?= $param ?>":</p>
     <?php
     }
     ?>
-    
+
     <!-- show result as ol list ,  right now we support fuzzy search "seller name" such as clean, garden etc  -->
     <?php
         if ($param){
-        while(list($category,$name,$description,$img) = $result->fetch_row()) { 
+        while(list($category,$name,$description,$img) = $result->fetch_row()) {
     ?>
         <ol>
         <li><p><a href = "profile.php?name=<?=$name?>"><?= $name ?></a></p>
         <p><?= $description ?></p></li>
         </ol>
-    <?php 
+    <?php
         }}
     ?>
 

@@ -11,7 +11,7 @@
                         <li><a href="contactus.php">Company History</a></li>
                         <li><a href="contactus.php">Special Offers</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>
-                        <li><a href="sitemap.php">Site Map</a></li>                    
+                        <li><a href="sitemap.php">Site Map</a></li>
                     </ul>
                </li>
                <li>SERVICE
