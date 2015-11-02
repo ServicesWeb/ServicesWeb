@@ -399,22 +399,24 @@ a.fixP img{
 }
 
 /*for table in cart.php */
-#carttable {
+.carttable {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   text-align: center;
-}
-
-#carttable, th, td {
-  background-color: lightblue;
-  border: 1px solid black;
   border-collapse: collapse;
+  margin-bottom: 30px;
+  font-family: "arial";
+  font-size: 14px;
+  color: #333;
 }
 
-#ckbutton {
-  float: right;
-  margin-right: 240px;
-  background-color: red;
-  font-size: 15px;
+.carttable td, tr{
+    border: 1px solid #dfdfdf;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+.ckbutton {
+  text-align: right;
 }

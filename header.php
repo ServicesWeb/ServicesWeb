@@ -15,6 +15,7 @@
                 <li><a href="search.php">Search</a></li>
                 <li><a href="login.php">Log IN</a></li>
                 <li><a href="account.php">Account</a></li>
+                <li><a href="trackorder.php">Trade Order</a></li>
                 <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
             </ul>
         </div>

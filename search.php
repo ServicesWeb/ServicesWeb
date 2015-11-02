@@ -2,20 +2,17 @@
     include 'header.php';
     require 'connection.php';
 ?>
-
 <?php
     $param = $_GET["search"]; //get the parameter from url in this page after "?"
     if ($param) {
         $name = str_replace('+',' ',$param);
-        $sql = "SELECT * FROM seller where name LIKE '%".$name."%'";
+        $sql = "SELECT * FROM product where name LIKE '%".$name."%'";
         $result = $mysqli->query($sql);
         if(!$result){  // error detection
             echo $mysqli->error;
         }
     }
 ?>
-
-
 <div id="searchdiv" >
     <h1>Please Enter your Search</h1>
     <form action="search.php">
@@ -43,9 +40,7 @@
     <?php
         }}
     ?>
-
 </div>
-
 <?php
     require 'foot.php';
 ?>

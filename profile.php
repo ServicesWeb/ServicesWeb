@@ -2,27 +2,16 @@
     include 'header.php';
     require 'connection.php';
 ?>
-
-
 <?php
     $param = $_GET["name"]; //get the parameter from url in this page after "?"
     $sellername = str_replace('%20',' ',$param);
-    $sql = "SELECT * FROM info where name='".$sellername ."'";
-    $result1 = $mysqli->query($sql); // error detection
-    if(!$result1){
-        echo $mysqli->error;
-    }
-?>
-
-<?php
-    $sql = "SELECT * FROM seller where name='".$sellername ."'";
-    $result2 = $mysqli->query($sql); // error detection
-    if(!$result2){
+    $sql = "SELECT * FROM product where name='".$sellername ."'";
+    $result = $mysqli->query($sql); // error detection
+    if(!$result){
         echo $mysqli->error;
     }
 ?>
     <div id='mainbody'>
-
         <!-- left side of mainbody, showing categories -->
         <div id="categoryleft">
             <h2>House</h2>
@@ -49,38 +38,31 @@
                 <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=DR">Drive</a></p>
                 <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=CO">Computer</a></p>
         </div>
-
         <!-- right of mainbody showing seller information -->
         <div id="categoryright">
-
-
-    <?php
-        while(list($category,$name,$description,$img) = $result2->fetch_row()) {
+   <?php
+        while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) {
     ?>
-
                 <img class='sellerprofileimg' src="<?= $img ?>"alt='sellers' width='300' height='300'></a>
                 <h1><?= $name ?></h1>
-
-    <?php
-        while(list($id,$name,$hour,$price) = $result1->fetch_row()) {
-    ?>
-                <p><?= $id?> <?=$hour?> <?=$price ?> Add to Cart</p>
-    <?php
-            }
-    ?>
+                <h1>Price: $<?= $price ?>/Week</h1>
+                <h1>Available <?=$in_stock?> Weeks</h1>
+                <form action="cart.php" method="post">
+                    <input type="hidden" name=id value="<?=$id?>">
+                    <input type="hidden" name=name value="<?=$name?>">
+                    <input type="hidden" name=price value="<?=$price?>">
+                    <input type="text" name="count" value="1"> Weeks. <input type="submit" value="add to cart">
+                </form>
                 <div  class="sellerprofiledescription">
-                    <p><?= $description ?></p>
+                <p><?= $description ?></p>
                 </div>
 
     <?php
     }
     ?>
-
         </div><!-- end of categoryright div -->
-
     </div> <!-- end of mainbody div -->
-
-    <a class="fixP" href="cart.php"><img src="img/shopping-cart.png" />Add to cart</a>
+    <!--<a class="fixP" href="cart.php"><img src="img/shopping-cart.png" />Add to cart</a>-->
 <?php
     include 'foot.php';
     require 'close.php';
