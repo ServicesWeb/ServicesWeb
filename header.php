@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <title>Vinkaiyang-Fenni Service Website</title>
         <link type="text/css" rel="stylesheet" href="main.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
 
     <body>

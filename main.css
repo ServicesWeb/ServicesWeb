@@ -5,6 +5,7 @@ body{
 
 a{
     text-decoration: none;
+
 }
 
 /* header header header header header header header header header header header header header */
@@ -34,14 +35,13 @@ img.imagenews{
 }
 
 #header a {
-    background-color: orange;
     color: black;
     padding: 4px 4px;
     border-radius: 4px;
 }
 
 #header a:hover{
-    background-color:lightblue;
+    color:orange;
 }
 
 #header a.cart {
@@ -58,39 +58,47 @@ img.imagenews{
 #menubar ul {
     padding:0;
     margin:0;
-    list-style:none;
 }
+
 #menubar li {
     float:left;
     width:200px;
-    font-family: "sans-serif";
-    font-size: 25px;
-    float: left;
+    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+
+
 }
 #menubar{
-    background-color: #2369b8;
-    height: 30px;
-    font-family: "sans-serif";
-    font-size: 25px;
-    padding-top: 5px;
+    background-color: #20386E;
+    height: 80px;
+    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    padding-top:10px;
     padding-left: 30px;
-    color: #ffa036;
+    color: white;
     width:1030px;
+    box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
+
 }
 #menubar ul li {
     position: relative;
     width: 200px;
+    text-align: center;
+    margin-top: 20px;
 }
 #menubar ul li  a:hover, a:active {
-    color: #ffffff;
+    color: #4169E1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
+    padding: 10px;
+
 }
 #menubar ul li:hover > ul {
     display: block;
-    background-color: #2369b8;
+    background-color: #20386E;
+    padding: 10px;
 }
 #menubar ul ul {
     position: absolute;
-    top: 100%;
     list-style: none;
     display: none;
 }
@@ -100,8 +108,9 @@ img.imagenews{
   top: 0;
 }
 #menubar a{
-    color: #ffa036;
-    font-size: 25px;
+    color: white;
+    font-size: 20px;
+
 }
 /* menu bar end  menu bar end  menu bar end  menu bar end  menu bar end  menu bar end  menu bar end */
 
@@ -118,24 +127,26 @@ div.topbanner{
     border: #c1c1c1;
     border-style: solid;
     width: 300px;
-    height:250px;
+    height:280px;
     float:left;
 }
 
 div.topbanner h1{
-    color: #ffa036;
-    background-color: #2369b8;
+    color: white;
+    background-color: #20386E;
     height: 50px;
     padding: 15px 0px 0px 0px;
     font-size: 35px;
     margin: 0;
     text-align:center;
+    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .topbanner ul li{
     color: #666666;
-    font-family: sans-serif;
+    font-family: 'Open Sans Condensed';
     padding-bottom: 20px;
+    font-size: 20px;
 }
 
 div.bottombanner{
@@ -147,36 +158,38 @@ div.bottombanner{
     border-style: solid;
     border-radius:25px;
     width: 210px;
-    height:250px;
+    height:300px;
     float:left;
+
 }
 
 div.bottombanner h2{
-    color: #ffa036;
-    background-color: #2369b8;
+    color: white;
+    background-color: #20386E;
     border-radius:20px;
     height: 50px;
     padding: 15px 0px 0px 0px;
     font-size: 20px;
     margin: 0;
     text-align:center;
+    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .bottombanner ul li{
     color: #666666;
-    font-family: sans-serif;
+    font-family: 'Open Sans Condensed';
     padding-bottom: 20px;
 }
 
 .bottombanner li a{
-  background-color: #AFEEEE;
   color:black;
   border-radius: 5px;
   padding: 5px 5px;
-}
+  font-size: 20px;
+ }
 
 .bottombanner li a:hover{
-  background-color:#DB7093;
+  color:#4169E1;
 }
 
 /* mainbody mainbody mainbody mainbody mainbody mainbody mainbody mainbody mainbody  end end*/
@@ -223,7 +236,7 @@ div.bottombanner h2{
     width: 180px;
     float:left;
     padding-top: 10px;
-    color: #2369b8;
+    color: #20386E;
     font-family: "arial";
     margin-right: 20px;
     margin-bottom: 10px;
@@ -231,17 +244,17 @@ div.bottombanner h2{
     text-align: center;
 }
 .listseller a{
-    color: #2369b8;
+    color: #20386E;
 }
 
 .listseller img{
     border-radius: 10px;
-    border: 1px solid #2369b8;
+    border: 1px solid #20386E;
 }
 #categoryleft{
     width: 180px;
     float: left;
-    border: 1px #2369b8 solid;
+    border: 1px #20386E solid;
     padding-top: -10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -255,7 +268,6 @@ div.bottombanner h2{
     padding-top: 10px;
     font-size: 20px;
     color: #666666;
-    font-family: sans-serif;
 }
 
 #categoryleft p>img{
@@ -264,25 +276,28 @@ div.bottombanner h2{
 }
 
 #categoryleft h2{
-    color: #ffa036;
-    background-color: #2369b8;
+    color: white;
+    background-color: #20386E;
     height: 30px;
     font-size: 20px;
     margin: 0 -10 -10 -10;
     text-align:center;
     padding-top: 8px;
+    font-family: 'lato';
 }
 
 #categoryleft>p a{
     font-size: 18px;
     color: #666666;
-    font-family: sans-serif;
+    font-family:'Open Sans Condensed','lato';
 }
+
+
 
 /*css for profile.php*/
 img.sellerprofileimg{
     border-radius: 10px;
-    border: 1px solid #2369b8;
+    border: 1px solid #20386E;
     float: left;
     clear: right;
     margin-right: 15px;
@@ -325,14 +340,14 @@ form#login{
 }
 
 #searchdiv ,#helpdiv h1{
-    color: #2369b8;
+    color: #20386E;
 }
 
 .searchform, .searchsubmit{
-    color: #2369b8;
+    color: #20386E;
     height: 30px;
     font-size: 16px;
-    border: solid #2369b8 2px;
+    border: solid #20386E 2px;
 }
 
 .searchform{
@@ -354,7 +369,7 @@ form#login{
 }
 
 #helpdiv h2 {
-        color: #2369b8;
+        color: #20386E;
 }
 /*for help page <p> style*/
 p.helpquestions{

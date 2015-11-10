@@ -3,6 +3,8 @@
 ?>
 
         <!-- this is main body beginning -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
         <div id="mainbody" >
 
             <div id="banner">
