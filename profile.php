@@ -5,7 +5,7 @@
 <?php
     $param = $_GET["name"]; //get the parameter from url in this page after "?"
     $sellername = str_replace('%20',' ',$param);
-    $sql = "SELECT * FROM product where name='".$sellername ."'";
+    $sql = "SELECT * FROM product where name='".$sellername ."' and in_stock > 0";
     $result = $mysqli->query($sql); // error detection
     if(!$result){
         echo $mysqli->error;

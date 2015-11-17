@@ -4,7 +4,7 @@
 ?>
 <?php
     $param = $_GET["category"]; //get the parameter from url in this page after "?"
-    $sql = "SELECT * FROM product where category='".$param."'"; // sql = from table "seller" and category = $param
+    $sql = "SELECT * FROM product where category='".$param."' and in_stock > 0"; // sql = from table "seller" and category = $param
     $result = $mysqli->query($sql); // error detection
     if(!$result){
         echo $mysqli->error;
