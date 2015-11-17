@@ -6,7 +6,7 @@
     $param = $_GET["search"]; //get the parameter from url in this page after "?"
     if ($param) {
         $name = str_replace('+',' ',$param);
-        $sql = "SELECT * FROM product where name LIKE '%".$name."%'";
+        $sql = "SELECT * FROM product where name LIKE '%".$name."%' and in_stock > 0";
         $result = $mysqli->query($sql);
         if(!$result){  // error detection
             echo $mysqli->error;
