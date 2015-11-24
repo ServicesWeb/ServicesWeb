@@ -14,7 +14,7 @@
             <img class="logo" src="img/logo.png" alt="logo">
             <ul>
                 <li><a href="search.php">Search</a></li>
-                <li><a href="login.php">Log IN</a></li>
+                <li><a href="login.php">Log In</a></li>
                 <li><a href="account.php">Account</a></li>
                 <li><a href="trackorder.php">Trade Order</a></li>
                 <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
