@@ -1,5 +1,6 @@
 <?php
     include 'header.php';
+    require 'connection.php';
 ?>
 
 <?php
@@ -60,6 +61,28 @@
          ?>
          <br />
          <input type="submit" />
+
+         <?php
+            if((isValidUsername()==0)&&(isValidPassword()==0)){
+                $username=$_POST["username"];
+                $password=$_POST["password"];
+
+                $sql = "SELECT username, password FROM user where username = '".$username."'";
+                $result = $mysqli->query($sql);
+                if(mysqli_num_rows($result) == 0){
+                    echo "Login failed. This username doesn't exit.";
+                }
+                else{
+                    list($username_db,$password_db) = $result->fetch_row();
+                    if($password_db == $password){
+                        echo "Login succeeded";
+                    }
+                    else{
+                        echo "Login failed. Password doesn't match.";
+                    }
+                }
+            }
+         ?>
 
          <p>Don't have an account? <a href="signup.php">Sign up!</a></p>
        </div>
