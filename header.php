@@ -5,11 +5,8 @@
         <link type="text/css" rel="stylesheet" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
-
     <body>
-
         <!-- this is headers beginning -->
-
         <div id="header">
             <img class="logo" src="img/logo.png" alt="logo">
             <ul>
@@ -24,16 +21,6 @@
        <div id="menubar">
            <ul>
                <li><a href="index.php">HOME</a></li>
-               <!--<li>ABOUT US
-                   <ul>
-                        <li>Company History</li>
-                        <li>Special Offers</li>
-                        <li><a href="contactus.php">Contact Us</a></li>
-                        <li><a href="sitemap.php">Site Map</a></li>
-                    </ul>
-               </li>
-               <li>SERVICE
-                   <ul> -->
                         <li>House
                             <ul>
                                 <li><a href="list.php?category=HC">House Cleaning</a></li>
@@ -66,16 +53,6 @@
                                 <li><a href="list.php?category=CO">Computer</a></li>
                             </ul>
                         </li>
-               <!--     </ul>
-                </li>
-               <li><a href="search.php">SEARCH</a></li>
-               <li><a href="help.php">HELP</a></li>
-                   <ul>
-                        <li>FAQ</li>
-                        <li>Rating System</li>
-                        <li>Sitemap</li>
-                        <li>Service Locations</li>
-                    </ul>-->
             </ul>
         </div>
         <!-- this is headers end -->

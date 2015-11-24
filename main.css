@@ -63,7 +63,7 @@ img.imagenews{
 #menubar li {
     float:left;
     width:200px;
-    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
     font-size: 20px;
 
 
@@ -71,7 +71,7 @@ img.imagenews{
 #menubar{
     background-color: #20386E;
     height: 80px;
-    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
     font-size: 20px;
     padding-top:10px;
     padding-left: 30px;
@@ -143,7 +143,7 @@ div.topbanner h1{
     font-size: 35px;
     margin: 0;
     text-align:center;
-    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
 }
 
 .topbanner ul li{
@@ -176,7 +176,7 @@ div.bottombanner h2{
     font-size: 20px;
     margin: 0;
     text-align:center;
-    font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
 }
 
 .bottombanner ul li{
@@ -332,15 +332,33 @@ img.sellerprofileimg{
 
 
 /* css for help.php */
-#contact{
-  margin-top: 50px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+#contact>fieldset{
+    color: #20386E;
+    font-size: 16px;
+    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
+    width: 31em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
-
-
+#contact input{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+#contact input[type="submit"]{
+    font-weight: bold;
+    margin-left: 12em;
+}
+label.contactusheading{
+    float: left;
+    margin-right: 1em;
+    text-align: right;
+    width: 7em;
+}
+#contact legend{
+    border: 1px solid #20386E;
+    padding: 0.25em;
+}
 /* css for search.php and help.php and sitemap.php*/
 #searchdiv{
     padding-left: 100px;
