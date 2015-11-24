@@ -8,8 +8,6 @@
                <li><a href="index.php">HOME</a></li>
                <li>ABOUT US
                    <ul>
-                        <li><a href="contactus.php">Company History</a></li>
-                        <li><a href="contactus.php">Special Offers</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>
                         <li><a href="sitemap.php">Site Map</a></li>
                     </ul>
@@ -50,14 +48,15 @@
                         </li>
                     </ul>
                 </li>
+               <li>User Interface
+                    <ul>
+                        <li><a href="signup.php">Sign Up</a></li>
+                        <li><a href="login.php">Log In</a></li>
+                        <li><a href="trackorder.php">Track Order</a></li>
+                    </ul>
+               </li>
                <li><a href="search.php">SEARCH</a></li>
                <li><a href="help.php">HELP</a></li>
-                   <ul>
-                        <li><a href="help.php">FAQ</a></li>
-                        <li><a href="help.php">Rating System</a></li>
-                        <li><a href="sitemap.php">Sitemap</a></li>
-                        <li><a href="help.php">Service Locations</a></li>
-                    </ul>
             </ul>
 </div>
 <?php

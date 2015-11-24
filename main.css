@@ -86,11 +86,15 @@ img.imagenews{
     text-align: center;
     margin-top: 20px;
 }
-#menubar ul li  a:hover, a:active {
+#menubar ul li a:hover {
     color: #4169E1;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
     padding: 10px;
-
+}
+#menubar ul li a:active {
+    color: #4169E1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
+    padding: 10px;
 }
 #menubar ul li:hover > ul {
     display: block;
@@ -438,4 +442,8 @@ a.fixP img{
 
 .ckbutton {
   text-align: right;
+}
+/*for location */
+#map{
+    height: 100%;
 }
