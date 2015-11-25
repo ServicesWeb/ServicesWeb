@@ -8,12 +8,11 @@
     <body>
         <!-- this is headers beginning -->
         <div id="header">
-            <img class="logo" src="img/logo.png" alt="logo">
+            <a href="index.php"><img class="logo" src="img/logo.png" alt="logo"></a>
             <ul>
                 <li><a href="search.php">Search</a></li>
                 <li><a href="login.php">Log In</a></li>
-                <li><a href="account.php">Account</a></li>
-                <li><a href="trackorder.php">Track Order</a></li>
+               <li><a href="trackorder.php">Track Order</a></li>
                 <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
             </ul>
         </div>

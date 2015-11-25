@@ -51,7 +51,6 @@ img.imagenews{
 #header ul img {
   width: 26px;
   height: 22px;
-  position: absolute;
 }
 
 /* menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar menu bar */
@@ -439,7 +438,53 @@ a.fixP img{
   height: 22px;
 }
 
-/*for table in cart.php */
+/*for cart.php */
+#cartdiv{
+    padding-left: 100px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
+}
+
+#cartdiv h1{
+    color: #20386E;
+}
+
+#paymentinformation{
+    width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cartdiv>fieldset{
+    color: #20386E;
+    font-size: 16px;
+    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#cartdiv input{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+#cartdiv input[type="submit"]{
+    font-weight: bold;
+    margin-left: 12em;
+}
+label.cartheading{
+    float: left;
+    margin-right: 1em;
+    text-align: right;
+    width: 7em;
+}
+
+.ckbutton {
+  text-align: right;
+}
+
 .carttable {
   margin-left: auto;
   margin-right: auto;
@@ -456,12 +501,4 @@ a.fixP img{
     border: 1px solid #dfdfdf;
     border-collapse: collapse;
     width: 30%;
-}
-
-.ckbutton {
-  text-align: right;
-}
-/*for location */
-#map{
-    height: 100%;
 }
