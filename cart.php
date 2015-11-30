@@ -1,17 +1,20 @@
 <?php
     session_start();  //use a session to keep shop cart information
+$total=0;
+$result=NULL;
+$mysqli=NULL;
 ?>
 <?php
     include 'header.php';
     require 'cartclass.php';
 ?>
     <div id='cartdiv'>
-        <?php
-            $id=$_POST['id'];
-            $name=$_POST['name'];
-            $count=$_POST['count'];
-            $price=$_POST['price'];
-            $checkout=$_POST['checkout'];
+	    <?php
+	        $id=array_key_exists('id',$_POST)?$_POST['id']:NULL;
+            $name=array_key_exists('name',$_POST)?$_POST['name']:NULL;
+            $count=array_key_exists('count',$_POST)?$_POST['count']:NULL;
+            $price=array_key_exists('price',$_POST)?$_POST['price']:NULL;
+            $checkout=array_key_exists('checkout',$_POST)?$_POST['checkout']:NULL;
             $product = array('id'=>$id, 'name'=>$name, 'count'=>$count, 'price'=>$price);
 
             if ($name){
@@ -22,8 +25,12 @@
                 $shopcart->add($product);
                 $_SESSION['cart']=serialize($shopcart);
             }
-            $shopcart=unserialize($_SESSION['cart']);
-            $productList=$shopcart->productList;
+            if (isset($_SESSION['cart'])) {
+	            $shopcart=unserialize($_SESSION['cart']);
+            } else {
+	            $shopcart=NULL;
+            }
+            $productList=$shopcart?$shopcart->productList:NULL;
         ?>
         
         <?php
@@ -108,9 +115,12 @@
             if (!$checkout || $globalerror != ""){
         ?>
         <h1>Shopping Cart</h1>
+		<?php
+		     if ($productList) {
+		?>
         <table class="carttable">
             <tr>
-                <th>Produce</th>
+                <th>Product</th>
                 <th>Number</th>
                 <th>Price</th>      
             </tr>
@@ -123,13 +133,18 @@
                 <td><?=$prod['count']?></td>
                 <td><?=$prod['price']?></td>
             </tr>
-        <?php
-            }
-        ?>
             <tr>
-                <td colspan="3" class="ckbutton"><label>Total Price:  <?=$total?></label></td>
+              <td colspan="3" class="ckbutton"><label>Total Price:  <?=$total?></label></td>
             </tr>
         </table>
+
+        <?php
+            } // end foreach
+		    } // end if
+		     else {
+			     echo "<p>Your cart is empty.</p>";
+			}
+        ?>
         <h1>Additional Order Information</h1>
         <form enctype = "multipart/form-data" method="post" id="paymentinformation">       
             <fieldset>
