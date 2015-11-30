@@ -1,10 +1,5 @@
 <?php
-    include 'header.php';
     require 'connection.php';
-?>
-
-<?php
-
     function isValidUsername(){
         if(empty($_POST["username"])){
             return 1;
@@ -28,6 +23,35 @@
             return 0;
         }
     }
+?>
+
+<?php
+$login_str = "";
+   if((isValidUsername()==0)&&(isValidPassword()==0)){
+	   $username=$_POST["username"];
+	   $password=$_POST["password"];
+	   $sql = "SELECT username, password FROM user where username = '".$username."'";
+	   $result = $mysqli->query($sql);
+	   if(mysqli_num_rows($result) == 0){
+		   $login_str = "Login failed. This username doesn't exist.";
+	   }
+	   else{
+		   list($username_db,$password_db) = $result->fetch_row();
+		   if($password_db == $password){
+//			   $login_str = "Login succeeded";
+			   /* set session cookie */
+			   setcookie("userlogin", $username);
+			   header("Location: logged_in.php");
+		   }
+		   else{
+			   $login_str = "Login failed. Password doesn't match.";
+		   }
+	   }
+   }
+?>
+
+<?php
+    include 'header.php';
 ?>
 
 <div id="loginMainView">
@@ -60,30 +84,12 @@
             } 
          ?>
          <br />
-         <input type="submit" />
-
+         <input type="submit" value="Login"/>
+	     <p>
          <?php
-            if((isValidUsername()==0)&&(isValidPassword()==0)){
-                $username=$_POST["username"];
-                $password=$_POST["password"];
-
-                $sql = "SELECT username, password FROM user where username = '".$username."'";
-                $result = $mysqli->query($sql);
-                if(mysqli_num_rows($result) == 0){
-                    echo "Login failed. This username doesn't exit.";
-                }
-                else{
-                    list($username_db,$password_db) = $result->fetch_row();
-                    if($password_db == $password){
-                        echo "Login succeeded";
-                    }
-                    else{
-                        echo "Login failed. Password doesn't match.";
-                    }
-                }
-            }
+	         echo $login_str;
          ?>
-
+         </p>
          <p>Don't have an account? <a href="signup.php">Sign up!</a></p>
        </div>
     </form>

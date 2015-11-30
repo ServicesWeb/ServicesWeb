@@ -1,7 +1,7 @@
         <div id="footbar">
 
                 <div class="footbardiv">
-                    <p><a href="contactus.php">Comtact Us</a></p>
+                    <p><a href="contactus.php">Contact Us</a></p>
                     <p>1(800)234-5678</p>
                     <p>customer@coen267group3.com</p>
                     <p>Follow Us</p>

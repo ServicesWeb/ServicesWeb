@@ -10,10 +10,19 @@
         <div id="header">
             <a href="index.php"><img class="logo" src="img/logo.png" alt="logo"></a>
             <ul>
-                <li><a href="search.php">Search</a></li>
-                <li><a href="login.php">Log In</a></li>
-               <li><a href="trackorder.php">Track Order</a></li>
-                <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
+              <?php
+                 if (empty($_COOKIE["userlogin"])) {
+                 ?>
+              <li><a href="login.php">Log In</a></li>
+              <?php
+                 } else {
+                 printf("<li>Hello, %s</li>",$_COOKIE["userlogin"]);
+                 echo "<li><a href=\"logout.php\">Logout</a></li>";
+                 }
+                 ?>
+              <li><a href="search.php">Search</a></li>
+              <li><a href="trackorder.php">Track Order</a></li>
+              <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
             </ul>
         </div>
 
