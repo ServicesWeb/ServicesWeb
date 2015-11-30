@@ -1,10 +1,27 @@
+<!--add javascript effect -->
+<script type = "text/javascript"
+   src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type = "text/javascript" language = "javascript">
+
+   $(document).ready(function() {
+      $(".clickme").click(function(event){
+         $(".target").toggle('slow', function(){
+            $(".log").text('Transition Complete');
+         });
+      });
+   });
+
+</script>
+<!--add javascript effect-->
+
 <?php
     include 'header.php';
 ?>
 
 <div id="helpdiv">
-    <h1>Site Map</h1>
-           <ul>
+    <h1 class="clickme">Site Map</h1>
+           <ul class="target">
                <li><a href="index.php">HOME</a></li>
                <li>ABOUT US
                    <ul>
