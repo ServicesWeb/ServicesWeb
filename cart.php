@@ -32,7 +32,7 @@ $mysqli=NULL;
             }
             $productList=$shopcart?$shopcart->productList:NULL;
         ?>
-        
+
         <?php
             $fullnameerror = "";
             $addresserror = "";
@@ -55,7 +55,7 @@ $mysqli=NULL;
                 } else {
                     $fullname = ($_POST["fullname"]);
                     if (!preg_match("/^[a-zA-Z ]*$/",$fullname)) {
-                        $name_error = "Please enter letters or space."; 
+                        $name_error = "Please enter letters or space.";
                         $globalerror = "error";
                     }
                 }
@@ -67,39 +67,39 @@ $mysqli=NULL;
                 } else {
                     $address = ($_POST["address"]);
                 }
-                
+
                 if (empty($_POST["zipcode"])) {
                     $zipcodeerror = "Zipcode Cannot Be Empty.";
                     $globalerror = "error";
                 } else {
                     $zipcode = ($_POST["zipcode"]);
                     if (!preg_match("/^(0|[1-9]\d{0,4})$/",$zipcode)) {
-                        $zipcodeerror = "Please enter 5 digit numbers."; 
+                        $zipcodeerror = "Please enter 5 digit numbers.";
                         $globalerror = "error";
                     }
                 }
-            
+
                 if (empty($_POST["tel"])) {
                     $telerror = "Phone number cannot be empty.";
                     $globalerror = "error";
                 } else {
                     $tel = ($_POST["tel"]);
                     if (!preg_match("/^(0|[1-9]\d{0,15})$/",$tel)) {
-                        $telerror = "Please enter numbers like xxx-xxx-xxxx."; 
+                        $telerror = "Please enter numbers like xxx-xxx-xxxx.";
                         $globalerror = "error";
                     }
                 }
-                
+
                 if (empty($_POST["payment"])) {
                     $paymenterror = "Card number Cannot Be Empty.";
                     $globalerror = "error";
                 } else {
                     $payment = ($_POST["payment"]);
                     if (!preg_match("/^(0|[1-9]\d{0,15})$/",$payment)) {
-                        $paymenterror = "Please enter numbers."; 
+                        $paymenterror = "Please enter numbers.";
                         $globalerror = "error";
                     }
-                }    
+                }
             }
 
             function check_input($data) {
@@ -110,7 +110,7 @@ $mysqli=NULL;
             }
         }
         ?>
-        
+
         <?php
             if (!$checkout || $globalerror != ""){
         ?>
@@ -125,7 +125,7 @@ $mysqli=NULL;
                 <th>Price</th>
 				<th>Remove</th>
             </tr>
-        <?php              
+        <?php
             foreach ($productList as $prod){
                 $total += $prod['price'] * $prod['count'];
         ?>
@@ -154,7 +154,7 @@ $mysqli=NULL;
 			}
         ?>
         <h1>Additional Order Information</h1>
-        <form enctype = "multipart/form-data" method="post" id="paymentinformation">       
+        <form enctype = "multipart/form-data" method="post" id="paymentinformation">
             <fieldset>
                 <label class="cartheading" for="fullname">Full Name</label>
                 <input type=text name=fullname value="<?php echo $fullname;?>" size="40"> * <?php echo $fullnameerror;?>
@@ -174,7 +174,7 @@ $mysqli=NULL;
         <?php
                 if ($productList){
         ?>
-                <input type="submit" name="checkout" value="checkout">
+                <input class="checkoutbtn" type="submit" name="checkout" value="checkout">
         <?php
                 }else{
         ?>
@@ -183,8 +183,8 @@ $mysqli=NULL;
                 }
         ?>
             </fieldset>
-        </form> 
-        
+        </form>
+
         <?php
             }
         ?>
@@ -212,7 +212,7 @@ $mysqli=NULL;
                         }
                     }
                 }
-                
+
                 //insert a new order
                 $fullname=$_POST['fullname'];
                 $address=$_POST['address'];

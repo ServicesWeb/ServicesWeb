@@ -468,9 +468,10 @@ a.fixP img{
 }
 
 #paymentinformation{
-    width: 45em;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 #cartdiv>fieldset{
@@ -620,3 +621,24 @@ label.cartheading{
 }
 
 /*--------*/
+
+.checkoutbtn{
+  color: #fff;
+  background-color: #ed9017;
+  border-color: (#f6e6b4 0%,#ed9017 100%);
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width:310px;
+  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
+  margin-top: 20px;
+
+}
+.checkoutbtn:hover{
+  background-color: #ffd65e;
+  border-color: #ffd65e;
+
+
+}
