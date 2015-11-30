@@ -1,10 +1,28 @@
 <?php
     include 'header.php';
 ?>
+<link type="text/css" rel="stylesheet" href="main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(".shop1").click(function(){
+        $(".shop_help").slideToggle("slow");
+    });
+    $(".shop2").click(function(){
+        $(".shop_help2").slideToggle("slow");
+    });
+    $(".shop3").click(function(){
+        $(".shop_help3").slideToggle("slow");
+    });
+});
+</script>
+
 
 <div id="helpdiv">
     <h1>Frequently Asked Questions</h1>
-    <h2>- Shop -</h2>
+    <h2 class="shop1">- Shop -</h2>
+  <div class="shop_help">
     <p class="helpquestions">How do I search service I need?</p>
     <p class="helpanswers">Just click the "Service" on the menubar of our page, and then search the services by category,  if you like any seller, you can browse their profile page and add the service to the cart.</p>
 
@@ -13,8 +31,9 @@
 
     <p class="helpquestions">How long will one service last?</p>
     <p class="helpanswers">Usually if you purchase one service, the time for the service will be for one calendar month.</p>
-
-    <h2>- Checkout &amp; Payment -</h2>
+  </div>
+    <h2 class="shop2">- Checkout &amp; Payment -</h2>
+  <div class="shop_help2">
     <p class="helpquestions">How to checkout my services in cart?</p>
     <p class="helpanswers">Just click "Check out" button, and follow the steps, it's easy and safe!</p>
 
@@ -26,8 +45,9 @@
 
     <p class="helpquestions">I do not have a credit or debit card, how do I pay?</p>
     <p class="helpanswers">Please call us 800-1234-5678 for assistant! Our customer representative will happy to assist you!</p>
-
-    <h2>- Feedback -</h2>
+  </div>
+    <h2 class="shop3">- Feedback -</h2>
+  <div class="shop_help3">
     <p class="helpquestions">What should I do before the service come?</p>
     <p class="helpanswers">Please keep your valuable things locked and your dog leashed.</p>
 
@@ -39,7 +59,7 @@
 
     <p class="helpquestions">Should I give them tips if I am satisfied?</p>
     <p class="helpanswers">No need, your payment is including tips, supplies and gas.</p>
-
+  </div>
 </div>
 <?php
     require 'foot.php';

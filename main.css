@@ -573,3 +573,8 @@ label.cartheading{
   margin-top: 50px;
   margin-bottom: 80px;
 }
+/*help js */
+.shop_help, .shop_help2, .shop_help3{
+  display: none;
+}
+/*--------*/
