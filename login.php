@@ -35,7 +35,7 @@
        <div>
          Username
          <br>
-         <input type="text" name="username" />
+         <input id = "login_box" type="text" name="username" />
          <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"]))) {
                 if(isValidUsername()==1){
@@ -50,7 +50,7 @@
 
          Password
          <br>
-         <input type="password" name="password" />
+         <input id = "login_box" type="password" name="password" />
          <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"]))) {
                 if(isValidPassword()==1){
@@ -62,7 +62,7 @@
             }
          ?>
          <br />
-         <input type="submit" />
+         <input id="login_submit" type="submit" />
 
          <?php
             if((isValidUsername()==0)&&(isValidPassword()==0)){

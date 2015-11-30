@@ -521,7 +521,7 @@ label.cartheading{
 
 }
 
-input[type="submit"]{
+#login_submit{
   color: #fff;
   background-color: #ed9017;
   border-color: (#f6e6b4 0%,#ed9017 100%);
@@ -534,11 +534,11 @@ input[type="submit"]{
   background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
 }
 
-input[type="submit"]:hover{
+#login_submit:hover{
   background-color: #ffd65e;
   border-color: #ffd65e;
 }
-input[type="text"]{
+#login_box{
   height:25px;
   display: block;
   margin-bottom: 10px;
