@@ -2,6 +2,21 @@
     include 'header.php';
     require 'connection.php';
 ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("img").mouseenter(function(){
+         $("input").css("background-color", "#F0E68C");
+    });
+});
+</script>
+
+
+
+
+
+
 <?php
     $param = $_GET["name"]; //get the parameter from url in this page after "?"
     $sellername = str_replace('%20',' ',$param);

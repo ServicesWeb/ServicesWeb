@@ -18,3 +18,4 @@ function showMore() {
    document.getElementById("description").style.height = "auto";
    document.getElementById("showMore").style.visibility = "hidden";
 }
+// function for saking the img on profile.php
