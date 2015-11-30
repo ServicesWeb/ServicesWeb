@@ -122,7 +122,8 @@ $mysqli=NULL;
             <tr>
                 <th>Product</th>
                 <th>Number</th>
-                <th>Price</th>      
+                <th>Price</th>
+				<th>Remove</th>
             </tr>
         <?php              
             foreach ($productList as $prod){
@@ -132,14 +133,21 @@ $mysqli=NULL;
                 <td><?=$prod['name']?></td>
                 <td><?=$prod['count']?></td>
                 <td><?=$prod['price']?></td>
+                <td><?php
+                       printf("<a href=\"cartdel.php?id=%s\">remove</a>",
+                       $prod['id']);
+                       ?></td>
             </tr>
-            <tr>
-              <td colspan="3" class="ckbutton"><label>Total Price:  <?=$total?></label></td>
-            </tr>
-        </table>
 
         <?php
-            } // end foreach
+           } // end foreach
+           ?>
+            <tr>
+              <td colspan="3" class="ckbutton"><label>Total Price:  <?=$total?></label></td>
+              <td><a href="cartdel.php?all=yes">clear</a></td>
+            </tr>
+        </table>
+        <?php
 		    } // end if
 		     else {
 			     echo "<p>Your cart is empty.</p>";
