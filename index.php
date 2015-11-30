@@ -5,10 +5,10 @@
         <!-- this is main body beginning -->
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
-        <div id="mainbody" >
+        <div id="mainbody">
 
             <div id="banner">
-                <img src="img/banner.jpg">
+                <img src="img/banner1.jpg" id="slide" />
             </div>
 
             <div class="topbanner">
@@ -23,16 +23,18 @@
              <div class="topbanner">
                 <h1>HOW TO USE</h1>
                 <ul>
-                    <li>Search</li>
+                    <li><a href="search.php">Search</a></li>
                     <li>Order</li>
                     <li>Get service!</li>
                 </ul>
             </div>
-            <div class="topbanner">
+            <div class="topbanner" style="overflow:hidden">
                 <h1>COUPONS</h1>
-                <ul>
-                    <li>Computer</li>
-                    <li>House Cleaning</li>
+                <ul id="coupon">
+                  <li>Computer tutoring: get 10% off, before Nov 30!</li>
+                  <li>House Cleaning: get 20% off, expire on Dec 15. </li>
+                  <li>Cooking: get 10% off for Christmas holiday!</li>
+                  <li>Gardening: get 5% off before the spring.</li>
                 </ul>
             </div>
 
@@ -43,7 +45,7 @@
                     <li><a href="list.php?category=GD">Gardening</a></li>
                     <li><a href="list.php?category=PB">Plumbing</a></li>
                     <li><a href="list.php?category=RP">Repairing</a></li>
-                    <li>More..</li>
+                    <!--  <li>More..</li>  -->
                 </ul>
             </div>
             <div class="bottombanner">
@@ -53,7 +55,7 @@
                   <li><a href="list.php?category=CD">Chauffeur Drive</a></li>
                   <li><a href="list.php?category=GP">Grocery Purchase</a></li>
                   <li><a href="list.php?category=MM">Move in &#124; Move out</a></li>
-                  <li>More..</li>
+                  <!--  <li>More..</li>  -->
                 </ul>
             </div>
             <div class="bottombanner">
@@ -63,7 +65,7 @@
                   <li><a href="list.php?category=JA">Japanese</a></li>
                   <li><a href="list.php?category=CH">Chinese</a></li>
                   <li><a href="list.php?category=IN">Indian</a></li>
-                  <li>More..</li>
+                  <!--  <li>More..</li>  -->
                 </ul>
             </div>
             <div class="bottombanner">
@@ -73,7 +75,7 @@
                   <li><a href="list.php?category=SW">Swim</a></li>
                   <li><a href="list.php?category=DR">Drive</a></li>
                   <li><a href="list.php?category=CO">Computer</a></li>
-                  <li>More..</li>
+                  <!--  <li>More..</li>  -->
                 </ul>
             </div>
         </div>

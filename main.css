@@ -5,7 +5,6 @@ body{
 
 a{
     text-decoration: none;
-
 }
 
 /* header header header header header header header header header header header header header */
@@ -123,6 +122,14 @@ img.imagenews{
     width:1050px;
 }
 
+#banner{
+
+}
+#banner img{
+  width:1060px;
+  height: 420px;
+}
+
 div.topbanner{
     margin-left: 30px;
     margin-top: 10px;
@@ -152,6 +159,10 @@ div.topbanner h1{
     font-size: 20px;
 }
 
+#coupon{
+    list-style-image: url('img/coupon.jpg');
+}
+
 div.bottombanner{
     margin-left: 30px;
     margin-top: 10px;
@@ -161,9 +172,8 @@ div.bottombanner{
     border-style: solid;
     border-radius:25px;
     width: 210px;
-    height:300px;
+    height:270px;
     float:left;
-
 }
 
 div.bottombanner h2{
@@ -305,9 +315,12 @@ img.sellerprofileimg{
     clear: right;
     margin-right: 15px;
 }
+
 .sellerprofiledescription p{
     clear: both;
     padding-top: 20px;
+    height: 1em;
+    overflow: hidden;
 }
 
 #categoryright h1{

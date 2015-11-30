@@ -5,7 +5,7 @@
         <link type="text/css" rel="stylesheet" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body onload="slideit()">
         <!-- this is headers beginning -->
         <div id="header">
             <a href="index.php"><img class="logo" src="img/logo.png" alt="logo"></a>

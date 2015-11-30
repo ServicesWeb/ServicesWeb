@@ -54,7 +54,10 @@
                     <input type="text" name="count" value="1"> Weeks. <input type="submit" value="add to cart">
                 </form>
                 <div  class="sellerprofiledescription">
-                <p><?= $description ?></p>
+                  <p id="description">
+                    <?= $description ?>
+                  </p>
+                  <button id="showMore" onclick="showMore()">show More</button>
                 </div>
 
     <?php
