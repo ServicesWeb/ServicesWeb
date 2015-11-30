@@ -33,9 +33,10 @@
 <div id="loginMainView">
     <form id="login" enctype = "multipart/form-data" method = "post">
        <div>
-         Username:
+         Username
+         <br>
          <input type="text" name="username" />
-         <?php 
+         <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"]))) {
                 if(isValidUsername()==1){
                     echo "Username is required";
@@ -43,13 +44,14 @@
                 else if(isValidUsername()==2){
                     echo "Please input a valid username";
                 }
-            } 
+            }
          ?>
          <br />
 
-         Password:
+         Password
+         <br>
          <input type="password" name="password" />
-         <?php 
+         <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"]))) {
                 if(isValidPassword()==1){
                     echo "Password is required";
@@ -57,7 +59,7 @@
                 else if(isValidPassword()==2){
                     echo "Please input a valid password";
                 }
-            } 
+            }
          ?>
          <br />
          <input type="submit" />
