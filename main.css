@@ -515,3 +515,93 @@ label.cartheading{
     border-collapse: collapse;
     width: 30%;
 }
+
+
+/* login */
+#loginMainView{
+    width:30%;
+    height: 350px;
+    border-color: gray;
+    border-width: thin;
+    border-style: ridge;
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+}
+#login, #singup{
+    margin:60px;
+
+}
+
+#login_submit, #singup_submit{
+  color: #fff;
+  background-color: #ed9017;
+  border-color: (#f6e6b4 0%,#ed9017 100%);
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width:190px;
+  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
+}
+
+#login_submit:hover, #singup_submit:hover{
+  background-color: #ffd65e;
+  border-color: #ffd65e;
+}
+#login_box,#signup_box_password,#sign_user_box{
+  height:25px;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  float:left;
+  margin-top: 16px;
+  margin-right: 5px;
+
+}
+
+#login_box_password, #signup_box_email{
+
+  height:25px;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  float:left;
+  margin-top: 16px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+
+}
+
+
+#signupMainView{
+  width:30%;
+  height: 350px;
+  border-color: gray;
+  border-width: thin;
+  border-style: ridge;
+  margin-left: 350px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+/*help js */
+.shop_help, .shop_help2, .shop_help3{
+  display: none;
+}
+/*--------*/
+
+
+/*site map js*/
+.target{
+  display:none;
+
+}
+.clickme{
+  margin-bottom: 110px;
+
+}
+
+/*--------*/
+

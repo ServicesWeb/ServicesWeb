@@ -3,17 +3,33 @@
         <meta charset="utf-8">
         <title>Vinkaiyang-Fenni Service Website</title>
         <link type="text/css" rel="stylesheet" href="main.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>    
     </head>
     <body onload="slideit()">
         <!-- this is headers beginning -->
         <div id="header">
             <a href="index.php"><img class="logo" src="img/logo.png" alt="logo"></a>
             <ul>
+<<<<<<< Updated upstream
+              <?php
+                 if (empty($_COOKIE["userlogin"])) {
+                 ?>
+              <li><a href="login.php">Log In</a></li>
+              <?php
+                 } else {
+                 printf("<li>Hello, %s</li>",$_COOKIE["userlogin"]);
+                 echo "<li><a href=\"logout.php\">Logout</a></li>";
+                 }
+                 ?>
+              <li><a href="search.php">Search</a></li>
+              <li><a href="trackorder.php">Track Order</a></li>
+              <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
+=======
                 <li><a href="search.php">Search</a></li>
                 <li><a href="login.php">Log In</a></li>
-               <li><a href="trackorder.php">Track Order</a></li>
+                <li><a href="trackorder.php">Track Order</a></li>
                 <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
+>>>>>>> Stashed changes
             </ul>
         </div>
 
