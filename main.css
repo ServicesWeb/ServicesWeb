@@ -564,7 +564,7 @@ label.cartheading{
 
 }
 
-#login_box_password, #signup_box_email{
+#login_box_password{
 
   height:25px;
   display: block;
@@ -576,6 +576,19 @@ label.cartheading{
   margin-bottom: 20px;
 
 }
+
+#signup_box_email{
+  height:25px;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  float:left;
+  margin-top: 16px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+
 
 
 #signupMainView{
@@ -601,8 +614,8 @@ label.cartheading{
 
 }
 .clickme{
-  margin-bottom: 110px;
-  
+  margin-bottom: 150px;
+
 }
 
 /*--------*/

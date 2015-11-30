@@ -73,11 +73,12 @@
                 }
             }
         ?>
-
          <br>
-         Email
          <br>
+         <br>
+         <div>Email</div>
          <input id="signup_box_email" type="text" name="email" />
+
          <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"])&&empty($_POST["email"]))) {
                 if(isValidEmail()==1){
@@ -89,7 +90,7 @@
             }
         ?>
 
-         <br>
+
          <input id= "singup_submit" type="submit" />
 
          <?php
