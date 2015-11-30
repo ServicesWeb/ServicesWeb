@@ -329,19 +329,21 @@ img.sellerprofileimg{
     padding-top: 8px;
 }
 /* css for login.php */
-
+/*
 #loginMainView{
     background-color: ivory;
     width: 1030px;
 }
+*/
 
 /* css for signup.php */
 
+/*
 #signupMainView{
     background-color: ivory;
     width: 1030px;
 }
-
+*/
 
 /* css for help.php */
 #contact>fieldset{
@@ -516,7 +518,7 @@ label.cartheading{
     width: 30%;
 }
 
-
+/*---------------------------------------*/
 /* login */
 #loginMainView{
     width:30%;
@@ -604,4 +606,3 @@ label.cartheading{
 }
 
 /*--------*/
-
