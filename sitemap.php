@@ -7,7 +7,7 @@
    $(document).ready(function() {
       $(".clickme").click(function(event){
          $(".target").toggle('slow', function(){
-            $(".log").text('Transition Complete');
+            $(".log").text('Site Map');
          });
       });
    });
