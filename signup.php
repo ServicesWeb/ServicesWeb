@@ -44,9 +44,11 @@
 <div id="signupMainView">
     <form id="singup" enctype = "multipart/form-data" method = "post">
        <div>
-         Username:
-         <input type="text" name="username" />
-         <?php 
+         Username
+         <br>
+         <input id="sign_user_box" type="text" name="username" />
+         <br>
+         <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"])&&empty($_POST["email"]))) {
                 if(isValidUsername()==1){
                     echo "Username is required";
@@ -54,13 +56,14 @@
                 else if(isValidUsername()==2){
                     echo "Please input a valid username";
                 }
-            } 
+            }
         ?>
-        <br />
 
-         Password:
-         <input type="password" name="password" />
-         <?php 
+
+         Password
+         <br>
+         <input id="signup_box_password" type="password" name="password" />
+         <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"])&&empty($_POST["email"]))) {
                 if(isValidPassword()==1){
                     echo "Password is required";
@@ -68,13 +71,14 @@
                 else if(isValidPassword()==2){
                     echo "Please input a valid password";
                 }
-            } 
+            }
         ?>
-        <br />
 
-         Email:
-         <input type="text" name="email" />
-         <?php 
+         <br>
+         Email
+         <br>
+         <input id="signup_box_email" type="text" name="email" />
+         <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"])&&empty($_POST["email"]))) {
                 if(isValidEmail()==1){
                     echo "Email is required";
@@ -82,11 +86,11 @@
                 else if(isValidEmail()==2){
                     echo "Please input a valid email";
                 }
-            } 
+            }
         ?>
-        <br />
 
-         <input type="submit" />
+         <br>
+         <input id= "singup_submit" type="submit" />
 
          <?php
             if((isValidUsername()==0)&&(isValidPassword()==0)&&(isValidEmail()==0)){
