@@ -41,7 +41,7 @@ $login_str = "";
 //			   $login_str = "Login succeeded";
 			   /* set session cookie */
 			   setcookie("userlogin", $username);
-			   header("Location: logged_in.php");
+			   header("Location: index.php");
 		   }
 		   else{
 			   $login_str = "Login failed. Password doesn't match.";
