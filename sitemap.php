@@ -6,9 +6,7 @@
 
    $(document).ready(function() {
       $(".clickme").click(function(event){
-         $(".target").toggle('slow', function(){
-            $(".log").text('Site Map');
-         });
+         $(".target").toggle('slow');
       });
    });
 

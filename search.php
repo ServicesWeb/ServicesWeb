@@ -1,4 +1,24 @@
+<!-- js shake -->
 
+<script type = "text/javascript"
+   src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type = "text/javascript"
+   src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+<script type = "text/javascript" language = "javascript">
+
+   $(document).ready(function() {
+
+      $("#shake_button").click(function(){
+         $("h1").effect( "shake", {times:1}, 500 );
+      });
+
+   });
+
+</script>
+
+<!-- js shake -->
 <?php
     include 'header.php';
     require 'connection.php';
@@ -16,7 +36,7 @@
 ?>
 <div id="searchdiv" >
     <h1>Please Enter your Search</h1>
-    <form action="search.php">
+    <form id="shake_button" action="search.php">
         <input type="text" name="search" class="searchform"> <input type="submit" value="Search" class="searchsubmit">
     </form>
 
