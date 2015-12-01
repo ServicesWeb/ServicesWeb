@@ -11,7 +11,6 @@
             return 0;
         }
     }
-
     function isValidPassword(){
         if(empty($_POST["password"])){
             return 1;
@@ -23,9 +22,6 @@
             return 0;
         }
     }
-?>
-
-<?php
 $login_str = "";
    if((isValidUsername()==0)&&(isValidPassword()==0)){
 	   $username=$_POST["username"];
@@ -38,7 +34,7 @@ $login_str = "";
 	   else{
 		   list($username_db,$password_db) = $result->fetch_row();
 		   if($password_db == $password){
-//			   $login_str = "Login succeeded";
+			   $login_str = "Login succeeded";
 			   /* set session cookie */
 			   setcookie("userlogin", $username);
 			   header("Location: index.php");
