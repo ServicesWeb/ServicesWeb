@@ -63,7 +63,6 @@ $mysqli=NULL;
                 if (empty($_POST["address"])) {
                     $addresserror = "Address Cannot Be Empty.";
                     $globalerror = "error";
-                    echo "address error";
                 } else {
                     $address = ($_POST["address"]);
                 }
