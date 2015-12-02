@@ -389,6 +389,27 @@ label.contactusheading{
 }
 
 
+
+#contactus_submit{
+  color: #fff;
+  background-color: #ed9017;
+  border-color: (#f6e6b4 0%,#ed9017 100%);
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width:302px;
+  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
+  margin-top: 20px;
+
+}
+
+#contactus_submit:hover{
+  background-color: #ffd65e;
+  border-color: #ffd65e;
+}
+
 /* css for search.php and help.php and sitemap.php*/
 #searchdiv{
     padding-left: 100px;
@@ -427,7 +448,24 @@ label.contactusheading{
 
 #helpdiv h2 {
         color: #20386E;
+
 }
+
+/*help js */
+.shop_help, .shop_help2, .shop_help3{
+  display: none;
+}
+
+/*site map js*/
+.target{
+  display:none;
+
+}
+.clickme{
+  margin-bottom: 150px;
+
+}
+
 /*for help page <p> style*/
 p.helpquestions{
     font-size: 18px;
@@ -536,6 +574,52 @@ label.cartheading{
     width: 30%;
 }
 
+
+.checkoutbtn{
+  color: #fff;
+  background-color: #ed9017;
+  border-color: (#f6e6b4 0%,#ed9017 100%);
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width:310px;
+  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
+  margin-top: 20px;
+
+}
+.checkoutbtn:hover{
+  background-color: #ffd65e;
+  border-color: #ffd65e;
+
+
+}
+
+.checkoutbtn2{
+  color: #fff;
+  background-color: #ed9017;
+  border-color: (#f6e6b4 0%,#ed9017 100%);
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width:310px;
+  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
+  margin-top: 20px;
+
+}
+
+
+.checkoutbtn:hover{
+  background-color: #ffd65e;
+  border-color: #ffd65e;
+
+
+}
+
+
 /*---------------------------------------*/
 /* login */
 #loginMainView{
@@ -616,88 +700,4 @@ label.cartheading{
   margin-left: 350px;
   margin-top: 50px;
   margin-bottom: 80px;
-}
-/*help js */
-.shop_help, .shop_help2, .shop_help3{
-  display: none;
-}
-/*--------*/
-
-
-/*site map js*/
-.target{
-  display:none;
-
-}
-.clickme{
-  margin-bottom: 150px;
-
-}
-
-/*---------------------cart.php----------------------------------------*/
-
-.checkoutbtn{
-  color: #fff;
-  background-color: #ed9017;
-  border-color: (#f6e6b4 0%,#ed9017 100%);
-  padding: 14px 24px;
-  border: 0 none;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  width:310px;
-  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
-  margin-top: 20px;
-
-}
-.checkoutbtn:hover{
-  background-color: #ffd65e;
-  border-color: #ffd65e;
-
-
-}
-
-.checkoutbtn2{
-  color: #fff;
-  background-color: #ed9017;
-  border-color: (#f6e6b4 0%,#ed9017 100%);
-  padding: 14px 24px;
-  border: 0 none;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  width:310px;
-  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
-  margin-top: 20px;
-
-}
-
-
-.checkoutbtn:hover{
-  background-color: #ffd65e;
-  border-color: #ffd65e;
-
-
-}
-/*--------------------------------------------------------------*/
-
-
-#contactus_submit{
-  color: #fff;
-  background-color: #ed9017;
-  border-color: (#f6e6b4 0%,#ed9017 100%);
-  padding: 14px 24px;
-  border: 0 none;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  width:302px;
-  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
-  margin-top: 20px;
-
-}
-
-#contactus_submit:hover{
-  background-color: #ffd65e;
-  border-color: #ffd65e;
 }
