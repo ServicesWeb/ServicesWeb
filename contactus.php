@@ -5,10 +5,10 @@
     <fieldset>
         <legend>Please email us if you have any quetion.</legend>
         <label class="contactusheading" for="name">Subject:</label>
-        <input name="Subject" type="text" size ="40">
+        <input name="Subject" type="text">
         <br/>
         <label class="contactusheading" for="content">Comments:</label>
-        <textarea name="content" rows="5" cols="40"></textarea>
+        <textarea name="content" rows="5" cols="43"></textarea>
         <br>
         <input id="contactus_submit"type="submit" value="Submit"><br/>
     </fieldset>

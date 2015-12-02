@@ -393,7 +393,7 @@ label.contactusheading{
 }
 
 #contact input[name="Subject"]{
-  width:302px;
+  width:304px;
   margin-bottom: 10px;
   border-style:ridge;
   height:30px;
@@ -593,7 +593,7 @@ label.cartheading{
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  width:310px;
+  width:265px;
   margin-top: 20px;
 
 }
@@ -609,7 +609,7 @@ label.cartheading{
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  width:310px;
+  width:265px;
   margin-top: 20px;
 
 }

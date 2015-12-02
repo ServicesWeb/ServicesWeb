@@ -122,7 +122,7 @@ $mysqli=NULL;
                 <th>Product</th>
                 <th>Number</th>
                 <th>Price</th>
-				<th>Remove</th>
+				        <th>Remove</th>
             </tr>
         <?php
             foreach ($productList as $prod){
