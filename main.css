@@ -405,20 +405,17 @@ label.contactusheading{
 #contactus_submit{
   color: #fff;
   background-color: #ed9017;
-  border-color: (#f6e6b4 0%,#ed9017 100%);
   padding: 14px 24px;
   border: 0 none;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   width:302px;
-  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
   margin-top: 20px;
 }
 
 #contactus_submit:hover{
   background-color: #ffd65e;
-  border-color: #ffd65e;
 }
 
 /* css for search.php and help.php and sitemap.php*/
@@ -446,7 +443,6 @@ label.contactusheading{
 .searchsubmit{
     width: 100px;
     border-radius: 5px;
-    cursor:hand;
     background-color: azure;
 }
 
@@ -591,35 +587,28 @@ label.cartheading{
 .checkoutbtn{
   color: #fff;
   background-color: #ed9017;
-  border-color: (#f6e6b4 0%,#ed9017 100%);
   padding: 14px 24px;
   border: 0 none;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   width:310px;
-  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
   margin-top: 20px;
 
 }
 .checkoutbtn:hover{
   background-color: #ffd65e;
-  border-color: #ffd65e;
-
-
 }
 
 .checkoutbtn2{
   color: #fff;
   background-color: #DCDCDC;
-  border-color: (#DCDCDC 100%);
   padding: 14px 24px;
   border: 0 none;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   width:310px;
-  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
   margin-top: 20px;
 
 }
@@ -627,7 +616,6 @@ label.cartheading{
 
 .checkoutbtn2:hover{
   background-color: #D3D3D3;
-  border-color: #D3D3D3;
 }
 
 
@@ -652,19 +640,17 @@ label.cartheading{
 #login_submit, #singup_submit{
   color: #fff;
   background-color: #ed9017;
-  border-color: (#f6e6b4 0%,#ed9017 100%);
   padding: 14px 24px;
   border: 0 none;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   width:190px;
-  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
+
 }
 
 #login_submit:hover, #singup_submit:hover{
   background-color: #ffd65e;
-  border-color: #ffd65e;
 }
 #login_box,#signup_box_password,#sign_user_box{
   height:25px;
