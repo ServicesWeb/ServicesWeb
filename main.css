@@ -611,8 +611,8 @@ label.cartheading{
 
 .checkoutbtn2{
   color: #fff;
-  background-color: #ed9017;
-  border-color: (#f6e6b4 0%,#ed9017 100%);
+  background-color: #DCDCDC;
+  border-color: (#DCDCDC 100%);
   padding: 14px 24px;
   border: 0 none;
   font-weight: 700;
@@ -625,11 +625,9 @@ label.cartheading{
 }
 
 
-.checkoutbtn:hover{
-  background-color: #ffd65e;
-  border-color: #ffd65e;
-
-
+.checkoutbtn2:hover{
+  background-color: #D3D3D3;
+  border-color: #D3D3D3;
 }
 
 
