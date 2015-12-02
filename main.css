@@ -404,10 +404,12 @@ label.contactusheading{
 
 #helpdiv{
     padding-top: 10px;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     padding-left: 50px;
-    padding-right: 100px
+    /*padding-right: 100px;*/
+    width: 1010px;
 }
+
 
 #helpdiv h2 {
         color: #20386E;
@@ -613,10 +615,9 @@ label.cartheading{
 /*site map js*/
 .target{
   display:none;
-
 }
 .clickme{
-  margin-bottom: 150px;
+  margin-bottom: 10px;
 
 }
 

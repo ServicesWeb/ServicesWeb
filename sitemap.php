@@ -18,7 +18,7 @@
 ?>
 
 <div id="helpdiv">
-    <h1 class="clickme">Site Map</h1>
+    <h1 class="clickme">Site Map<br /></h1>
            <ul class="target">
                <li><a href="index.php">HOME</a></li>
                <li>ABOUT US

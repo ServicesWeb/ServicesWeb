@@ -30,4 +30,4 @@ window.setInterval(run,1000);
 var swap = function() {
     $("#coupon li:last").hide().prependTo("#coupon").fadeIn(500);
 }
-window.setInterval(swap,2000)
+window.setInterval(swap,3500)

@@ -6,15 +6,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("img").mouseenter(function(){
+    $("input").mouseenter(function(){
          $("input").css("background-color", "#F0E68C");
+    });
+    $("input").mouseleave(function(){
+         $("input").css("background-color", "white");
     });
 });
 </script>
-
-
-
-
 
 
 <?php
