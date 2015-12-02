@@ -274,7 +274,7 @@ div.bottombanner h2{
     width: 180px;
     float: left;
     border: 1px #20386E solid;
-    padding-top: -10px;
+    padding-top: 0px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -299,7 +299,7 @@ div.bottombanner h2{
     background-color: #20386E;
     height: 30px;
     font-size: 20px;
-    margin: 0 -10 -10 -10;
+    margin: 0px -10px -10px -10px;
     text-align:center;
     padding-top: 8px;
     font-family: 'lato';
@@ -443,6 +443,10 @@ label.contactusheading{
 .searchsubmit{
     width: 100px;
     border-radius: 5px;
+<<<<<<< HEAD
+=======
+    cursor:pointer;
+>>>>>>> origin/master
     background-color: azure;
 }
 
