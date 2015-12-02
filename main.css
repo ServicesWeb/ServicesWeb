@@ -310,6 +310,9 @@ div.bottombanner h2{
     color: #666666;
     font-family:'Open Sans Condensed','lato';
 }
+#categoryleft>p a:hover{
+    color:orange;
+}
 
 
 
@@ -357,9 +360,11 @@ img.sellerprofileimg{
     font-size: 16px;
     font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
     width: 31em;
-    margin-left: auto;
+    margin-left: 250px;;
     margin-right: auto;
     margin-top: 20px;
+    border-style: hidden;
+    margin-bottom: 50px;
 }
 #contact input{
     font-weight: bold;
@@ -378,12 +383,13 @@ label.contactusheading{
 #contact legend{
     border: 1px solid #20386E;
     padding: 0.25em;
-    margin:auto;
+    margin-left: 130px;
     display: block;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 17px;
     color: #333;
-
+    width:290px;
+    border-style: hidden;
 }
 
 #contact input[name="Subject"]{
@@ -408,7 +414,6 @@ label.contactusheading{
   width:302px;
   background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
   margin-top: 20px;
-
 }
 
 #contactus_submit:hover{
