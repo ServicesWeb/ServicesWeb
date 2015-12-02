@@ -177,7 +177,7 @@ $mysqli=NULL;
         <?php
                 }else{
         ?>
-                <input type="submit" name="checkout" value="checkout" disabled="1">
+                <input class="checkoutbtn2" type="submit" name="checkout" value="checkout" disabled="1">
         <?php
                 }
         ?>

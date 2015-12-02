@@ -372,7 +372,23 @@ label.contactusheading{
 #contact legend{
     border: 1px solid #20386E;
     padding: 0.25em;
+    margin:auto;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+
 }
+
+#contact input[name="Subject"]{
+  width:302px;
+  margin-bottom: 10px;
+  border-style:ridge;
+  height:30px;
+  margin-bottom: 20px;
+}
+
+
 /* css for search.php and help.php and sitemap.php*/
 #searchdiv{
     padding-left: 100px;
@@ -570,7 +586,6 @@ label.cartheading{
 
   height:25px;
   display: block;
-  margin-bottom: 10px;
   font-size: 15px;
   float:left;
   margin-top: 16px;
@@ -582,7 +597,6 @@ label.cartheading{
 #signup_box_email{
   height:25px;
   display: block;
-  margin-bottom: 10px;
   font-size: 15px;
   float:left;
   margin-top: 16px;
@@ -620,7 +634,7 @@ label.cartheading{
 
 }
 
-/*--------*/
+/*---------------------cart.php----------------------------------------*/
 
 .checkoutbtn{
   color: #fff;
@@ -641,4 +655,49 @@ label.cartheading{
   border-color: #ffd65e;
 
 
+}
+
+.checkoutbtn2{
+  color: #fff;
+  background-color: #ed9017;
+  border-color: (#f6e6b4 0%,#ed9017 100%);
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width:310px;
+  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
+  margin-top: 20px;
+
+}
+
+
+.checkoutbtn:hover{
+  background-color: #ffd65e;
+  border-color: #ffd65e;
+
+
+}
+/*--------------------------------------------------------------*/
+
+
+#contactus_submit{
+  color: #fff;
+  background-color: #ed9017;
+  border-color: (#f6e6b4 0%,#ed9017 100%);
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width:302px;
+  background-color: linear-gradient (#f6e6b4 0%,#ed9017 100%);
+  margin-top: 20px;
+
+}
+
+#contactus_submit:hover{
+  background-color: #ffd65e;
+  border-color: #ffd65e;
 }
