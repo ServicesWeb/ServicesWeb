@@ -260,6 +260,12 @@ div.bottombanner h2{
     color: #20386E;
 }
 
+.listseller a:hover{
+  color:#FFA500
+}
+
+
+
 .listseller img{
     border-radius: 10px;
     border: 1px solid #20386E;
