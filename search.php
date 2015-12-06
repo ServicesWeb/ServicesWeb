@@ -1,28 +1,8 @@
-<!-- js shake -->
-
-<script type = "text/javascript"
-   src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<script type = "text/javascript"
-   src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-
-<script type = "text/javascript" language = "javascript">
-
-   $(document).ready(function() {
-
-      $("#shake_button").click(function(){
-         $("h1").effect( "shake", {times:1}, 500 );
-      });
-
-   });
-
-</script>
-
-<!-- js shake -->
 <?php
     include 'header.php';
     require 'connection.php';
 ?>
+
 <?php
     $param = $_GET["search"]; //get the parameter from url in this page after "?"
     if ($param) {
@@ -62,6 +42,7 @@
     ?>
     </ol>
 </div>
+
 <?php
-    require 'foot.php';
+    include 'foot.php';
 ?>

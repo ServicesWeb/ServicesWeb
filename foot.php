@@ -1,5 +1,4 @@
         <div id="footbar">
-
                 <div class="footbardiv">
                     <p><a href="contactus.php">Contact Us</a></p>
                     <p>1(800)234-5678</p>
@@ -11,7 +10,6 @@
                     <p><a href="sitemap.php">Sitemap</a></p>
                     <p>About Us</p>
                     <p>Company History</p>
-                    <!-- <p>Special Offers</p>  -->
                     <p>Join Us</p>
                 </div>
                 <div class="footbardiv">
@@ -30,7 +28,6 @@
                 </div>
 
             <div class="footbarmadeby">© Made by SCU COEN 276 Group 3 all rights reserved. Banner photo source: Google Photo</div>
-
         </div>
 
         <script type="text/javascript" src="jsfunction.js"></script>

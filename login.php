@@ -53,8 +53,7 @@ $login_str = "";
 <div id="loginMainView">
     <form id="login" enctype = "multipart/form-data" method = "post">
        <div>
-         Username
-         <br>
+         Username<br />
          <input id= "login_box" type="text" name="username" />
          <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"]))) {
@@ -67,9 +66,7 @@ $login_str = "";
             }
          ?>
 
-
-         Password
-         <br>
+         Password<br />
          <input id = "login_box_password" type="password" name="password" />
          <?php
             if(!(empty($_POST["username"])&&empty($_POST["password"]))) {
@@ -94,5 +91,5 @@ $login_str = "";
 </div>
 
 <?php
-    require 'foot.php';
+    include 'foot.php';
 ?>

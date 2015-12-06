@@ -2,6 +2,7 @@
     include 'header.php';
     require 'connection.php';
 ?>
+
 <?php
     $param = $_GET["search"]; //get the parameter from url in this page after "?"
     if ($param) {
@@ -52,6 +53,7 @@
         }
     ?>
 </div>
+
 <?php
-    require 'foot.php';
+    include 'foot.php';
 ?>

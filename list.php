@@ -19,28 +19,28 @@
                 <p><img src="img/category_1.jpg"><a href="list.php?category=PB">Plumbing</a></p>
                 <p><img src="img/category_1.jpg"><a href="list.php?category=RP">Repairing</a></p>
 
-            <h2>Service</h2>
+            <h2>General</h2>
                 <p><img src="img/category_2.jpg"><a href="list.php?category=WD">Walking Dog</a></p>
                 <p><img src="img/category_2.jpg"><a href="list.php?category=CD">Chauffeur Drive</a></p>
                 <p><img src="img/category_2.jpg"><a href="list.php?category=GP">Grocery Purchase</a></p>
                 <p><img src="img/category_2.jpg"><a href="list.php?category=MM">Move in &#47; out</a></p>
 
             <h2>Cooking</h2>
-                <p><img src="img/category_3.jpg"><a href="list.php?category=FR">French</a></p>
-                <p><img src="img/category_3.jpg"><a href="list.php?category=JA">Japanese</a></p>
-                <p><img src="img/category_3.jpg"><a href="list.php?category=CH">Chinese</a></p>
-                <p><img src="img/category_3.jpg"><a href="list.php?category=IN">Indian</a></p>
+                <p><img src="img/category_3.jpg"><a href="list.php?category=FR">French Cuisine</a></p>
+                <p><img src="img/category_3.jpg"><a href="list.php?category=JA">Japanese Cuisine</a></p>
+                <p><img src="img/category_3.jpg"><a href="list.php?category=CH">Chinese Cuisine</a></p>
+                <p><img src="img/category_3.jpg"><a href="list.php?category=IN">Indian Cuisine</a></p>
 
             <h2>Tutor</h2>
-                <p><img src="img/category_4.jpg"><a href="list.php?category=SP">Spanish</a></p>
-                <p><img src="img/category_4.jpg"><a href="list.php?category=SW">Swim</a></p>
-                <p><img src="img/category_4.jpg"><a href="list.php?category=DR">Drive</a></p>
-                <p><img src="img/category_4.jpg"><a href="list.php?category=CO">Computer</a></p>
+                <p><img src="img/category_4.jpg"><a href="list.php?category=SP">Speaking Spanish</a></p>
+                <p><img src="img/category_4.jpg"><a href="list.php?category=SW">Swimming Lessons</a></p>
+                <p><img src="img/category_4.jpg"><a href="list.php?category=DR">Driving Instruction</a></p>
+                <p><img src="img/category_4.jpg"><a href="list.php?category=CO">Computers</a></p>
         </div>
         <!-- right of mainbody showing seller list in one category -->
         <div id="categoryright">
             <img src="img/<?=$param ?>.jpg" width="830" height="150"/>
-             <p>You are browsing category: <?=$param ?></p>
+             <p>You are browsing sub-category: <?=$param ?></p>
 <?php
         while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) { //fetch seller's information from sql "seller"
 ?>

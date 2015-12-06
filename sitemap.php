@@ -1,18 +1,3 @@
-<!--add javascript effect -->
-<script type = "text/javascript"
-   src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<script type = "text/javascript" language = "javascript">
-
-   $(document).ready(function() {
-      $(".clickme").click(function(event){
-         $(".target").toggle('slow');
-      });
-   });
-
-</script>
-<!--add javascript effect-->
-
 <?php
     include 'header.php';
 ?>
@@ -75,5 +60,5 @@
             </ul>
 </div>
 <?php
-    require 'foot.php';
+    include 'foot.php';
 ?>

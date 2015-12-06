@@ -1,23 +1,6 @@
 <?php
     include 'header.php';
 ?>
-<link type="text/css" rel="stylesheet" href="main.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<script>
-$(document).ready(function(){
-    $(".shop1").click(function(){
-        $(".shop_help").slideToggle("slow");
-    });
-    $(".shop2").click(function(){
-        $(".shop_help2").slideToggle("slow");
-    });
-    $(".shop3").click(function(){
-        $(".shop_help3").slideToggle("slow");
-    });
-});
-</script>
-
 
 <div id="helpdiv">
     <h1>Frequently Asked Questions</h1>
@@ -61,6 +44,7 @@ $(document).ready(function(){
     <p class="helpanswers">No need, your payment is including tips, supplies and gas.</p>
   </div>
 </div>
+
 <?php
-    require 'foot.php';
+    include 'foot.php';
 ?>

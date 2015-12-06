@@ -14,5 +14,5 @@
     </fieldset>
 </form>
 <?php
-    require 'foot.php';
+    include 'foot.php';
 ?>

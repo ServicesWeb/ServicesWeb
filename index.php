@@ -8,7 +8,7 @@
         <div id="mainbody">
 
             <div id="banner">
-                <img src="img/banner1.jpg" id="slide" />
+                <img src="img/banner1.jpg" id="slide">
             </div>
 
             <div class="topbanner">
@@ -32,9 +32,9 @@
                 <h1>COUPONS</h1>
                 <ul id="coupon">
                   <li>Computer tutoring: get 10% off, before Nov 30!</li>
-                  <li>House Cleaning: get 20% off, expire on Dec 15. </li>
-                  <li>Cooking: get 10% off for Christmas holiday!</li>
-                  <li>Gardening: get 5% off before the spring.</li>
+                  <li>House Cleaning: get 20% off, expires on Dec 15. </li>
+                  <li>Chinese Cooking: get 10% off for Christmas!</li>
+                  <li>Gardening: get 5% off before Spring.</li>
                 </ul>
             </div>
 
@@ -82,5 +82,5 @@
         <!-- this is main body end -->
 
 <?php
-    require 'foot.php';
+    include 'foot.php';
 ?>

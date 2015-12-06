@@ -156,19 +156,19 @@ $mysqli=NULL;
         <form enctype = "multipart/form-data" method="post" id="paymentinformation">
             <fieldset>
                 <label class="cartheading" for="fullname">Full Name</label>
-                <input type=text name=fullname value="<?php echo $fullname;?>" size="40"> * <?php echo $fullnameerror;?>
+                <input type=text name=fullname value="<?php echo $fullname;?>"> * <?php echo $fullnameerror;?>
                 <br>
                 <label class="cartheading" for="address">Address</label>
-                <input type=text name=address value="<?php echo $address;?>" size="40"> * <?php echo $addresserror;?>
+                <input type=text name=address value="<?php echo $address;?>"> * <?php echo $addresserror;?>
                 <br>
                 <label class="cartheading" for="zipcode">Zip Code</label>
-                <input type=text name=zipcode value="<?php echo $zipcode;?>" size="40"> * <?php echo $zipcodeerror;?>
+                <input type=text name=zipcode value="<?php echo $zipcode;?>"> * <?php echo $zipcodeerror;?>
                 <br>
                 <label class="cartheading" for="tel">Phone Number</label>
-                <input type=text name=tel value="<?php echo $tel;?>" size="40"> * <?php echo $telerror;?>
+                <input type=text name=tel value="<?php echo $tel;?>"> * <?php echo $telerror;?>
                 <br>
                 <label class="cartheading" for="payment">Payment Card</label>
-                <input type=text name=payment value="<?php echo $payment;?>" size="40"> * <?php echo $paymenterror;?>
+                <input type=text name=payment value="<?php echo $payment;?>"> * <?php echo $paymenterror;?>
                 <br>
         <?php
                 if ($productList){

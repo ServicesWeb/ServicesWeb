@@ -91,7 +91,7 @@
         ?>
 
 
-         <input id= "singup_submit" type="submit" />
+         <input id= "singup_submit" type="submit" value="submit"/>
 
          <?php
             if((isValidUsername()==0)&&(isValidPassword()==0)&&(isValidEmail()==0)){
