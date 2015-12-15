@@ -229,6 +229,8 @@ $mysqli=NULL;
             }
         ?>
     </div> <!-- end of mainbody div -->
+    <p>Payments</p>
+     <img src="img/creditcard.jpg" alt="creditcard"/>
 <?php
     include 'foot.php';
     require 'close.php';

@@ -9,6 +9,7 @@
         <!-- this is headers beginning -->
         <div id="header">
             <a href="index.php"><img class="logo" src="img/logo.png" alt="logo"></a>
+
             <ul>
               <?php
                  if (empty($_COOKIE["userlogin"])) {
@@ -20,16 +21,22 @@
                  echo "<li><a href=\"logout.php\">Logout</a></li>";
                  }
                  ?>
-              <li><a href="search.php">Search</a></li>
+              <li><a href="search.php">Register</a></li>
               <li><a href="trackorder.php">Track Order</a></li>
               <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
-
             </ul>
+
+            <form action="search.php">
+              <div id="searchWindow">
+                <input type="text" name="search" class="searchform">
+                <input type="submit" value="Search" class="searchsubmit">
+              </div>
+            </form>
         </div>
 
        <div id="menubar">
            <ul>
-              <li><a href="index.php">HOME</a></li>
+              <!--<li><a href="index.php">HOME</a></li>-->
               <li>House
                   <ul>
                       <li><a href="list.php?category=HC">House Cleaning</a></li>
@@ -48,18 +55,18 @@
               </li>
               <li>Cooking
                   <ul>
-                      <li><a href="list.php?category=FR">French</a></li>
-                      <li><a href="list.php?category=JA">Japanese</a></li>
-                      <li><a href="list.php?category=CH">Chinese</a></li>
-                      <li><a href="list.php?category=IN">Indian</a></li>
+                      <li><a href="list.php?category=FR">French Cuisine</a></li>
+                      <li><a href="list.php?category=JA">Japanese Cuisine</a></li>
+                      <li><a href="list.php?category=CH">Chinese Cuisine</a></li>
+                      <li><a href="list.php?category=IN">Indian Cuisine</a></li>
                   </ul>
               </li>
               <li>Tutor
                   <ul>
-                      <li><a href="list.php?category=SP">Spanish</a></li>
-                      <li><a href="list.php?category=SW">Swim</a></li>
-                      <li><a href="list.php?category=DR">Drive</a></li>
-                      <li><a href="list.php?category=CO">Computer</a></li>
+                      <li><a href="list.php?category=SP">Speaking Spanish</a></li>
+                      <li><a href="list.php?category=SW">Swimming Lessons</a></li>
+                      <li><a href="list.php?category=DR">Driving Instruction</a></li>
+                      <li><a href="list.php?category=CO">Computers</a></li>
                   </ul>
               </li>
             </ul>

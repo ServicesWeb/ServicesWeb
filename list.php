@@ -13,29 +13,40 @@
     <div id='mainbody'>
         <!-- left side of mainbody, showing categories -->
         <div id="categoryleft">
-            <h2>House</h2>
-                <p><img src="img/category_1.jpg"><a href="list.php?category=HC">House Cleaning</a></p>
-                <p><img src="img/category_1.jpg"><a href="list.php?category=GD">Gardening</a></p>
-                <p><img src="img/category_1.jpg"><a href="list.php?category=PB">Plumbing</a></p>
-                <p><img src="img/category_1.jpg"><a href="list.php?category=RP">Repairing</a></p>
 
-            <h2>General</h2>
-                <p><img src="img/category_2.jpg"><a href="list.php?category=WD">Walking Dog</a></p>
-                <p><img src="img/category_2.jpg"><a href="list.php?category=CD">Chauffeur Drive</a></p>
-                <p><img src="img/category_2.jpg"><a href="list.php?category=GP">Grocery Purchase</a></p>
-                <p><img src="img/category_2.jpg"><a href="list.php?category=MM">Move in &#47; out</a></p>
+            <ul id="manu1C"><img src="img/category_1.jpg"><h2>House Services</h2><br />
+              <div id="manu1">
+                <li><a href="list.php?category=HC">House Cleaning</a></li>
+                <li><a href="list.php?category=GD">Gardening</a></li>
+                <li><a href="list.php?category=PB">Plumbing</a></li>
+                <li><a href="list.php?category=RP">Repairing</a></li>
+              </div>
+            </ul>
 
-            <h2>Cooking</h2>
-                <p><img src="img/category_3.jpg"><a href="list.php?category=FR">French Cuisine</a></p>
-                <p><img src="img/category_3.jpg"><a href="list.php?category=JA">Japanese Cuisine</a></p>
-                <p><img src="img/category_3.jpg"><a href="list.php?category=CH">Chinese Cuisine</a></p>
-                <p><img src="img/category_3.jpg"><a href="list.php?category=IN">Indian Cuisine</a></p>
-
-            <h2>Tutor</h2>
-                <p><img src="img/category_4.jpg"><a href="list.php?category=SP">Speaking Spanish</a></p>
-                <p><img src="img/category_4.jpg"><a href="list.php?category=SW">Swimming Lessons</a></p>
-                <p><img src="img/category_4.jpg"><a href="list.php?category=DR">Driving Instruction</a></p>
-                <p><img src="img/category_4.jpg"><a href="list.php?category=CO">Computers</a></p>
+          <div id="manu2">
+            <ul><img src="img/category_2.jpg"><h2>General Services</h2><br />
+                <li><a href="list.php?category=WD">Walking Dog</a></li>
+                <li><a href="list.php?category=CD">Chauffeur Drive</a></li>
+                <li><a href="list.php?category=GP">Grocery Purchase</a></li>
+                <li><a href="list.php?category=MM">Move in &#47; out</a></li>
+            </ul>
+          </div>
+          <div id="manu3">
+            <ul><img src="img/category_3.jpg"><h2>Cooking Services</h2><br />
+                <li><a href="list.php?category=FR">French Cuisine</a></li>
+                <li><a href="list.php?category=JA">Japanese Cuisine</a></li>
+                <li><a href="list.php?category=CH">Chinese Cuisine</a></li>
+                <li><a href="list.php?category=IN">Indian Cuisine</a></li>
+            </ul>
+          </div>
+          <div id="manu4">
+            <ul><img src="img/category_4.jpg"><h2>Tutor Services</h2><br />
+                <li><a href="list.php?category=SP">Speaking Spanish</a></li>
+                <li><a href="list.php?category=SW">Swimming Lessons</a></li>
+                <li><a href="list.php?category=DR">Driving Instruction</a></li>
+                <li><a href="list.php?category=CO">Computers</a></li>
+            </ul>
+          </div>
         </div>
         <!-- right of mainbody showing seller list in one category -->
         <div id="categoryright">

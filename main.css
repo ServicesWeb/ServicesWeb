@@ -7,9 +7,11 @@ a{
     text-decoration: none;
 }
 
-/* ---------------------head.php--------------------------------------------- */
-img.imagenews{
-    float: left;
+/* ---------------------header.php--------------------------------------------- */
+#searchWindow{
+  float: right;
+  margin-top: -40px;
+  margin-right: 10px;
 }
 
 #header{
@@ -56,12 +58,12 @@ img.imagenews{
 #menubar{
     background-color: #20386E;
     height: 80px;
+    width:1030px;
     font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
     font-size: 20px;
+    color: white;
     padding-top:10px;
     padding-left: 30px;
-    color: white;
-    width:1030px;
     box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
 }
 
@@ -70,52 +72,95 @@ img.imagenews{
     font-size: 20px;
 }
 
-#menubar ul {
+div#menubar > ul {
     padding:0;
-    margin:0;
+    margin: 0;
     list-style-type: none;
 }
 
-#menubar li {
+#menubar > ul > li {
+    border-radius: 20px;
+    background-color: #20386E;
     float:left;
-    width:200px;
     font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    padding: 10px 50px 10px 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#menubar > ul > li:hover {
+    color: #ff751a;
 }
 
-#menubar ul li {
-    position: relative;
-    width: 200px;
-    text-align: center;
-    margin-top: 20px;
-}
-#menubar ul li a:hover {
-    color: #4169E1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
-    padding: 10px;
-}
-
-#menubar ul li:hover > ul {
+#menubar > ul > li:hover > ul {     /*for drop down list*/
     display: block;
     background-color: #20386E;
     padding: 10px;
 }
-#menubar ul ul {
+#menubar ul > li > ul {             /*for drop down list*/
     position: absolute;
     list-style: none;
     display: none;
 }
 
+#menubar > ul > li > ul > li{
+    position: relative;
+    width: 200px;
+    text-align: left;
+    margin-top: 20px;
+}
+#menubar > ul > li > ul > li > a:hover {
+    color: #4169E1;
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);*/
+    padding: 10px;
+}
 /* ----------------------------index.php--------------------------------------*/
 #mainbody{
     width:1050px;
 }
 
 #banner img{
-  width:1060px;
+  width:840px;
   height: 420px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: -10px;
+  float: right;
 }
 
+div.leftbar{
+    margin-top: 10px;
+    border: #c1c1c1;
+    border-style: solid;
+    border-radius: 12px;
+    width: 200px;
+    height:200px;
+    float:left;
+}
+
+div.leftbar h3{
+    color: white;
+    background-color: #20386E;
+    border-radius: 10px;
+    height: 35px;
+    padding: 10px 0px 0px 0px;
+    margin: 0;
+    text-align:center;
+    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
+}
+
+.leftbar ul li{
+    color: #666666;
+    font-family: 'Open Sans Condensed';
+    padding-bottom: 4px;
+    font-size: 20px;
+}
+
+#coupon{
+    list-style-image: url('img/coupon.jpg');
+}
+
+/*
 div.topbanner{
     margin-left: 30px;
     margin-top: 10px;
@@ -190,13 +235,13 @@ div.bottombanner h2{
 .bottombanner li a:hover{
   color:#4169E1;
 }
+*/
 
 /* ------------------------------foot.php----------------------------------- */
 #footbar{
     clear: both;
     background-color: #eeeeee;
     font-family: "arial";
-    padding-top: 10px;
     width: 1030px;
     font-size: 12px;
     padding-left: 30px;
@@ -206,13 +251,18 @@ div.bottombanner h2{
 }
 
 .footbardiv{
-    width: 250px;
-    float: left;
-    clear: right;
     text-align: left;
     color: #333;
-    margin-bottom: 20px;
 }
+.footbardiv ul li{
+  display: inline;
+  list-style-type: none;
+  padding-left: 150px;
+}
+.footbardiv a{
+    color: #333;
+}
+
 .footbarmadeby{
     background-color: #666;
     color: white;
@@ -223,9 +273,6 @@ div.bottombanner h2{
     height: 22px;
     padding-top: 5px;
     margin-left: -30px;
-}
-.footbardiv a{
-    color: #333;
 }
 
 /* -------------------------------list.php  --------------------------------*/
@@ -257,30 +304,18 @@ div.bottombanner h2{
     width: 180px;
     float: left;
     border: 1px #20386E solid;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px 10px 10px 10px;  /*top, right, bottom, left*/
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#categoryright{
-    width: 830px;
-    float: right;
-    padding-top: 10px;
-    font-size: 20px;
-    color: #666666;
-}
-
-#categoryleft p>img{
-    float: left;
-    clear: right;
-}
-
 #categoryleft img{
   width: 30px;
-  height: 30px;
+  height: 25px;
+  padding-top: 5px;
+  padding-right: 5px;
+  float: left;
+  clear: right;
 }
 
 #categoryleft h2{
@@ -289,19 +324,33 @@ div.bottombanner h2{
     height: 30px;
     font-size: 20px;
     margin: 0px -10px -10px -10px;
-    text-align:center;
+    text-align:left;
     padding-top: 8px;
     font-family: 'lato';
 }
-
-#categoryleft>p a{
+#categoryleft a{
     font-size: 18px;
     color: #666666;
     font-family:'Open Sans Condensed','lato';
 }
-
-#categoryleft>p a:hover{
+#categoryleft a:hover{
     color:orange;
+}
+#categoryleft ul{
+  margin-left: -40px;
+}
+#categoryleft li{
+    list-style-type: none;
+    margin-left: 5px;
+    padding-top: 8px;
+}
+
+#categoryright{
+    width: 830px;
+    float: right;
+    padding-top: 10px;
+    font-size: 20px;
+    color: #666666;
 }
 
 /*-------------------------------------profile.php --------------------------*/
@@ -404,10 +453,11 @@ label.contactusheading{
     height: 30px;
     font-size: 16px;
     border: solid #20386E 2px;
+    float: right;
 }
 
 .searchform{
-    width: 450px;
+    width: 400px;
 }
 
 .searchsubmit{

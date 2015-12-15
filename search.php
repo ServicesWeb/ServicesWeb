@@ -15,16 +15,11 @@
     }
 ?>
 <div id="searchdiv" >
-    <h1>Please Enter your Search</h1>
-    <form id="shake_button" action="search.php">
-        <input type="text" name="search" class="searchform"> <input type="submit" value="Search" class="searchsubmit">
-    </form>
-
     <!-- if no result, do not show below -->
     <?php
     if($param){
     ?>
-        <p>Result for"<?= $param ?>":</p>
+        <p>Search results for"<?= $param ?>":</p>
     <?php
     }
     ?>

@@ -13,6 +13,10 @@
         <input id="contactus_submit"type="submit" value="Submit"><br/>
     </fieldset>
 </form>
+<p>1(800)234-5678</p>
+<p>customer@coen267group3.com</p>
+<p>Follow Us</p>
+<img src="img/followus.png" alt="followus" width="55px"/>
 <?php
     include 'foot.php';
 ?>

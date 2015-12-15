@@ -13,33 +13,6 @@
     }
 ?>
     <div id='mainbody'>
-        <!-- left side of mainbody, showing categories -->
-        <div id="categoryleft">
-            <h2>House</h2>
-                <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=HC">House Cleaning</a></p>
-                <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=GD">Gardening</a></p>
-                <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=PB">Plumbing</a></p>
-                <p><img src="img/category_1.jpg" width="30" height="30"><a href="list.php?category=RP">Repairing</a></p>
-
-            <h2>General</h2>
-                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php?category=WD">Walking Dog</a></p>
-                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php?category=CD">Chauffeur Drive</a></p>
-                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php?category=GP">Grocery Purchase</a></p>
-                <p><img src="img/category_2.jpg"  width="30" height="30"><a href="list.php?category=MM">Move in &#124; out</a></p>
-
-            <h2>Cooking</h2>
-                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php?category=FR">French Cuisine</a></p>
-                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php?category=JA">Japanese Cuisine</a></p>
-                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php?category=CH">Chinese Cuisine</a></p>
-                <p><img src="img/category_3.jpg"  width="30" height="30"><a href="list.php?category=IN">Indian Cuisine</a></p>
-
-            <h2>Tutor</h2>
-                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=SP">Speaking Spanish</a></p>
-                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=SW">Swimming Lessons</a></p>
-                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=DR">Driving Instruction</a></p>
-                <p><img src="img/category_4.jpg"  width="30" height="30"><a href="list.php?category=CO">Computers</a></p>
-        </div>
-        <!-- right of mainbody showing seller information -->
         <div id="categoryright">
    <?php
         while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) {
@@ -52,8 +25,14 @@
                     <input type="hidden" name=id value="<?=$id?>">
                     <input type="hidden" name=name value="<?=$name?>">
                     <input type="hidden" name=price value="<?=$price?>">
-                    <input class="jsShow" type="text" name="count" value="1"> Weeks. <input class="jsShow" type="submit" value="add to cart">
+                    <input class="jsShow" type="text" name="count" value="1"> Weeks.
+                    <input class="jsShow" type="submit" value="add to cart">
                 </form>
+
+                <div><strong>date:   </strong> <input type="date" /></div>
+                <div><strong>month:   </strong> <input type="month" /></div>
+                <div><strong>week:   </strong> <input type="week" /></div>
+
                 <div  class="sellerprofiledescription">
                   <p id="description">
                     <?= $description ?>
