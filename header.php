@@ -1,15 +1,20 @@
+<!DOCTYPE html> 
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vinkaiyang-Fenni Service Website</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body onload="slideit()">
+      <div class="container-fluid">
         <!-- this is headers beginning -->
-        <div id="header">
+        <div class="row" id="header">
+            <!-- logo -->
             <a href="index.php"><img class="logo" src="img/logo.png" alt="logo"></a>
-
+            <!-- user info -->
             <ul>
               <?php
                  if (empty($_COOKIE["userlogin"])) {
@@ -25,7 +30,7 @@
               <li><a href="trackorder.php">Track Order</a></li>
               <li><a class="cart" href="cart.php"><img src="img/shopping-cart.png" /></a></li>
             </ul>
-
+            <!-- search bar -->
             <form action="search.php">
               <div id="searchWindow">
                 <input type="text" name="search" class="searchform">
@@ -33,9 +38,11 @@
               </div>
             </form>
         </div>
+        
 
-       <div id="menubar">
-           <ul>
+
+        <div class="row" id="menubar">
+          <ul>
               <!--<li><a href="index.php">HOME</a></li>-->
               <li>House
                   <ul>
@@ -69,6 +76,6 @@
                       <li><a href="list.php?category=CO">Computers</a></li>
                   </ul>
               </li>
-            </ul>
+          </ul>
         </div>
         <!-- this is headers end -->

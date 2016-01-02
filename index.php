@@ -5,12 +5,12 @@
         <!-- this is main body beginning -->
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
-        <div id="mainbody">
-            <div id="banner">
-                <img src="img/banner1.jpg" id="slide">
+        <div class="row" id="mainbody">
+            <div class="col-md-9" id="banner">
+                <!-- <img src="img/banner1.jpg" id="slide"> -->
             </div>
-
-            <div class="leftbar" style="overflow:hidden">
+            <div class="col-md-3">
+              <div class="leftbar" style="overflow:hidden">
                 <h3>COUPONS</h3>
                 <ul id="coupon">
                   <li>Computer tutoring: get 10% off, before Nov 30!</li>
@@ -18,15 +18,37 @@
                   <li>Chinese Cooking: get 10% off for Christmas!</li>
                   <li>Gardening: get 5% off before Spring.</li>
                 </ul>
-            </div>
-            <div class="leftbar">
+              </div>
+              <div class="leftbar">
                 <h3>WHY US</h3>
                 <ul>
                     <li>Experience the newest "Timeshare" system!</li>
                     <li>The lowest price in town!</li>
                     <li>Order once, get service one month!</li>
                 </ul>
+              </div>
             </div>
+            <!-- <div class="leftbar" style="overflow:hidden">
+                <h3>COUPONS</h3>
+                <ul id="coupon">
+                  <li>Computer tutoring: get 10% off, before Nov 30!</li>
+                  <li>House Cleaning: get 20% off, expires on Dec 15. </li>
+                  <li>Chinese Cooking: get 10% off for Christmas!</li>
+                  <li>Gardening: get 5% off before Spring.</li>
+                </ul>
+            </div> -->
+            <!-- <div class="leftbar">
+                <h3>WHY US</h3>
+                <ul>
+                    <li>Experience the newest "Timeshare" system!</li>
+                    <li>The lowest price in town!</li>
+                    <li>Order once, get service one month!</li>
+                </ul>
+            </div> -->
+        </div>
+
+
+
 <!--
             <div class="topbanner">
                 <h1>WHY US</h1>
