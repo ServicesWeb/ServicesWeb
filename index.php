@@ -2,7 +2,6 @@
     include 'header.php';
 ?>
 
-<<<<<<< HEAD
         <main class="main">
             <!-- carousel -->
             <div id="carousel-generic" class="carousel slide" data-ride="carousel">
