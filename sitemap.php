@@ -2,6 +2,9 @@
     include 'header.php';
 ?>
 
+<main class="main">
+    <div class="container" id="profile">
+
 <div id="helpdiv">
     <h1 class="clickme">Site Map<br /></h1>
            <ul class="target">
@@ -59,6 +62,10 @@
                <li><a href="help.php">HELP</a></li>
             </ul>
 </div>
+
+</div>
+</main>
+
 <?php
-    include 'foot.php';
+    include 'footer.php';
 ?>

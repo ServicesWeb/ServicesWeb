@@ -8,14 +8,30 @@ $mysqli=NULL;
     include 'header.php';
     require 'cartclass.php';
 ?>
+
+<main class="main">
+    <div class="container" id="profile">
     <div id='cartdiv'>
 	    <?php
 	        $id=array_key_exists('id',$_POST)?$_POST['id']:NULL;
             $name=array_key_exists('name',$_POST)?$_POST['name']:NULL;
-            $count=array_key_exists('count',$_POST)?$_POST['count']:NULL;
             $price=array_key_exists('price',$_POST)?$_POST['price']:NULL;
-            $checkout=array_key_exists('checkout',$_POST)?$_POST['checkout']:NULL;
-            $product = array('id'=>$id, 'name'=>$name, 'count'=>$count, 'price'=>$price);
+            $days_select=array_key_exists('days_select',$_POST)?$_POST['days_select']:NULL;
+            $month=array_key_exists('month',$_POST)?$_POST['month']:NULL;
+            $year=array_key_exists('year',$_POST)?$_POST['year']:NULL;
+            $startHour=array_key_exists('startHour',$_POST)?$_POST['startHour']:NULL;
+            $durationHour=array_key_exists('durationHour',$_POST)?$_POST['durationHour']:NULL;
+            $checkout=array_key_exists('checkout',$_POST)?$_POST['checkout']:NULL;   // set $checkout == null at beginning
+
+            $timestub=array();      // Lifen added
+            if($days_select) {
+                foreach($days_select as $day) {
+                        $temtimestub=array("year"=>$year, "month"=>$month, "day"=>$day, "start"=>$startHour, "finish"=>$startHour + $durationHour, "duration"=>$durationHour);
+                        array_push($timestub, $temtimestub);
+                }
+            }
+            //printf (sizeof($timestub));
+            $product = array('id'=>$id, 'name'=>$name, 'price'=>$price, 'timestub'=>$timestub, 'amount'=>$price*$durationHour*sizeof($days_select));
 
             if ($name){
                 if(isset($_SESSION['cart']))    //existing session
@@ -46,8 +62,10 @@ $mysqli=NULL;
             $tel = "";
             $payment = "";
 
-            if ($checkout){
 
+//-- part 1.
+//-- after click checkout button, come here to check whether there is error exits, and remember the error messages
+        if ($checkout){                  // after click checkout, come here to check whether there is error
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (empty($_POST["fullname"])) {
                     $fullnameerror = "Name Cannot Be Empty.";
@@ -84,7 +102,7 @@ $mysqli=NULL;
                 } else {
                     $tel = ($_POST["tel"]);
                     if (!preg_match("/^(0|[1-9]\d{0,15})$/",$tel)) {
-                        $telerror = "Please enter numbers like xxx-xxx-xxxx.";
+                        $telerror = "Please enter numbers like xxxxxxxxxx.";
                         $globalerror = "error";
                     }
                 }
@@ -101,57 +119,94 @@ $mysqli=NULL;
                 }
             }
 
-            function check_input($data) {
+            /*function check_input($data) {        //???????????????????? no use?
                $data = trim($data);
                $data = stripslashes($data);
                $data = htmlspecialchars($data);
                return $data;
-            }
+            }*/
         }
         ?>
 
-        <?php
-            if (!$checkout || $globalerror != ""){
-        ?>
-        <h1>Shopping Cart</h1>
-		<?php
-		     if ($productList) {
-		?>
-        <table class="carttable">
-            <tr>
-                <th>Product</th>
-                <th>Number</th>
-                <th>Price</th>
-				        <th>Remove</th>
-            </tr>
-        <?php
-            foreach ($productList as $prod){
-                $total += $prod['price'] * $prod['count'];
-        ?>
-            <tr>
-                <td><?=$prod['name']?></td>
-                <td><?=$prod['count']?></td>
-                <td><?=$prod['price']?></td>
-                <td><?php
-                       printf("<a href=\"cartdel.php?id=%s\">remove</a>",
-                       $prod['id']);
-                       ?></td>
-            </tr>
 
+
+<!-- part 2 -->
+<!-- before click checkout button, or after click checkout button but error exists-->
+<!-- begin of body part, including shopping cart and lower part -->
         <?php
-           } // end foreach
-           ?>
-            <tr>
-              <td colspan="3" class="ckbutton"><label>Total Price:  <?=$total?></label></td>
-              <td><a href="cartdel.php?all=yes">clear</a></td>
-            </tr>
-        </table>
-        <?php
-		    } // end if
-		     else {
-			     echo "<p>Your cart is empty.</p>";
-			}
+        if (!$checkout || $globalerror != ""){       // when checkout == null (before checkout), or if there is error af checkout
         ?>
+
+        <!-- begin of shopping cart, either emtpy or show table -->
+            <h1>Shopping Cart</h1>
+		        <?php
+		        if ($productList) {
+		        ?>
+               <table class="carttable" border="1">
+                  <tr>
+                     <th>Product</th>
+                     <th>Price/hr</th>
+                     <th>Schedule</th>
+                     <th>Charge</th>
+				             <th>Remove</th>
+                  </tr>
+
+               <?php
+               foreach ($productList as $prod){
+                   $total += $prod['amount'];
+               ?>
+                  <tr>
+                     <td><?=$prod['name']?></td>
+                     <td>$<?=$prod['price']?></td>
+                     <!-- <td><//?=$prod['timestub']?></td> -->
+                     <td>
+                       <table border="1">
+                         <tr>
+                           <th>Day</th>
+                           <th>Start</th>
+                           <th>Finish</th>
+                           <th>Time</th>
+                         </tr>
+                         <?php
+                         foreach ($prod['timestub'] as $list) {
+                         ?>
+                            <tr>
+                            <td><div id="cartDay"><?=$list['year']?>-<?=$list['month']?>-<?=$list['day']?></div></td>
+                            <td><?=$list['start']?></td>
+                            <td><?=$list['finish']?>:00</td>
+                            <td><?=$list['duration']?>hr</td>
+                            </tr>
+                          <?php
+                           }
+                         ?>
+                       </table>
+                     </td>
+
+                     <td>$<?=$prod['amount']?></td>
+                     <td><?php
+                         printf("<a href=\"cartdel.php?id=%s\">remove</a>",
+                         $prod['id']);
+                         ?></td>
+                  </tr>
+               <?php
+               } // end foreach
+               ?>
+
+                  <tr>
+                     <td colspan="4" class="ckbutton"><label>Total Price: $<?=$total?></label></td>
+                     <td><a href="cartdel.php?all=yes">clear</a></td>
+                  </tr>
+               </table>
+           <?php
+		       } // end if
+		       else {
+			        echo "<p>Your cart is empty.</p>";
+			     }
+           ?>
+           <!-- end of shopping cart -->
+
+
+        <!-- begin of lower part, type in and show user's infomation: name, address, tel, etc-->
         <h1>Additional Order Information</h1>
         <form enctype = "multipart/form-data" method="post" id="paymentinformation">
             <fieldset>
@@ -183,16 +238,26 @@ $mysqli=NULL;
         ?>
             </fieldset>
         </form>
+        <!-- end of lower part -->
 
         <?php
             }
         ?>
+        <!-- end of body part -->
+
+
+
+<!-- part 3 -->
+<!-- after click checkout button and no error exist, connect and write to SQL-->
         <?php
-            if ($checkout && $globalerror == "")// checkout event
+            if ($checkout && $globalerror == "")// checkout event         // after click checkout and no error, save to SQL
             {
                 require 'connection.php';
                 $orderinfo="";
-                foreach ($productList as $prod){
+
+                // here, I marked off the check of the invertory to see the item is still avaiable or not (count)
+                // I could add here to deactive the timespan submitted
+                /*foreach ($productList as $prod){
                     $sql = "SELECT * FROM product where id='".$prod['id']."'";
                     $result = $mysqli->query($sql);
                     if(!$result){
@@ -210,7 +275,18 @@ $mysqli=NULL;
                             $orderinfo = $orderinfo.$name.",".$price.",".$prod['count'].";";
                         }
                     }
+                }*/
+
+
+                // below is to insert a new order,  orderinfo part + userinfo part
+                foreach ($productList as $prod){            // orderinfo part
+                  $timestubinfo = "";
+                  foreach ($prod['timestub'] as $list) {
+                     $timestubinfo = $timestubinfo.$list['year'] ."-". $list['month'] ."-". $list['day'] .",". $list['start'] ."-". $list['finish'] .":00,". $list['duration'] . "hrs|";
+                   }
+                  $orderinfo = $orderinfo.$prod['name']."*".$prod['price']."*".$timestubinfo.";";
                 }
+
 
                 //insert a new order
                 $fullname=$_POST['fullname'];
@@ -228,10 +304,17 @@ $mysqli=NULL;
                 echo "<h1>Success!</h1><p>Your order number is:  ".$orderid." Please remember your Order Id and track it in <a href =trackorder.php>&#34;Track Order&#34;</a></p>";
             }
         ?>
+
+
+
     </div> <!-- end of mainbody div -->
     <p>Payments</p>
      <img src="img/creditcard.jpg" alt="creditcard"/>
+
+</div>
+</main>
+
 <?php
-    include 'foot.php';
+    include 'footer.php';
     require 'close.php';
 ?>

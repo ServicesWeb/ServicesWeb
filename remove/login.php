@@ -50,6 +50,9 @@ $login_str = "";
     include 'header.php';
 ?>
 
+<main class="main">
+    <div class="container" id="profile">
+
 <div id="loginMainView">
     <form id="login" enctype = "multipart/form-data" method = "post">
        <div>
@@ -90,6 +93,9 @@ $login_str = "";
     </form>
 </div>
 
+</div>
+</main>
+
 <?php
-    include 'foot.php';
+    include 'footer.php';
 ?>

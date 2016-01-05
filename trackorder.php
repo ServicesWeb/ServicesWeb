@@ -13,47 +13,66 @@
         }
     }
 ?>
-<div id="searchdiv" >
-    <h1>Track Order</h1>
-    <form action="trackorder.php">
-        <input type="text" name="search" class="searchform"> <input type="submit" value="Search" class="searchsubmit">
-    </form>
-    <!-- if no result, do not show below -->
-    <?php
-    if($param){
-    ?>
-        <p>Result for order "<?= $param ?>":</p>
-    <?php
-    }
-    ?>
-    <!-- Show order name price and count-->
-        <h2>Order Information</h2>
-    <?php
-        if ($param){
-            while(list($orderid, $orderinfo, $name, $address, $zipcode, $tel, $payment) = $result->fetch_row()) {
-                $orders=explode(";", $orderinfo);
-                foreach ($orders as $order){
-                    if ($order){
-                        $details=explode(",", $order);
-    ?>
-                    <p><?=$details[0]?>: $<?=$details[1]?> &lowast; <?=$details[2]?> Weeks</p>
-    <?php
-                    }
-                }
-    ?>
-    <!-- Show order shipping information-->
-        <h2>Shipping Address:</h2>
-        <p>Name:<?=$name?></p>
-        <p>Address: <?=$address?></p>
-        <p>Zipcode: <?=$zipcode?></p>
-        <p>Phone Number: <?=$tel?></p>
-        <p>Payment Method: <?=$payment?></p>
-    <?php
-            }
+
+<main class="main">
+  <div class="container" id="profile">
+
+    <div id="searchdiv" >
+        <h1>Track Order</h1>
+        <form action="trackorder.php">
+            <input type="submit" value="Order #" class="searchsubmit"><input type="text" name="search" class="searchform">
+        </form>
+        <br>
+
+        <!-- if no result, do not show below -->
+        <?php
+        if($param){
+        ?>
+            <hr>
+            <p>Result for order "<?= $param ?>":</p>
+            <h2>Order Information</h2>
+        <?php
         }
-    ?>
-</div>
+        ?>
+        <!-- Show order name price and count-->
+        <?php
+            if ($param){
+                 while(list($orderid, $orderinfo, $name, $address, $zipcode, $tel, $payment) = $result->fetch_row()) {
+                 $orders=explode(";", $orderinfo);
+                 foreach ($orders as $order){
+                      if ($order){
+                          $details=explode("*", $order);
+        ?>
+                          <p><?=$details[0]?>: $<?=$details[1]?>/hr</br>
+                          <?php
+                             $rows=explode("|", $details[2]);
+                             foreach ($rows as $row) {
+                          ?>
+                             <?=$row?> </br>
+                          <?php
+                             }
+                          ?>
+                        </p>
+                 <?php
+                      }
+                  }
+                 ?>
+                 <!-- Show order shipping information-->
+                 <h2>Shipping Address:</h2>
+                 <p>Name:<?=$name?></p>
+                 <p>Address: <?=$address?></p>
+                 <p>Zip code: <?=$zipcode?></p>
+                 <p>Phone Number: <?=$tel?></p>
+                 <p>Payment Method: <?=$payment?></p>
+        <?php
+                }
+            }
+        ?>
+    </div>
+
+  </div>
+</main>
 
 <?php
-    include 'foot.php';
+    include 'footer.php';
 ?>

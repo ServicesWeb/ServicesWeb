@@ -2,100 +2,116 @@
     include 'header.php';
 ?>
 
-        <!-- this is main body beginning -->
-        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
-        <div id="mainbody">
-            <div id="banner">
-                <img src="img/banner1.jpg" id="slide">
+        <main class="main">
+            <!-- carousel -->
+            <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="banner"><img src="img/banner1.jpg" alt="Frist slide"></div>
+                        <div class="carousel-caption">This Caption 1</div>
+                    </div>
+                    <div class="item">
+                        <div class="banner"><img src=img/banner2.jpg alt="Second slide"></div>
+                        <div class="carousel-caption">This Caption 2</div>
+                    </div>
+                    <div class="item">
+                        <div class="banner"><img src=img/banner3.jpg alt="Third slide"></div>
+                        <div class="carousel-caption">This Caption 3</div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
 
-            <div class="leftbar" style="overflow:hidden">
-                <h3>COUPONS</h3>
-                <ul id="coupon">
-                  <li>Computer tutoring: get 10% off, before Nov 30!</li>
-                  <li>House Cleaning: get 20% off, expires on Dec 15. </li>
-                  <li>Chinese Cooking: get 10% off for Christmas!</li>
-                  <li>Gardening: get 5% off before Spring.</li>
-                </ul>
-            </div>
-            <div class="leftbar">
-                <h3>WHY US</h3>
-                <ul>
-                    <li>Experience the newest "Timeshare" system!</li>
-                    <li>The lowest price in town!</li>
-                    <li>Order once, get service one month!</li>
-                </ul>
-            </div>
-<!--
-            <div class="topbanner">
-                <h1>WHY US</h1>
-                <ul>
-                    <li>Experience the newest and hottest way to improve your home! Let's introduce "Timeshare" system to you!</li>
-                    <li>The lowest price in town!</li>
-                    <li>Order once, get service one month!</li>
-                </ul>
+            <!-- deal -->
+            <div class="deal">
+                <div class="container">
+                    <h2>
+                        Today's Deals
+                        <a><small>Learn More</small></a>
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="thumbnail">
+                                <img src="http://placehold.it/250x200" alt="First thumbnail">
+                                <div class="caption">
+                                    <h3>Deal's Name</h3>
+                                    <p>Deal's Content</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="thumbnail">
+                                <img src="http://placehold.it/250x200" alt="Second thumbnail">
+                                <div class="caption">
+                                    <h3>Deal's Name</h3>
+                                    <p>Deal's Content</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="thumbnail">
+                                <img src="http://placehold.it/250x200" alt="Third thumbnail">
+                                <div class="caption">
+                                    <h3>Deal's Name</h3>
+                                    <p>Deal's Content</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="thumbnail">
+                                <img src="http://placehold.it/250x200" alt="Forth thumbnail">
+                                <div class="caption">
+                                    <h3>Deal's Name</h3>
+                                    <p>Deal's Content</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-             <div class="topbanner">
-                <h1>HOW TO USE</h1>
-                <ul>
-                    <li><a href="search.php">Search</a></li>
-                    <li>Order</li>
-                    <li>Get service!</li>
-                </ul>
+            <!-- learn more -->
+            <div class="learn-more">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Fast</h3>
+                            <p>We guarantee to make the response in 3 hours after and provide 24-hour helpline.</p>
+                            <p><a href="#">See how to facilitate your life by our service</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Safety</h3>
+                            <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
+                            <p><a href="#">Learn about trust at Service Website</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Community</h3>
+                            <p>All our service providers come from your own community.</p>
+                            <p><a href="#">Learn more about your community.</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="topbanner" style="overflow:hidden">
-                <h1>COUPONS</h1>
-                <ul id="coupon">
-                  <li>Computer tutoring: get 10% off, before Nov 30!</li>
-                  <li>House Cleaning: get 20% off, expires on Dec 15. </li>
-                  <li>Chinese Cooking: get 10% off for Christmas!</li>
-                  <li>Gardening: get 5% off before Spring.</li>
-                </ul>
-            </div>
-
-            <div class="bottombanner">
-                <h2>House Services</h2>
-                <ul>
-                    <li><a href="list.php?category=HC">House Cleaning</a></li>
-                    <li><a href="list.php?category=GD">Gardening</a></li>
-                    <li><a href="list.php?category=PB">Plumbing</a></li>
-                    <li><a href="list.php?category=RP">Repairing</a></li>
-                </ul>
-            </div>
-
-            <div class="bottombanner">
-                <h2>General Services</h2>
-                <ul>
-                  <li><a href="list.php?category=WD">Walking Dog</a></li>
-                  <li><a href="list.php?category=CD">Chauffeur Drive</a></li>
-                  <li><a href="list.php?category=GP">Grocery Purchase</a></li>
-                  <li><a href="list.php?category=MM">Move in &#124; Move out</a></li>
-                </ul>
-            </div>
-            <div class="bottombanner">
-                <h2>Cooking Services</h2>
-                <ul>
-                  <li><a href="list.php?category=FR">French</a></li>
-                  <li><a href="list.php?category=JA">Japanese</a></li>
-                  <li><a href="list.php?category=CH">Chinese</a></li>
-                  <li><a href="list.php?category=IN">Indian</a></li>
-                </ul>
-            </div>
-            <div class="bottombanner">
-                <h2>Tutor Services</h2>
-                <ul>
-                  <li><a href="list.php?category=SP">Spanish</a></li>
-                  <li><a href="list.php?category=SW">Swim</a></li>
-                  <li><a href="list.php?category=DR">Drive</a></li>
-                  <li><a href="list.php?category=CO">Computer</a></li>
-                </ul>
-            </div>
-        </div>
--->
-        <!-- this is main body end -->
+        </main>
 
 <?php
-    include 'foot.php';
+    include 'footer.php';
 ?>

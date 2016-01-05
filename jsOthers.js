@@ -1,22 +1,7 @@
-// function for coupon rotation in index.php
-var swap = function() {
-    $("#coupon li:last").hide().prependTo("#coupon").fadeIn(500);
-}
-window.setInterval(swap,3500);
-
-
 $(document).ready(function() {
    // function for content show in sitemap.php page
    $(".clickme").click(function(event){
       $(".target").toggle('slow');
-   });
-
-   //  function for mouseover and mouseleave in profile.php page
-   $(".jsShow").mouseenter(function(){
-        $(".jsShow").css("background-color", "#F0E68C");
-   });
-   $(".jsShow").mouseleave(function(){
-        $(".jsShow").css("background-color", "white");
    });
 
    //  function for content show in help.php page
@@ -34,4 +19,26 @@ $(document).ready(function() {
    $("#manu1C").click(function(){
        $("#manu1").slideToggle("slow");
    });
+
+});
+
+
+// Zhang Sen added
+$(function() {
+
+    $('#login-form-link').click(function(e) {
+        $("#login-form").delay(100).fadeIn(100);
+        $("#register-form").fadeOut(100);
+        $('#register-form-link').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    });
+    $('#register-form-link').click(function(e) {
+        $("#register-form").delay(100).fadeIn(100);
+        $("#login-form").fadeOut(100);
+        $('#login-form-link').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    });
+
 });
