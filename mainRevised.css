@@ -1,0 +1,366 @@
+body {
+  color: #49494a;
+}
+
+h3 {
+  color: #49494a;
+}
+
+@media screen and (max-width: 992px) {
+  .profile-sidebar {
+    display: none; 
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 992px) {
+  .deal .col-md-3 {
+    width: 50%;
+  }
+
+  .caption h3 {
+    text-align: center;
+  }
+
+  .caption p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+  .navbar-default .navbar-nav>li>a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .deal .col-md-3 {
+    width: 100%;
+  }
+
+    .caption h3 {
+    text-align: center;
+  }
+
+  .caption p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .btn-sm, .btn-group-sm>.btn {
+    font-size: 10px;
+  }
+
+  .panel-body .row .col-xs-2 {
+    width: 50%;
+  }
+
+  .panel-body .row .col-xs-2 img {
+    padding-left: 15px;
+  }
+
+  .panel-body .row .col-xs-4 {
+    width: 50%;
+  }
+
+  .panel-body .row .col-xs-6 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .panel-body .text-center .col-xs-9 {
+    width: 60%;
+  }
+
+  .panel-body .text-center .col-xs-3 {
+    width: 40%;
+  }
+
+  .panel-footer .col-xs-9 {
+    width: 60%;
+  }
+
+  .panel-footer .col-xs-3 {
+    width: 40%;
+  }
+}
+
+
+/****************************/
+         /*header*/
+.navbar-header {
+  background-color: #003c66;
+}
+
+.navbar-collapse {
+  background-color: #003c66;
+} 
+
+.navbar-default .navbar-nav>li>a {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-form .btn-default {
+  color: #00004d;
+  background-color: #ffff4d;
+}
+
+.dropdown-menu>li>a {
+  color: #003c66;
+}
+
+.dropdown-menu .sub-menu {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/****************************/
+       /*body-main*/
+/*carousel-generic*/
+#carousel-generic {
+    margin-top: 50px;
+}
+
+/*deal*/
+.deal {
+  margin-top: 30px;
+}
+
+.deal .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caption {
+  color: #49494a;
+}
+
+/*learn more*/
+.learn-more {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*****************************/
+        /*profile*/
+#profile {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+#shop-category-title {
+  background-color: #003c66;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.shop-category-subtitle {
+  padding-left: 15px;
+}
+
+.shop-category-items {
+  padding-left: 20px;
+}
+
+#current-offer-title {
+  background-color: #003c66;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.current-offer li {
+  padding-left: 15px;
+}
+
+.profile-main {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+/****************************/
+        /*footer*/
+.footer {
+  /*position: absolute;*/
+  margin-top: 50px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background-color: #003c66;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer .container {
+    padding: 5px;
+}
+
+.footer a {
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/****************************/
+        /*sign in*/
+#sign-in {
+    margin-top: 130px;
+    margin-bottom: 135px;
+}
+.panel-login {
+  border-color: #ccc;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+  color: #00415d;
+  background-color: #fff;
+  border-color: #fff;
+  text-align:center;
+}
+.panel-login>.panel-heading a{
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+  color: #029f5b;
+  font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+  height: 45px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+  outline:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+.btn-login {
+  background-color: #59B2E0;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+  color: #fff;
+  background-color: #53A3CD;
+  border-color: #53A3CD;
+}
+.forgot-password {
+  text-decoration: underline;
+  color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+  text-decoration: underline;
+  color: #666;
+}
+
+.btn-register {
+  background-color: #1CB94E;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+  color: #fff;
+  background-color: #1CA347;
+  border-color: #1CA347;
+}
+
+/***************************/
+         /*cart*/
+#cart {
+    margin-top: 110px;
+    margin-bottom: 105px;
+}
+
+/*****************************/
+      /*check out*/
+#check-out { 
+  margin-top:140px; 
+  margin-bottom: 145px;
+
+}
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+/*.pl-ziro { padding-left: 0px; }*/
