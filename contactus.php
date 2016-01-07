@@ -18,9 +18,10 @@
     </fieldset>
 </form>
 <p>1(800)234-5678</p>
-<p>customer@coen267group3.com</p>
-<p>Follow Us</p>
-<img src="img/followus.png" alt="followus" width="55px"/>
+<p>customer@webservice.com</p>
+<p>500 El Camino Real, Santa Clara, CA 95053</p>
+<!--<p>Follow Us</p>
+<img src="img/followus.png" alt="followus" width="55px"/>-->
 
 </div>
 </main>

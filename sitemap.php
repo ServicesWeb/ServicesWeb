@@ -6,7 +6,7 @@
     <div class="container" id="profile">
 
 <div id="helpdiv">
-    <h1 class="clickme">Site Map<br /></h1>
+    <h1><button class="clickme">Site Map<br /></button></h1>
            <ul class="target">
                <li><a href="index.php">HOME</a></li>
                <li>ABOUT US

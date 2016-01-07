@@ -1,5 +1,14 @@
 <?php
     include 'header.php';
+    require 'connection.php';
+?>
+
+<?php
+    $sql = "SELECT * FROM product ORDER BY RAND() LIMIT 4"; // sql = from table "seller" and category = $param
+    $result = $mysqli->query($sql); // error detection
+    if(!$result){
+        echo $mysqli->error;
+    }
 ?>
 
         <main class="main">
@@ -39,52 +48,34 @@
                 </a>
             </div>
 
+
             <!-- deal -->
             <div class="deal">
                 <div class="container">
                     <h2>
-                        Today's Deals
-                        <a><small>Learn More</small></a>
+                        Today's star providers
+                        <!--<a><small>Learn More</small></a>-->
                     </h2>
                     <div class="row">
-                        <div class="col-md-3">
-                            <a class="thumbnail">
-                                <img src="http://placehold.it/250x200" alt="First thumbnail">
-                                <div class="caption">
-                                    <h3>Deal's Name</h3>
-                                    <p>Deal's Content</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a class="thumbnail">
-                                <img src="http://placehold.it/250x200" alt="Second thumbnail">
-                                <div class="caption">
-                                    <h3>Deal's Name</h3>
-                                    <p>Deal's Content</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a class="thumbnail">
-                                <img src="http://placehold.it/250x200" alt="Third thumbnail">
-                                <div class="caption">
-                                    <h3>Deal's Name</h3>
-                                    <p>Deal's Content</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a class="thumbnail">
-                                <img src="http://placehold.it/250x200" alt="Forth thumbnail">
-                                <div class="caption">
-                                    <h3>Deal's Name</h3>
-                                    <p>Deal's Content</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
 
+                    <?php
+                        while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) { //fetch seller's information from sql "seller"
+                    ?>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <a href = "profile.php?name=<?=$name?>"><img src="<?=$img ?>" alt="First thumbnail"></a>
+                                    <div class="caption">
+                                        <h3><a href = "profile.php?name=<?=$name?>"><?=$name?></a></h3>
+                                        <!--<p>Deal's Content</p>-->
+                                    </div>
+                                </div>
+
+                            </div>
+                     <?php
+                        }
+                    ?>
+
+                    </div>
                 </div>
             </div>
 
@@ -114,4 +105,5 @@
 
 <?php
     include 'footer.php';
+    require 'close.php';
 ?>

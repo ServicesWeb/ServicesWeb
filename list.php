@@ -11,6 +11,12 @@
         echo $mysqli->error;
     }
     list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row();
+
+    $categoryList = array("HC"=>"House:Cleaning", "GD"=>"House:Gardening", "PB"=>"House:Plumbing", "RP"=>"House:Repairing",
+                          "FR"=>"Cooking:French Cuisine", "CH"=>"Cooking:Chinese Cuisine", "JA"=>"Cooking:Japanese Cuisine", "IN"=>"Cooking:Indian Cuisine",
+                          "SP"=>"Tutoring:Speaking Spanish", "SW"=>"Tutoring:Swimming Lessons", "DR"=>"Tutoring:Driving Instruction", "CO"=>"Tutoring:Computer Programming",
+                          "WD"=>"General:Dog Walking", "CD"=>"General:Chauffeur Driving", "GP"=>"General:Grocery Purchase", "MM"=>"General:Moving and Storage");
+    $catNsubcat = explode(":", $categoryList[$category]);
 ?>
 
         <main class="main">
@@ -19,8 +25,8 @@
                     <div>
                         <ol class="breadcrumb">
                           <!--<li><a href="#">Home</a></li>-->
-                          <li><a href="#">House</a></li>                                  <!-- need to work-->
-                          <li class="active"><?=$category?></li>                          <!-- need to work-->
+                          <li><?=$catNsubcat[0]?></a></li>                                  <!-- need to work-->
+                          <li class="active"><?=$catNsubcat[1]?></li>                          <!-- need to work-->
                         </ol>
                     </div>
                 </div>
@@ -33,24 +39,26 @@
                     <div class="col-md-10 profile-main">
                         <div class="row">
                             <div class="col-md-12">
-                                <img class="img-responsive" src="img/<?=$param ?>.jpg" alt="profile-banner-img">
+                                <div class="TextOnImg">
+                                    <img class="img-responsive" src="img/<?=$param ?>.jpg" alt="profile-banner-img">
+                                    <h1><?=$catNsubcat[1]?></h1>
+                                </div>
                             </div>
                         </div>
                         <hr>
 
                         <div class="row">
-<?php
-        while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) { //fetch seller's information from sql "seller"
-?>
 
+                        <?php
+                          while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) { //fetch seller's information from sql "seller"
+                        ?>
                             <div class="col-sm-4 col-lg-4 col-md-4">
                                 <div class="thumbnail">
-
-                                  <a href = "profile.php?name=<?=$name?>"><img src="<?=$img ?>" alt='sellers'></a>
+                                    <a href = "profile.php?name=<?=$name?>"><img src="<?=$img ?>" alt='sellers'></a>
                                     <div class="caption">
                                         <h4 class="pull-right">$<?=$price?></h4>
                                         <h4><a href = "profile.php?name=<?=$name?>"><?=$name?></a></h4>
-                                        <p>Description this product</p>
+                                        <!--<p>Description this product</p>-->
                                     </div>
                                     <div class="ratings">
                                         <p class="pull-right">15 reviews</p>
@@ -65,11 +73,9 @@
                                 </div>
                             </div>
 
-<?php
-    }
-?>
-
-
+                        <?php
+                          }
+                        ?>
 
                         </div>
                     </div>

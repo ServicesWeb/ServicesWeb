@@ -11,6 +11,14 @@
     if(!$result){
         echo $mysqli->error;
     }
+
+    list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row();    // ? potential bug ?
+
+    $categoryList = array("HC"=>"House:Cleaning", "GD"=>"House:Gardening", "PB"=>"House:Plumbing", "RP"=>"House:Repairing",
+                          "FR"=>"Cooking:French Cuisine", "CH"=>"Cooking:Chinese Cuisine", "JA"=>"Cooking:Japanese Cuisine", "IN"=>"Cooking:Indian Cuisine",
+                          "SP"=>"Tutoring:Speaking Spanish", "SW"=>"Tutoring:Swimming Lessons", "DR"=>"Tutoring:Driving Instruction", "CO"=>"Tutoring:Computer Programming",
+                          "WD"=>"General:Dog Walking", "CD"=>"General:Chauffeur Driving", "GP"=>"General:Grocery Purchase", "MM"=>"General:Moving and Storage");
+    $catNsubcat = explode(":", $categoryList[$category]);
 ?>
 
 
@@ -20,10 +28,12 @@
         <div class="row">
             <div>
                 <ol class="breadcrumb">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">House</a></li>
-                  <li>Cleaning</li>
-                  <li class="active">AAA Cleaning</li>
+
+                          <!--<li><a href="#">Home</a></li>-->
+                          <li><?=$catNsubcat[0]?></a></li>
+                          <li><?=$catNsubcat[1]?></li>
+                          <li class="active"><?=$name?></li>
+
                 </ol>
             </div>
         </div>
@@ -35,7 +45,7 @@
 
         <div class="col-md-10 item-main">
               <?php
-                  while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) {
+                  //while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row();) {   //? need or not ? has problem here, but not in list.php
               ?>
               <div id="providerImgName">
                     <img src="<?= $img?>" alt='sellers'>
@@ -43,6 +53,7 @@
                     <h4>Price: $<?= $price ?>/hour</h4>
                     <h4>Duration: 01/01/2015 - 01/10/2015</h4>
               </div>
+
 
                 <form action="cart.php" method="post">
                   <div class="shopPart">
@@ -103,9 +114,10 @@
                 </div>
                 <!--<div class="evaluation" class="row"><span>Evaluation</span><br /></div>-->
 
-           <?php
-              }
-           ?>
+                <?php
+                   //}
+                ?>
+
       </div>
 
   </div>

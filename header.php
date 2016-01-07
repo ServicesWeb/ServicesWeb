@@ -91,7 +91,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Tutoring<span class="caret"></span></a>
+                                    <a href="#">General<span class="caret"></span></a>
                                     <ul class="dropdown-menu sub-menu">
                                         <li><a href="list.php?category=WD">Dog Walking</a></li>
                                         <li><a href="list.php?category=CD">Chauffeur Driving</a></li>
