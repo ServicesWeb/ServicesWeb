@@ -15,7 +15,8 @@ $(".jsShow").mouseleave(function(){
 
 //-----------------------------------------------------------------------
 var myArray;
-var monthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var monthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; // change month from number to character
+var monthNumber = {Jan:1, Feb:2, Mar:3, Apr:4, May:5, Jun:6, Jul:7, Aug:8, Sep:9, Oct:10, Nov:11, Dec:12};   // change month from character to number
 
 var xmlhttpCall = new XMLHttpRequest();
 xmlhttpCall.onreadystatechange = function() {
@@ -27,8 +28,9 @@ xmlhttpCall.onreadystatechange = function() {
 xmlhttpCall.open("GET", "calendar.json", true);
 xmlhttpCall.send();
 
+var d = new Date();
+var Today = [d.getDate(), d.getMonth()+1, d.getFullYear()];
 function showCalendar(){            // get current month and year, and show calendar
-  var d = new Date();
   var x = monthList[d.getMonth()];
   var y = d.getFullYear();
   var j = 0;
@@ -80,6 +82,7 @@ function updateMonth(step) {
 }
 
 function newCalendar(year, month, days){
+  var monthNum = monthNumber[month];
   $("#monthYear").html(month + " " + year);
   $("#addhidden").append("<input type='hidden' name='year' value="+year+">");
   $("#addhidden").append("<input type='hidden' name='month' value="+month+">");
@@ -91,9 +94,13 @@ function newCalendar(year, month, days){
     for (var i = 0; i < 7; i++){
       var ind = j*7+i;
       if (ind < days.length && days[ind] != 0){
-        $("#calendarShow tr:last-child").append("<td><label class='displayDays'><input type='checkbox' name='days_select[]' value="+days[j*7 + i]+">"+days[j*7 + i]+"</label></td>");
+        if ((year < Today[2]) || (year == Today[2] && monthNum < Today[1]) || (year == Today[2] && monthNum == Today[1] && days[ind] < Today[0])) {
+          $("#calendarShow tr:last-child").append("<td><label class='markoffDays'>"+days[j*7 + i]+"</label></td>");  // mark off the past days, so they will be unselectable
+        } else {
+          $("#calendarShow tr:last-child").append("<td><label class='displayDays'><input type='checkbox' name='days_select[]' value="+days[j*7 + i]+">"+days[j*7 + i]+"</label></td>");
+        }
       }else{
-        $("#calendarShow tr:last-child").append("<td><label><input type='checkbox' name='days_select[]' value=''></label></td>");
+        $("#calendarShow tr:last-child").append("<td></td>");
       }
     }
   }
@@ -113,30 +120,30 @@ function newCalendar(year, month, days){
 
 }
 
-  /*
-  var cc = document.getElementById("calendarShow");
-  for (var j = 0; j < Math.ceil(days.length/7); j++){
-    var tr1 = document.createElement("tr");
-    tr1.setAttribute("class", "update");
-    for (var i = 0; i < 7; i++){
-      var td1 = document.createElement("td");
-      var labl = document.createElement("label");
-      var inp = document.createElement("input");          // for <td><label><input></lable></td>
-      var ind = j*7+i;
-      inp.setAttribute("type", "checkbox");
-      inp.setAttribute("name", "days_select[]");
-      if (ind < days.length && days[ind] != 0){
-        inp.setAttribute("value", days[j*7 + i]);
-        labl.innerHTML = days[j*7 + i];
-        td1.setAttribute("class", "displayDays");      // in this if statement, only for valid days.   here for the td box
-      }else{
-        inp.setAttribute("value", "");
-        labl.innerHTML = "";
-      }
-      labl.appendChild(inp);
-      td1.appendChild(labl);
-      tr1.appendChild(td1);  // <td class="displayDays"><label><input type="checkbox" name="days_select[]" value="xx">xx</lable></td>
+/* pure JS mehtod to add HTML tag, same role as above, but more difficult to follow and not clear
+var cc = document.getElementById("calendarShow");
+for (var j = 0; j < Math.ceil(days.length/7); j++){
+  var tr1 = document.createElement("tr");
+  tr1.setAttribute("class", "update");
+  for (var i = 0; i < 7; i++){
+    var td1 = document.createElement("td");
+    var labl = document.createElement("label");
+    var inp = document.createElement("input");          // for <td><label><input></lable></td>
+    var ind = j*7+i;
+    inp.setAttribute("type", "checkbox");
+    inp.setAttribute("name", "days_select[]");
+    if (ind < days.length && days[ind] != 0){
+      inp.setAttribute("value", days[j*7 + i]);
+      labl.innerHTML = days[j*7 + i];
+      td1.setAttribute("class", "displayDays");      // in this if statement, only for valid days.   here for the td box
+    }else{
+      inp.setAttribute("value", "");
+      labl.innerHTML = "";
     }
-    cc.appendChild(tr1);     // <tr class="update"></tr>
+    labl.appendChild(inp);
+    td1.appendChild(labl);
+    tr1.appendChild(td1);  // <td class="displayDays"><label><input type="checkbox" name="days_select[]" value="xx">xx</lable></td>
   }
+  cc.appendChild(tr1);     // <tr class="update"></tr>
+}
 */

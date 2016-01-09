@@ -38,22 +38,30 @@
                         <li class="active"><a href="index.php">Home<span class="sr-only">(current)</span></a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Your Account
+                              <?php
+                                 if (empty($_COOKIE["userlogin"])) {
+                                    echo "Your account";
+                                 } else {
+                                    printf("Hello, %s",$_COOKIE["userlogin"]);
+                                 }
+                              ?>
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                               <?php
                                  if (empty($_COOKIE["userlogin"])) {
                               ?>
-                               <li><a href="signIn.php">Log In</a></li>
+                                    <li><a href="signIn.php">Log In</a></li>
+                                    <li><a href="signIn.php">Register</a></li>
                               <?php
                                   } else {
-                                     printf("<li>Hello, %s</li>",$_COOKIE["userlogin"]);
-                                     echo "<li><a href=\"logout.php\">Logout</a></li>";
+                              ?>
+                                     <li><a href="logout.php">Logout</a></li>
+                                     <li><a href="trackorder.php?username=<?=$_COOKIE["userlogin"]?>">Your Orders</a></li>
+                              <?php
                                   }
                               ?>
-                                <li><a href="signIn.php">Register</a></li>
-                                <li><a href="trackorder.php">Track Order</a></li>
+                                <!--<li><a href="trackorder.php?username=<?=$_COOKIE["userlogin"]?>">Your Order</a></li>-->
                                 <!--<li><a href="#">Help</a></li>-->
                             </ul>
                         </li>
@@ -101,7 +109,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <!--<li class="hidden-md hidden-sm"><a href="xxx.php">Register</a></li>-->
+                        <li class="hidden-md hidden-sm"><a href="trackorder.php">Track Order</a></li>
                         <li class="hidden-md hidden-sm"><a href="help.php">Help</a></li>
                     </ul>
 

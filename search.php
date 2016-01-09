@@ -7,9 +7,11 @@
     $param = $_GET["search"]; //get the parameter from url in this page after "?"
     if ($param) {
         $name = str_replace('+',' ',$param);
-        $sql = "SELECT category, name, description, img FROM product where name LIKE '%".$name."%' and in_stock > 0";
+        $sql = "SELECT category, name, description, img FROM product where name LIKE '%".$name."%' and in_stock > 0";     // keyword in product name
+        $sql2 = "SELECT category, name, description, img FROM product where description LIKE '%".$name."%' and name NOT LIKE '%".$name."%' and in_stock > 0";  // keyword in description and not in product name
         $result = $mysqli->query($sql);
-        if(!$result){  // error detection
+        $result2 = $mysqli->query($sql2);
+        if(!$result && !$result2){  // error detection
             echo $mysqli->error;
         }
     }
@@ -19,28 +21,38 @@
     <div class="container" id="profile">
 
         <div id="searchdiv" >
-        <!-- if no result, do not show below -->
-          <?php
-            if($param){
-          ?>
-                <p>Search results for"<?= $param ?>":</p>
-          <?php
-            }
-          ?>
+            <!-- if no result, do not show below -->
+            <?php
+              if($param){
+            ?>
+                  <h3>Search results for "<?= $param ?>":</h3>
+            <?php
+              } else {
+            ?>
+                  <h3>no search input</h3>
+            <?php
+              }
+            ?>
 
-            <!-- show result as ol list ,  right now we support fuzzy search "seller name" such as clean, garden etc  -->
-            <ol>
-          <?php
-            if ($param){
-                while(list($category,$name,$description,$img) = $result->fetch_row()) {
-          ?>
-                    <li><p><a href = "profile.php?name=<?=$name?>"><?= $name ?></a></p>
-                    <p><?= $description ?></p></li>
-          <?php
+              <!-- show result as ol list ,  right now we support fuzzy search "seller name" such as clean, garden etc  -->
+              <ol>
+              <?php
+                if ($param){
+                    while(list($category,$name,$description,$img) = $result->fetch_row()) {
+              ?>
+                        <li><p><a href = "profile.php?name=<?=$name?>"><?= $name ?></a></p>
+                        <p><?= $description ?></p></li>
+              <?php
+                    }
+                    while(list($category,$name,$description,$img) = $result2->fetch_row()) {
+              ?>
+                        <li><p><a href = "profile.php?name=<?=$name?>"><?= $name ?></a></p>
+                        <p><?= $description ?></p></li>
+              <?php
+                    }
                 }
-            }
-          ?>
-            </ol>
+              ?>
+              </ol>
         </div>
 
     </div>

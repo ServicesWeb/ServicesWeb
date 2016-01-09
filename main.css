@@ -589,6 +589,9 @@ div.calendar tr:first-child td {
 .selectedDays{          /* change color after days are selected */
   background-color: lightblue;
 }
+.markoffDays{
+  color:grey;
+}
 input.jsShow{
   margin-top: 5px;
   float: right;
@@ -786,7 +789,7 @@ label.cartheading{
 .carttable {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 70%;
   text-align: center;
   border-collapse: collapse;
   margin-bottom: 30px;
@@ -794,7 +797,9 @@ label.cartheading{
   font-size: 14px;
   color: #333;
 }
-
+.carttable th {
+  text-align: center;
+}
 .carttable td, tr{
     border: 1px solid #dfdfdf;
     border-collapse: collapse;
@@ -834,6 +839,13 @@ div#cartDay {
   width: 100px;
 }
 
+div.box {
+  display: none;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius:10px;
+  border:1px solid #999;
+  padding:10px;
+}
 /* ----------------------------------login.php------------------------------ */
 #loginMainView{
     width:30%;
@@ -903,4 +915,32 @@ div#cartDay {
   margin-left: 350px;
   margin-top: 50px;
   margin-bottom: 80px;
+}
+
+/* ----------------------------------trackorder.php------------------------------ */
+div#receiptInfo{
+  width: 200px;
+}
+p.shipAddr {
+  padding-left: 5px;
+  font-size: 13px;
+}
+.receiptTableOuter th {
+  text-align: center;
+}
+.receiptTable {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 10px;
+  font-family: "arial";
+  font-size: 14px;
+  color: #333;
+}
+.receiptTable th {
+  text-align: center;
+}
+.receiptTable td, tr{
+    border: 1px solid #dfdfdf;
+    border-collapse: collapse;
+    width: 30%;
 }
