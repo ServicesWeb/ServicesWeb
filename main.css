@@ -6,9 +6,27 @@ h3 {
   color: #49494a;
 }
 
+@media screen and (min-width: 992px) {
+  #provider-img img {
+    height: 295px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .profile-sidebar {
     display: none;
+  }
+
+  #provider-img {
+    width: 100%;
+  }
+
+  #provider-info {
+    width: 50%;
+  }
+
+  #calendar {
+    width: 50%;
   }
 }
 
@@ -24,6 +42,7 @@ h3 {
   .caption p {
     text-align: center;
   }
+
 }
 
 @media screen and (max-width: 824px) {
@@ -62,10 +81,6 @@ h3 {
     padding-left: 15px;
   }
 
-
-
-
-
   .panel-body .row .col-xs-4 {
     width: 50%;
   }
@@ -90,6 +105,18 @@ h3 {
   .panel-footer .col-xs-3 {
     width: 40%;
   }
+
+    #provider-img {
+    width: 100%;
+  }
+
+  #provider-info {
+    width: 100%;
+  }
+
+  #calendar {
+    width: 100%;
+  }
 }
 
 
@@ -113,6 +140,10 @@ h3 {
 
 .navbar-default .navbar-brand {
   color: #ffffff;
+}
+
+a.navbar-brand {
+  background-color: #ffffff;
 }
 
 .navbar-form .btn-default {
@@ -170,8 +201,8 @@ h3 {
 /*****************************/
         /*profile*/
 #profile {
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 60px;
 }
 
 #shop-category-title {
@@ -476,27 +507,47 @@ div.TextOnImg h1 {
   background-color: #C0C0C0;
 }
 /*-------------------------------------profile.php --------------------------*/
+.item-main {
+  /*margin-top: 20px;*/
+}
+
 #providerImgName {
-  width: 300px;
-  height: 400px;
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  /*width: 300px;*/
+  /*height: 400px;*/
+  /*float: left;*/
 }
 #providerImgName img{
     border-radius: 10px;
-    float: left;
-    clear: right;
-    margin-right: 15px;
-    width:300px;
-    height:300px;
+    /*float: left;*/
+    /*clear: right;*/
+    /*margin-right: 15px;*/
+    width: 100%;
+    /*height: 100%;*/
+}
+
+#provider-img {
+  margin-top: 20px;
+}
+
+#provider-info {
+  margin-top: 20px;
+}
+
+#calendar {
+  margin-top: 20px;
+  float: right;
 }
 div#providerImgName h1 {
    font-size: 40px;
 }
 
 div.sellerDescription {
-  float: left;
-  border: 1px solid black;
-  margin-top: 10px;
+  /*float: left;*/
+  /*border-top: 1px solid black;*/
+  /*border-bottom: 1px solid black;*/
+  /*margin-top: 10px;*/
 }
 div.evaluation {
   float: left;
@@ -517,9 +568,9 @@ div.evaluation {
 
 /*------for calendar part in profile.php ------*/
 div.shopPart{
-  margin-left: 400px;
-  border: 1px solid black;
-  position: absolute;
+  /*margin-left: 400px;*/
+  /*border: 1px solid black;*/
+  /*position: absolute;*/
 }
 div.shopPart span{
   font-size: 15px;
@@ -530,6 +581,7 @@ div.calendar {
   box-sizing: border-box;
   padding: 15px 15px 7px 15px;
   width: 230px;
+  height: 305px;
 }
 div.calendar header {
   overflow: clear;
@@ -545,7 +597,8 @@ div.calendar h2 {
 }
 .monthButton {
   position: absolute;
-  top: -4px;
+  top: -8px;
+  margin-bottom: 4px;
 }
 .monthButton:first-child {
   left: 0;
@@ -592,12 +645,94 @@ div.calendar tr:first-child td {
 input.jsShow{
   margin-top: 5px;
   float: right;
+  width: 120px;
 }
 input.resetButton {
   margin-top: 5px;
+  float: left;
+  width: 70px;
 }
+
+#calendar-hour-input {
+  width: 25px;
+  margin-right: 2px;
+}
+
+/*-----------------------------------career.php--------------------------------------*/
+
+.career-bg {
+  background: url('img/careers.jpg') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+  margin-top: 50px;
+}
+
+.jumbotron {
+  height: 350px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+
+.jumbotron .container {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.jumbotron #career h1 {
+  color: orange;
+}
+
+.jumbotron h2 {
+  text-indent: 25px;
+  color: royalblue;
+}
+
+/* ------------------------------- aboutus.php ----------------------------------*/
+.about-us {
+  margin-top: 50px;
+}
+
+.aboutus-bg {
+  background: url('img/aboutUsBanner.jpg') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 350px; 
+  top:0;
+  left:0;
+  z-index: -1;
+  margin-top: 50px;
+}
+
+.jumbotron {
+  height: 350px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+
+.jumbotron .about-us h1 {
+  color: gold;
+}
+
+.about-us img {
+  width: 260px;
+  height: 260px;
+}
+
+.about-us hr {
+  margin-top: 0px;
+}
+
+
 /* ------------------------------- contactus.php --------------------------------*/
-#contact>fieldset{
+/*#contact>fieldset{
     color: #20386E;
     font-size: 16px;
     font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
@@ -607,8 +742,25 @@ input.resetButton {
     margin-top: 20px;
     border-style: hidden;
     margin-bottom: 50px;
+}*/
+#contact-us {
+  margin-top: 130px;
+  margin-bottom: 70px;
 }
-#contact input{
+
+#contact-us-form textarea {
+    width: 100%;
+}
+
+#contact-us-form legend {
+  text-align: center;
+}
+
+#contact-us-info {
+  margin-top: 30px;
+}
+
+/*#contact input{
     font-weight: bold;
     margin-bottom: 0.5em;
 }
@@ -652,7 +804,7 @@ label.contactusheading{
   text-transform: uppercase;
   width:302px;
   margin-top: 20px;
-}
+}*/
 
 #contactus_submit:hover{
   background-color: #ffd65e;
@@ -736,8 +888,8 @@ p.helpanswers{
 
 /*-------------------------------- cart.php --------------------------------*/
 #cartdiv{
-  padding-left: 100px;
-  padding-right: 150px;
+  /*padding-left: 100px;*/
+  /*padding-right: 150px;*/
   margin-left: auto;
   margin-right: auto;
   font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
@@ -801,7 +953,16 @@ label.cartheading{
     width: 30%;
 }
 
-.checkoutbtn{
+td#shopping-cart-subcell {
+  padding: 0px;
+  border: 0px;
+}
+
+table#shopping-cart-subtable {
+  margin-bottom: 0px;
+}
+
+/*.checkoutbtn{
   color: #fff;
   background-color: #ed9017;
   padding: 14px 24px;
@@ -828,7 +989,7 @@ label.cartheading{
 
 .checkoutbtn2:hover{
   background-color: #D3D3D3;
-}
+}*/
 
 div#cartDay {
   width: 100px;

@@ -18,9 +18,9 @@
   <div class="container" id="profile">
 
     <div id="searchdiv" >
-        <h1>Track Order</h1>
-        <form action="trackorder.php">
-            <input type="submit" value="Order #" class="searchsubmit"><input type="text" name="search" class="searchform">
+        <legend><h2>Track Order</h2></legend>
+        <form class="form-inline" action="trackorder.php">
+            <input type="submit" value="Order #" class="form-control searchsubmit"><input type="text" name="search" class="searchform">
         </form>
         <br>
 
