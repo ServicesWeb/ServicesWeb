@@ -13,8 +13,9 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <legend><h2>About the Website</h2></legend>
-                <p>Our website, SERVICE, is the side project from COEN 276 Web Programming at Computer Science and Engineering, Santa Clara University.</p> 
+                <p>Our website, SERVICE, is the side project from COEN 276 Web Programming at Computer Science and Engineering, Santa Clara University.</p>
                 <p>The technologies we used in the website are HTML, CSS, JavaScript, jQuery, PHP, MySQL, Responsive design, Bootstrap.</p>
+                <p>Special thanks to Danni Wu and Yang Lei for their help and useful discussion.</p>
             </div>
         </div>
         <div class="row">
@@ -29,7 +30,7 @@
                 <div>
                     <legend class="text-center"><h3>Lifen<small>-- Web developer</small></h3></legend>
                     <h4>Skills at a Glance:</h4>
-                    <div><p>Java, .NET, T-SQL, HTML5, JavaScript, JQuery, CSS, Bootstrap</p></div>
+                    <div><p>Java, SQL, Database, JavaScript, PHP, C#, ASP.NET MVC, HTML5, JQuery, CSS, Bootstrap, JSON, XML, AJAX</p></div>
                     <hr>
                     <h4>Find me:</h4>
                     <div>
