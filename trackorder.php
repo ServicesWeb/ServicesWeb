@@ -24,96 +24,103 @@
 ?>
 
 <main class="main">
-  <div class="container" id="profile">
+  <div class="container" id="track-order">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1" id="searchdiv" >
+          <!-- Show order name price and count-->
+          <?php
+              if ($param){
+          ?>
+              <legend><h2>Order record of <?= $param ?>:</h2></legend>
+              <div class="table-responsive">
+                <table class="table receiptTableOuter" border="1">
+                  <tr>
+                    <th>Order#</th>
+                    <th>Order Details</th>
+                    <th>Service Address</th>
+                  </tr>
+                   <?php
+                      while(list($orderid, $orderinfo, $total, $name, $address, $zipcode, $tel, $payment) = $result->fetch_row()) {
+                         $orders=explode(";", $orderinfo);
+                   ?>
+                 <tr>
+                    <td><?=$orderid?></td>
+                    <td id="track-order-subcell">
+                       <table class="table receiptTable" border="1">
+                          <tr>
+                             <th>Name</th>
+                             <th>Price</th>
+                             <th>Schedule</th>
+                             <th>Charge</th>
+                          </tr>
 
-    <div id="searchdiv" >
-        <!-- Show order name price and count-->
-        <?php
-            if ($param){
-        ?>
-              <h2>Order record of <?= $param ?>:</h2>
-              <table class="receiptTableOuter" border="1">
-                <tr>
-                  <th>Order#</th>
-                  <th>Order Details</th>
-                  <th>Service Address</th>
-                </tr>
-           <?php
-              while(list($orderid, $orderinfo, $total, $name, $address, $zipcode, $tel, $payment) = $result->fetch_row()) {
-                 $orders=explode(";", $orderinfo);
-           ?>
-               <tr>
-                  <td><?=$orderid?></td>
-                  <td>
-                     <table class="receiptTable" border="1">
-                        <tr>
-                           <th>Name</th>
-                           <th>Price</th>
-                           <th>Schedule</th>
-                           <th>Charge</th>
-                        </tr>
+                        <?php
+                           foreach ($orders as $order){
+                        ?>
+                              <tr>
+                                  <?php
+                                    if ($order){
+                                        $details=explode("*", $order);
+                                  ?>
+                                        <td><?=$details[0]?></td>
+                                        <td>$<?=$details[1]?>/hr</td>
+                                        <td><div id="receiptInfo">
+                                        <?php
+                                           $rows=explode("|", $details[3]);
+                                           foreach ($rows as $row) {
+                                        ?>
+                                           <h5><?=$row?></h5>
+                                        <?php
+                                           }
+                                        ?>
+                                        </div></td>
+                                        <td>$<?=$details[2]?></td>
+                                  <?php
+                                    }
+                                  ?>
+                              </tr>
+                        <?php
+                           }
+                        ?>
 
-                      <?php
-                         foreach ($orders as $order){
-                      ?>
-                            <tr>
-                                <?php
-                                  if ($order){
-                                      $details=explode("*", $order);
-                                ?>
-                                      <td><?=$details[0]?></td>
-                                      <td>$<?=$details[1]?>/hr</td>
-                                      <td><div id="receiptInfo">
-                                      <?php
-                                         $rows=explode("|", $details[3]);
-                                         foreach ($rows as $row) {
-                                      ?>
-                                         <h5><?=$row?></h5>
-                                      <?php
-                                         }
-                                      ?>
-                                      </div></td>
-                                      <td>$<?=$details[2]?></td>
-                                <?php
-                                  }
-                                ?>
-                            </tr>
-                      <?php
-                         }
-                      ?>
-
-                        <tr><td colspan="4" class="ckbutton">Total: $<?=$total?></td></tr>
-                     </table>
-                 </td>
-
-                   <!-- Show shipping information-->
-                   <td>
-                       <p class="shipAddr">
-                         Name: <?=$name?> </br>
-                         Address: <?=$address?> </br>
-                         Zip code: <?=$zipcode?> </br>
-                         Phone: <?=$tel?> </br>
-                         <!--Payment Method: <?=$payment?>-->
-                       </p>
+                          <tr><td colspan="4" class="ckbutton">Total: $<?=$total?></td></tr>
+                       </table>
                    </td>
-               </tr>
-           <?php
-              }
-           ?>
-              </table>
-       <?php
-        }
-        else {
-        ?>
-            <h1>Track Order</h1>
-            <form action="trackorder.php">
-                <input type="submit" value="Order #" class="searchsubmit"><input type="text" name="search" class="searchform">
-            </form>
-        <?php
-        }
-        ?>
-    </div>
 
+                     <!-- Show shipping information-->
+                     <td>
+                         <p class="shipAddr">
+                           Name: <?=$name?> </br>
+                           Address: <?=$address?> </br>
+                           Zip code: <?=$zipcode?> </br>
+                           Phone: <?=$tel?> </br>
+                           <!--Payment Method: <?=$payment?>-->
+                         </p>
+                     </td>
+                 </tr>
+             <?php
+                }
+             ?>
+            </table>
+          </div>
+         <?php
+          }
+          else {
+          ?>
+              <legend><h2>Track Order</h2></legend>
+              <form class="form-inline" action="trackorder.php">
+                <div class="form-group">
+                  <label for="trackOrder">Order#</label>
+                  <input type="text" class="form-control" placeholder="2016011100693">
+                  <button type="submit" class="btn btn-default">Search</button>
+                </div>
+                  <!-- <input type="submit" value="Order #" class="searchsubmit"><input type="text" name="search" class="searchform"> -->
+              </form>
+          <?php
+          }
+          ?>
+      </div>
+    </div>
   </div>
 </main>
 

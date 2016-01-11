@@ -401,6 +401,9 @@ div.thumbnail img {        /* Lifen modified*/
 .checkbox.pull-right { margin: 0; }
 /*.pl-ziro { padding-left: 0px; }*/
 
+.FAQOrderInfo {
+  margin-bottom: 5px;
+}
 
 
 /*------------------------- previous part ------------------------------------*/
@@ -815,9 +818,9 @@ label.contactusheading{
 
 /* ------------------search.php, help.php, sitemap.php------------------------*/
 #searchdiv{
-    padding-left: 100px;
-    padding-right: 150px;
-    margin-bottom: 110px;
+    /*padding-left: 100px;*/
+    /*padding-right: 150px;*/
+    /*margin-bottom: 110px;*/
 }
 
 #searchdiv ,#helpdiv h1{
@@ -1079,6 +1082,11 @@ div.box {
 }
 
 /* ----------------------------------trackorder.php------------------------------ */
+#track-order {
+  margin-top: 115px;
+  margin-bottom: 400px;
+}
+
 div#receiptInfo{
   width: 200px;
 }
@@ -1092,7 +1100,8 @@ p.shipAddr {
 .receiptTable {
   text-align: center;
   border-collapse: collapse;
-  margin: 10px;
+  /*margin: 10px;*/
+  margin-bottom: 0px;
   font-family: "arial";
   font-size: 14px;
   color: #333;
@@ -1103,5 +1112,10 @@ p.shipAddr {
 .receiptTable td, tr{
     border: 1px solid #dfdfdf;
     border-collapse: collapse;
-    width: 30%;
+    /*width: 30%;*/
+}
+
+td#track-order-subcell {
+  padding: 0px;
+  border: 0px;
 }
