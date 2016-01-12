@@ -111,7 +111,7 @@
               <form class="form-inline" action="trackorder.php">
                 <div class="form-group">
                   <label for="trackOrder">Order#</label>
-                  <input type="text" class="form-control" placeholder="2016011100693">
+                  <input type="text" class="form-control" placeholder="2016011100693" name="search">
                   <button type="submit" class="btn btn-default">Search</button>
                 </div>
                   <!-- <input type="submit" value="Order #" class="searchsubmit"><input type="text" name="search" class="searchform"> -->

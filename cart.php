@@ -57,11 +57,11 @@
                 $telerror = "";
                 $paymenterror = "";
                 $globalerror = "";
-                $fullname = "e.g. test";
-                $address = "e.g. Santa Clara University";
-                $zipcode = "e.g. 95050";
-                $tel = "e.g. 1234567890";
-                $payment = "e.g. 1111222233334444";
+                $fullname = "";
+                $address = "";
+                $zipcode = "";
+                $tel = "";
+                $payment = "";
 
 
     //-- part 1.
@@ -206,19 +206,19 @@
             <form enctype = "multipart/form-data" method="post" id="paymentinformation">
                 <fieldset>
                     <label class="cartheading" for="fullname">Full Name</label>
-                    <input type=text name=fullname value="<?php echo $fullname;?>"> * <?php echo $fullnameerror;?>
+                    <input type=text placeholder="e.g. test" name=fullname value="<?php echo $fullname;?>"> * <?php echo $fullnameerror;?>
                     <br>
                     <label class="cartheading" for="address">Address</label>
-                    <input type=text name=address value="<?php echo $address;?>"> * <?php echo $addresserror;?>
+                    <input type=text placeholder="e.g. Santa Clara University" name=address value="<?php echo $address;?>"> * <?php echo $addresserror;?>
                     <br>
                     <label class="cartheading" for="zipcode">Zip Code</label>
-                    <input type=text name=zipcode value="<?php echo $zipcode;?>"> * <?php echo $zipcodeerror;?>
+                    <input type=text placeholder="e.g. 95050" name=zipcode value="<?php echo $zipcode;?>"> * <?php echo $zipcodeerror;?>
                     <br>
                     <label class="cartheading" for="tel">Phone Number</label>
-                    <input type=text name=tel value="<?php echo $tel;?>"> * <?php echo $telerror;?>
+                    <input type=text placeholder="e.g. 1234567890" name=tel value="<?php echo $tel;?>"> * <?php echo $telerror;?>
                     <br>
                     <label class="cartheading" for="payment">Payment Card</label>
-                    <input type=text name=payment value="<?php echo $payment;?>"> * <?php echo $paymenterror;?>
+                    <input type=text placeholder="e.g. 1111222233334444" name=payment value="<?php echo $payment;?>"> * <?php echo $paymenterror;?>
                     <br>
             <?php
                     if ($productList){
