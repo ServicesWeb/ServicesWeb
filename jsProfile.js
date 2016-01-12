@@ -1,8 +1,8 @@
 // function for description on profile.php
-function showMore() {
+/*function showMore() {
    document.getElementById("description").style.height = "auto";
    document.getElementById("showMore").style.visibility = "hidden";
-}
+}*/
 
 //  function for mouseover and mouseleave in profile.php page
 $(".jsShow").mouseenter(function(){

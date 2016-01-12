@@ -37,10 +37,16 @@
         }
     }
 
+// obtain variable "show" from either "GET" or "POST", if 1, show login and hide signup, otherwise the opposite
+$show_get=0;
+$show_post=0;
+$show_get=$_GET["show"];
+$show_post=$_POST["showp"];
+//$show=(($_GET["show"]==1) || ($_POST["show"]==1));
 
 // from login.php
 $login_str = "";
-   if((isValidUsername()==0)&&(isValidPassword()==0)&&(isValidEmail()==1)){
+   if((isValidUsername()==0)&&(isValidPassword()==0)&&(isValidEmail()==1)){  //&&($show_get==1 || $show_post==1)
 	   $username=$_POST["username"];
 	   $password=$_POST["password"];
 	   $sql = "SELECT username, password FROM user where username = '".$username."'";
@@ -64,7 +70,8 @@ $login_str = "";
 
 
 // from signup.php
-    if((isValidUsername()==0)&&(isValidPassword()==0)&&(isValidEmail()==0)){
+$signin_str = "";
+    if((isValidUsername()==0)&&(isValidPassword()==0)&&(isValidEmail()==0)){  //&&($show_get!=1 && $show_post!=1)
         $username=$_POST["username"];
         $password=$_POST["password"];
         $email=$_POST["email"];
@@ -72,22 +79,22 @@ $login_str = "";
         $sql0 = "SELECT username FROM user where username = '".$username."'";
         $result0 = $mysqli->query($sql0);
         if(mysqli_num_rows($result0) > 0){
-            echo "Signup failed. This username has been registered.";
+            $signin_str = "Signup failed. This username has been registered.";
         }
 
         $sql1 = "SELECT email FROM user where email = '".$email."'";
         $result1 = $mysqli->query($sql1);
         if(mysqli_num_rows($result1) > 0){
-            echo "Signup failed. This email has been registered.";
+            $signin_str = "Signup failed. This email has been registered.";
         }
 
         if((mysqli_num_rows($result0) == 0) && (mysqli_num_rows($result1) == 0)){
             $sql2 = "INSERT INTO user VALUES('".$username."','".$password."', '".$email."')";
             $result2 = $mysqli->query($sql2);
             if(!$result2){
-                echo $mysqli->error;
+                $signin_str = $mysqli->error;
             } else {
-                echo "Signup succeeded";
+                $signin_str = "Signup succeeded";
             }
         }
     }
@@ -102,21 +109,52 @@ $login_str = "";
       <div class="row">
           <div class="col-md-6 col-md-offset-3">
               <div class="panel panel-login">
+
                   <div class="panel-heading">
                       <div class="row">
-                          <div class="col-xs-6">
-                              <a href="#" class="active" id="login-form-link">Login</a>
-                          </div>
-                          <div class="col-xs-6">
-                              <a href="#" id="register-form-link">Register</a>
-                          </div>
+                        <?php
+                           if ($show_get==1 || $show_post==1) {    // decide to show register or login layout
+                        ?>
+                              <div class="col-xs-6">
+                                <a href="signIn.php?show=1" class="active" id="login-form-link">Login</a>
+                              </div>
+                              <div class="col-xs-6">
+                                  <a href="signIn.php?show=2" id="register-form-link">Register</a>
+                              </div>
+                        <?php
+                           }
+                           else {
+                          ?>
+                              <div class="col-xs-6">
+                               <a href="signIn.php?show=1" id="login-form-link">Login</a>
+                              </div>
+                              <div class="col-xs-6">
+                               <a href="signIn.php?show=2" class="active2" id="register-form-link">Register</a>
+                              </div>
+                          <?php
+                           }
+                         ?>
                       </div>
                       <hr>
                   </div>
+
                   <div class="panel-body">
                       <div class="row">
                           <div class="col-lg-12">
-                              <form id="login-form" action="#" method="post" enctype = "multipart/form-data" role="form" style="display: block;">
+                            <?php
+                               if ($show_get==1 || $show_post==1) {    // decide to show login layout or not, by display as block or none
+                            ?>
+                                  <form id="login-form" action="#" method="post" enctype = "multipart/form-data" role="form" style="display: block;">
+                                    <input type="hidden" name="showp" value="1">
+                            <?php
+                               }
+                               else {
+                            ?>
+                                  <form id="login-form" action="#" method="post" enctype = "multipart/form-data" role="form" style="display: none;">
+                            <?php
+                               }
+                            ?>
+                             <!--<form id="login-form" action="#" method="post" enctype = "multipart/form-data" role="form" style="display: block;">-->
                                   <div class="form-group">
                                       <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                                       <?php
@@ -164,7 +202,20 @@ $login_str = "";
                                   </div>-->
                               </form>
 
-                              <form id="register-form" action="#" method="post" enctype = "multipart/form-data" role="form" style="display: none;">
+                              <?php
+                                 if ($show_get==1 || $show_post==1) {            // decide to show register layout or not, by display as block or none
+                              ?>
+                                    <form id="register-form" action="#" method="post" enctype = "multipart/form-data" role="form" style="display: none;">
+                              <?php
+                                 }
+                                 else {
+                              ?>
+                                    <form id="register-form" action="#" method="post" enctype = "multipart/form-data" role="form" style="display: block;">
+                                      <input type="hidden" name="showp" value="2">
+                              <?php
+                                 }
+                              ?>
+                              <!--<form id="register-form" action="#" method="post" enctype = "multipart/form-data" role="form" style="display: none;">-->
                                   <div class="form-group">
                                       <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                                       <br>
@@ -209,6 +260,7 @@ $login_str = "";
                                       <div class="row">
                                           <div class="col-sm-6 col-sm-offset-3">
                                               <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                                              <p><?php echo $signin_str; ?></p>
                                           </div>
                                       </div>
                                   </div>
@@ -222,6 +274,8 @@ $login_str = "";
       </div>
   </div>
 </main>
+
+
 
 <?php
     include 'footer.php';

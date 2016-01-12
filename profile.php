@@ -52,7 +52,7 @@
                 <div class="col-md-4" id="provider-info">
                   <legend><h3><?= $name ?></h3></legend>
                   <h4>Price: <small>$<?= $price ?>/hour</small></h4>
-                  <h4>Duration: <small>01/01/2015 - 01/10/2015</small></h4>
+                  <h4>Duration: <small>01/01/2015 - 01/30/2018</small></h4>
                 </div>
 
                 <div class="col-md-4" id="calendar">
@@ -114,7 +114,7 @@
                 <hr>
                 <h5>Description:</h5>
                 <p id="description"><?= $description ?></p>
-                <button type="button" class="btn btn-default" id="showMore" onclick="showMore()">Show More</button>
+                <!--<button type="button" class="btn btn-default" id="showMore" onclick="showMore()">Show More</button>-->
                 <!-- <br/> -->
                 <hr>
               </div>

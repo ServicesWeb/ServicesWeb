@@ -57,11 +57,11 @@
                 $telerror = "";
                 $paymenterror = "";
                 $globalerror = "";
-                $fullname = "";
-                $address = "";
-                $zipcode = "";
-                $tel = "";
-                $payment = "";
+                $fullname = "e.g. test";
+                $address = "e.g. Santa Clara University";
+                $zipcode = "e.g. 95050";
+                $tel = "e.g. 1234567890";
+                $payment = "e.g. 1111222233334444";
 
 
     //-- part 1.
@@ -238,7 +238,6 @@
             <div id="box" class="box">
               <p>One time use? No need to login. Just simply fill out the form and checkout.</p>
               <p>Return user? Please login to check out, and your order will be saved in your account.</p>
-              <p>Example: Name: test, Address: Santa Clara, Zip: 11111, Tel:1234567890, Card:1111222233334444.</p>
             </div>
             <!-- end of lower part -->
 

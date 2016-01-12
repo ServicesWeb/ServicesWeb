@@ -1,8 +1,8 @@
 $(document).ready(function() {
    // function for content show in sitemap.php page
-   $(".clickme").click(function(event){
+   /*$(".clickme").click(function(event){
       $(".target").toggle('slow');
-   });
+   });*/
 
    //  function for content show in help.php page
    $(".shop1").click(function(){
@@ -16,9 +16,9 @@ $(document).ready(function() {
    });
 
    // function for category list in list.php
-   $("#manu1C").click(function(){
+   /*$("#manu1C").click(function(){
        $("#manu1").slideToggle("slow");
-   });
+   });*/
 
    $(".FAQOrderInfo").click(function(){
      $(".box").slideToggle("slow");
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 
 // Zhang Sen added
-$(function() {
+/*$(function() {
     $('#login-form-link').click(function(e) {
         $("#login-form").delay(100).fadeIn(100);
         $("#register-form").fadeOut(100);
@@ -43,7 +43,7 @@ $(function() {
         $(this).addClass('active');
         e.preventDefault();
     });
-});
+});*/
 
 var jumboHeight = $('.jumbotron').outerHeight();
 function parallax(){
@@ -51,7 +51,6 @@ function parallax(){
     $('.career-bg, .aboutus-bg').css('height', (jumboHeight-scrolled) + 'px');
 };
 
-$(window).scroll(function(e){ 
-  parallax(); 
+$(window).scroll(function(e){
+  parallax();
 });
-

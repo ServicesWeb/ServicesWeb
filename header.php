@@ -53,8 +53,8 @@
                               <?php
                                  if (empty($_COOKIE["userlogin"])) {
                               ?>
-                                    <li><a href="signIn.php">Log In</a></li>
-                                    <li><a href="signIn.php">Register</a></li>
+                                    <li><a href="signIn.php?show=1">Log In</a></li>
+                                    <li><a href="signIn.php?show=2">Register</a></li>
                               <?php
                                   } else {
                               ?>
