@@ -90,17 +90,17 @@
                 <div class="col-md-4">
                     <h3>Fast</h3>
                     <p>We guarantee to make the response in 3 hours after and provide 24-hour helpline.</p>
-                    <p><a href="#">See how to facilitate your life by our service</a></p>
+                    <!--<p><a href="#">See how to facilitate your life by our service</a></p>-->
                 </div>
                 <div class="col-md-4">
                     <h3>Safety</h3>
                     <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-                    <p><a href="#">Learn about trust at Service Website</a></p>
+                    <!--<p><a href="#">Learn about trust at Service Website</a></p>-->
                 </div>
                 <div class="col-md-4">
                     <h3>Community</h3>
                     <p>All our service providers come from your own community.</p>
-                    <p><a href="#">Learn more about your community.</a></p>
+                    <!--<p><a href="#">Learn more about your community.</a></p>-->
                 </div>
             </div>
         </div>
