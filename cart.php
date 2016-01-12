@@ -234,7 +234,7 @@
                 </fieldset>
             </form>
 
-            <button class="FAQOrderInfo">Need help?</button>
+            <button class="btn btn-default FAQOrderInfo">Need help?</button>
             <div id="box" class="box">
               <p>One time use? No need to login. Just simply fill out the form and checkout.</p>
               <p>Return user? Please login to check out, and your order will be saved in your account.</p>

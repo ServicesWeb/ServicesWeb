@@ -21,7 +21,7 @@
         <div class="row">
             <legend class="text-center"><h2>Who We Are</h2></legend>
             <div class="col-md-12 text-center">
-                <p>We love what we are doing! We are <b>TECH LOVER</b>, <b>TEAM PLAYER</b>, <b>FAST LEARNER</b>!</p>
+                <p>We love what we are doing! We are <b>TECH LOVER</b>, <b>TEAM PLAYER</b> and <b>FAST LEARNER</b>!</p>
                 <p>We are Computer Science graduate students at Santa Clara University.</p>
                 <p><b>We are actively looking for the 2016 summer internship!</b></p>
             </div>
