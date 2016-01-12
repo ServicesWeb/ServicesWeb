@@ -391,7 +391,7 @@ div.thumbnail img {        /* Lifen modified*/
          /*cart*/
 #cart {
     margin-top: 110px;
-    margin-bottom: 105px;
+    margin-bottom: 405px;
 }
 
 /*****************************/
@@ -820,13 +820,20 @@ label.contactusheading{
 }
 
 /* ------------------search.php, help.php, sitemap.php------------------------*/
-#searchdiv{
+/*#searchdiv{*/
     /*padding-left: 100px;*/
     /*padding-right: 150px;*/
-    /*margin-bottom: 110px;*/
+    /*margin-top: 60px;*/
+    /*margin-bottom: 400px;*/
+/*}*/
+
+#search {
+  margin-top: 100px;
+  margin-bottom: 455px;
+  color: #20386E;
 }
 
-#searchdiv ,#helpdiv h1{
+#helpdiv h1{
     color: #20386E;
 }
 
@@ -1086,8 +1093,9 @@ div.box {
 
 /* ----------------------------------trackorder.php------------------------------ */
 #track-order {
-  margin-top: 115px;
-  margin-bottom: 400px;
+  margin-top: 90px;
+  margin-bottom: 425px;
+  color: #20386E;
 }
 
 div#receiptInfo{

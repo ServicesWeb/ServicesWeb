@@ -43,7 +43,7 @@
                 <img class="img-circle center-block" src="img/SenPhoto.jpg">
                 <legend class="text-center"><h3>Sen<small> -- Web developer</small></h3></legend>
                 <h4>Skills at a Glance:</h4>
-                <div><p>Python, Flask, JavaScript, jQuery, HTML5, CSS, Bootstrap, Database</p></div>
+                <div><p>Python, Flask, PHP, Java, JavaScript, jQuery, HTML5, CSS, Bootstrap, Database</p></div>
                 <hr>
                 <h4>Find me:</h4>
                 <div>

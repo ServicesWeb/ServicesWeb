@@ -18,18 +18,17 @@
 ?>
 
 <main class="main">
-    <div class="container" id="profile">
-
-        <div id="searchdiv" >
+    <div class="container" id="search">
+        <div class="col-md-10 col-md-offset-1">
             <!-- if no result, do not show below -->
             <?php
               if($param){
             ?>
-                  <h3>Search results for "<?= $param ?>":</h3>
+                  <legend><h3>Search results for "<?= $param ?>":</h3></legend>
             <?php
               } else {
             ?>
-                  <h3>no search input</h3>
+                  <legend><h3>Sorry, please tell us what do you want to search</h3></legend>
             <?php
               }
             ?>
@@ -54,7 +53,6 @@
               ?>
               </ol>
         </div>
-
     </div>
 </main>
 

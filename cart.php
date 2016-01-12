@@ -10,8 +10,8 @@
 ?>
 
 <main class="main">
-  <div class="container" id="profile">
-    <div class="row" id='cartdiv'>
+  <div class="container" id="cart">
+    <div class="row">
       <div class="col-md-10 col-md-offset-1">
             <?php
                 $id=array_key_exists('id',$_POST)?$_POST['id']:NULL;
@@ -136,7 +136,7 @@
                 if ($productList) {
                 ?>
                   <div class="table-responsive">
-                   <table class="carttable" border="1">
+                   <table class="table carttable" border="1">
                       <tr>
                          <th>Product</th>
                          <th>Price/hr</th>
