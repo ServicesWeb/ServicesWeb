@@ -203,7 +203,70 @@
 
             <!-- begin of lower part, type in and show user's infomation: name, address, tel, etc-->
             <legend><h2>Payment Method</h2></legend>
-            <form enctype = "multipart/form-data" method="post" id="paymentinformation">
+            <form class="form-horizontal" enctype = "multipart/form-data" method="post" id="paymentinformation">
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="fullname">Full Name</label>
+                <div class="col-md-10">
+                  <input type=text placeholder="Jason" name=fullname value="<?php echo $fullname;?>"> * 
+                  <br>
+                  <?php echo $fullnameerror;?>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="address">Address</label>
+                <div class="col-md-10">
+                  <input type=text placeholder="Santa Clara University" name=address value="<?php echo $address;?>"> * 
+                  <br>
+                  <?php echo $addresserror;?>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="zipcode">Zip Code</label>
+                <div class="col-md-10">
+                  <input type=text placeholder="95050" name=zipcode value="<?php echo $zipcode;?>"> * 
+                  <br>
+                  <?php echo $zipcodeerror;?>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="tel">Phone Number</label>
+                <div class="col-md-10">
+                  <input type=text placeholder="1234567890" name=tel value="<?php echo $tel;?>"> * 
+                  <br>
+                  <?php echo $telerror;?>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="payment">Payment Card</label>
+                <div class="col-md-10">
+                  <input type=text placeholder="1111222233334444" name=payment value="<?php echo $payment;?>"> * 
+                  <br>
+                  <?php echo $paymenterror;?>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-10 col-md-offset-2">
+                 <?php
+                    if ($productList){
+                 ?>
+                    <button class="btn btn-default pull-left" type="submit" name="checkout" value="checkout">Check out</button>
+                 <?php
+                    }else{
+                 ?>
+                    <button class="btn btn-default pull-left" type="submit" name="checkout" value="checkout" disabled="1">Check out</button>
+                 <?php
+                    }
+                 ?>
+                </div>
+              </div>
+            </form>
+
+<!--             <form enctype = "multipart/form-data" method="post" id="paymentinformation">
                 <fieldset>
                     <label class="cartheading" for="fullname">Full Name</label>
                     <input type=text placeholder="e.g. test" name=fullname value="<?php echo $fullname;?>"> * <?php echo $fullnameerror;?>
@@ -232,7 +295,7 @@
                     }
             ?>
                 </fieldset>
-            </form>
+            </form> -->
 
             <button class="btn btn-default FAQOrderInfo">Need help?</button>
             <div id="box" class="box">

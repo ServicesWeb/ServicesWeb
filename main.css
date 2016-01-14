@@ -54,6 +54,47 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+  }
+
+  .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #E7E7E7;
+  }
+
+  .dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+  }
+
+  .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+}
+
 @media screen and (max-width: 750px) {
   .deal .col-md-3 {
     width: 100%;
@@ -155,7 +196,7 @@ a.navbar-brand {
   color: #003c66;
 }
 
-.dropdown-menu .sub-menu {
+/*.dropdown-menu .sub-menu {
   left: 100%;
   position: absolute;
   top: 0;
@@ -169,7 +210,7 @@ a.navbar-brand {
 
 .dropdown:hover .dropdown-menu {
   display: block;
-}
+}*/
 
 /****************************/
        /*body-main*/
@@ -926,26 +967,26 @@ p.helpanswers{
 }
 
 #paymentinformation{
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  /*width: 500px;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
 }
 #paymentinformation input{
-  width: 265px;
-  font-weight: bold;
-  margin-bottom: 0.5em;
+  width: 70%;
+  /*font-weight: bold;*/
+  /*margin-bottom: 0.5em;*/
 }
 #paymentinformation input[type="submit"]{
-  font-weight: bold;
-  margin-left: 11em;
+  /*font-weight: bold;*/
+  /*margin-left: 11em;*/
 }
 
-label.cartheading{
+/*label.cartheading{
   float: left;
   margin-right: 1em;
   text-align: right;
   width: 10em;
-}
+}*/
 
 .ckbutton {
   text-align: right;

@@ -57,10 +57,10 @@
     <!-- deal -->
     <div class="deal">
         <div class="container">
-            <h2>
+            <h3>
                 Today's star providers
                 <!--<a><small>Learn More</small></a>-->
-            </h2>
+            </h3>
             <div class="row">
 
             <?php
