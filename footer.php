@@ -6,7 +6,7 @@
             <div class="col-md-3"><a href="career.php">Career</a></div>
             <div class="col-md-3"><a href="help.php">Help</a></div>
         </div>
-        <div class="row">© Made by SCU all rights reserved. Photo source: Google Photo</div>
+        <div class="row">© Made by SCU. All rights reserved. Photo source: Google Photo</div>
     </div>
 </footer>
 
