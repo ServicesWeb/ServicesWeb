@@ -31,8 +31,8 @@
                 <ol class="breadcrumb">
 
                           <!--<li><a href="#">Home</a></li>-->
-                          <li><?=$catNsubcat[0]?></a></li>
-                          <li><?=$catNsubcat[1]?></li>
+                          <li><?=$catNsubcat[0]?></li>
+                          <li><a href = "list.php?category=<?=$category?>"><?=$catNsubcat[1]?></a></li>
                           <li class="active"><?=$name?></li>
 
                 </ol>
