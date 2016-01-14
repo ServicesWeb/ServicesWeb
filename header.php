@@ -39,7 +39,7 @@
                             <a href="index.php">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                               <?php
                                  if (empty($_COOKIE["userlogin"])) {
                                     echo "Your account";
@@ -68,7 +68,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                                 Category
                                 <span class="caret"></span>
                             </a>
