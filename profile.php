@@ -100,7 +100,7 @@
                           <option value="20:00">20:00</option>
                         </select>
 
-                        <span>for:</span><input id="calendar-hour-input" type="text" name="durationHour" value="" size="1"><span>hours</span>
+                        <span>for:</span><input id="calendar-hour-input" type="text" name="durationHour" value="" size="1"><span>hrs</span>
                         <input type="reset button" class="resetButton btn btn-default" value="Reset" onclick="showCalendar()">
                         <input type="submit" class="jsShow btn btn-default" value="Add to Cart">
                       </div>
