@@ -21,7 +21,6 @@
             <li data-target="#carousel-generic" data-slide-to="2"></li>
             <li data-target="#carousel-generic" data-slide-to="3"></li>
         </ol>
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
@@ -41,7 +40,6 @@
                 <div class="carousel-caption"><h4>General Services</h4></div>
             </div>
         </div>
-
         <!-- Controls -->
         <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -66,12 +64,11 @@
             <?php
                 while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) { //fetch seller's information from sql "seller"
             ?>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-xs-6">
                         <div class="thumbnail">
                             <a href = "profile.php?name=<?=$name?>"><img src="<?=$img ?>" alt="First thumbnail"></a>
                             <div class="caption">
                                 <h4><a href = "profile.php?name=<?=$name?>"><?=$name?></a></h4>
-                                <!--<p>Deal's Content</p>-->
                             </div>
                         </div>
                     </div>

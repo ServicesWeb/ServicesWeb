@@ -32,7 +32,6 @@
             <?php
               }
             ?>
-
               <!-- show result as ol list ,  right now we support fuzzy search "seller name" such as clean, garden etc  -->
               <ol>
               <?php

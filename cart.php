@@ -152,7 +152,6 @@
                       <tr>
                          <td><?=$prod['name']?></td>
                          <td>$<?=$prod['price']?></td>
-                         <!-- <td><//?=$prod['timestub']?></td> -->
                          <td id="shopping-cart-subcell">
                            <table class="table" id="shopping-cart-subtable" border="1">
                              <tr>
@@ -203,7 +202,7 @@
 
             <!-- begin of lower part, type in and show user's infomation: name, address, tel, etc-->
             <legend><h2>Payment Method</h2></legend>
-            <form class="form-horizontal" enctype = "multipart/form-data" method="post" id="paymentinformation">
+            <form class="form-horizontal" enctype = "multipart/form-data" method="post" id="payment-info">
               <div class="form-group">
                 <label class="col-md-2 control-label" for="fullname">Full Name</label>
                 <div class="col-md-10">
@@ -266,37 +265,6 @@
               </div>
             </form>
 
-<!--             <form enctype = "multipart/form-data" method="post" id="paymentinformation">
-                <fieldset>
-                    <label class="cartheading" for="fullname">Full Name</label>
-                    <input type=text placeholder="e.g. test" name=fullname value="<?php echo $fullname;?>"> * <?php echo $fullnameerror;?>
-                    <br>
-                    <label class="cartheading" for="address">Address</label>
-                    <input type=text placeholder="e.g. Santa Clara University" name=address value="<?php echo $address;?>"> * <?php echo $addresserror;?>
-                    <br>
-                    <label class="cartheading" for="zipcode">Zip Code</label>
-                    <input type=text placeholder="e.g. 95050" name=zipcode value="<?php echo $zipcode;?>"> * <?php echo $zipcodeerror;?>
-                    <br>
-                    <label class="cartheading" for="tel">Phone Number</label>
-                    <input type=text placeholder="e.g. 1234567890" name=tel value="<?php echo $tel;?>"> * <?php echo $telerror;?>
-                    <br>
-                    <label class="cartheading" for="payment">Payment Card</label>
-                    <input type=text placeholder="e.g. 1111222233334444" name=payment value="<?php echo $payment;?>"> * <?php echo $paymenterror;?>
-                    <br>
-            <?php
-                    if ($productList){
-            ?>
-                    <button class="btn btn-default center-block" type="submit" name="checkout" value="checkout">Check out</button>
-            <?php
-                    }else{
-            ?>
-                    <button class="btn btn-default center-block" type="submit" name="checkout" value="checkout" disabled="1">Check out</button>
-            <?php
-                    }
-            ?>
-                </fieldset>
-            </form> -->
-
             <button class="btn btn-default FAQOrderInfo">Need help?</button>
             <div id="box" class="box">
               <p>One time use? No need to login. Just simply fill out the form and checkout.</p>
@@ -309,12 +277,8 @@
             ?>
             <!-- end of body part -->
 
-
-
-
             <!-- part 3 -->
             <!-- after click checkout button and no error exist, connect and write to SQL-->
-
             <?php
                 if ($checkout && $globalerror == "")// checkout event         // after click checkout and no error, save to SQL
                 {
@@ -344,7 +308,6 @@
                             }
                         }
                     }*/
-
 
                     // below is to insert a new order,  orderinfo part + userinfo part
                     foreach ($productList as $prod){            // orderinfo part
