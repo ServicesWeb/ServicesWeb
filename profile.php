@@ -28,13 +28,13 @@
         ?>
 
         <div class="row">
-          <div>
-            <ol class="breadcrumb">
-              <li><?=$catNsubcat[0]?></a></li>
-              <li><?=$catNsubcat[1]?></li>
-              <li class="active"><?=$name?></li>
-            </ol>
-          </div>
+            <div>
+                <ol class="breadcrumb">
+                    <li><?=$catNsubcat[0]?></li>
+                    <li><a href = "list.php?category=<?=$category?>"><?=$catNsubcat[1]?></a></li>
+                    <li class="active"><?=$name?></li>
+                </ol>
+            </div>
         </div>
 
         <div class="row">

@@ -25,7 +25,7 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <div class="banner"><img src="img/banner1.jpg" alt="Frist slide"></div>
-                <div class="carousel-caption"><h4>House Services</h4></div>
+                <div class="carousel-caption"><h4>House Cleaning Services</h4></div>
             </div>
             <div class="item">
                 <div class="banner"><img src=img/banner2.jpg alt="Second slide"></div>
@@ -85,17 +85,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Fast</h3>
+                    <h3>Fast response</h3>
                     <p>We guarantee to make the response in 3 hours after and provide 24-hour helpline.</p>
                     <!-- <p><a href="#">See how to facilitate your life by our service</a></p> -->
                 </div>
                 <div class="col-md-4">
-                    <h3>Safety</h3>
+                    <h3>Privacy protection</h3>
                     <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
                     <!-- <p><a href="#">Learn about trust at Service Website</a></p> -->
                 </div>
                 <div class="col-md-4">
-                    <h3>Community</h3>
+                    <h3>Local providers</h3>
                     <p>All our service providers come from your own community.</p>
                     <!-- <p><a href="#">Learn more about your community.</a></p> -->
                 </div>

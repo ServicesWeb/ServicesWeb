@@ -28,7 +28,7 @@
             <?php
               } else {
             ?>
-                  <legend><h3>Sorry, please tell us what do you want to search</h3></legend>
+                  <legend><h3>Please input your keywords to search</h3></legend>
             <?php
               }
             ?>
