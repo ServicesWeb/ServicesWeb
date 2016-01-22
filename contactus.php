@@ -16,17 +16,6 @@
                     <textarea class="form-control" rows="5" id="comment"></textarea>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
-
-                <!-- <fieldset>
-                    <legend>Please email us if you have any quetion.</legend>
-                    <label class="contactusheading" for="name">Subject:</label>
-                    <input name="Subject" type="text">
-                    <br/>
-                    <label class="contactusheading" for="content">Comments:</label>
-                    <textarea name="content" rows="5" cols="40"></textarea>
-                    <br>
-                    <input id="contactus_submit" type="submit" value="Submit"><br/>
-                </fieldset> -->
             </form>
         </div>
         <div class="row" id="contact-us-info">

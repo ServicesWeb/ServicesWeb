@@ -4,7 +4,7 @@
         <div>
             <ul class="list-unstyled">
                 <li class="shop-category-subtitle">
-                    <a href="#"></a>House
+                    <a href="#">House</a>
                     <ul class="shop-category-items">
                         <li class="list-unstyled"><a href="list.php?category=HC">Cleaning</a></li>
                         <li class="list-unstyled"><a href="list.php?category=GD">Gardening</a></li>
@@ -14,7 +14,7 @@
                 </li>
                 <hr>
                 <li class="shop-category-subtitle">
-                    <a href="#"></a>Cooking
+                    <a href="#">Cooking</a>
                     <ul class="shop-category-items">
                         <li class="list-unstyled"><a href="list.php?category=FR">French Cuisine</a></li>
                         <li class="list-unstyled"><a href="list.php?category=CH">Chinese Cuisine</a></li>
@@ -24,7 +24,7 @@
                 </li>
                 <hr>
                 <li class="shop-category-subtitle">
-                    <a href="#"></a>Tutoring
+                    <a href="#">Tutoring</a>
                     <ul class="shop-category-items">
                         <li class="list-unstyled"><a href="list.php?category=SP">Speaking Spanish</a></li>
                         <li class="list-unstyled"><a href="list.php?category=SW">Swimming Lessons</a></li>
@@ -34,7 +34,7 @@
                 </li>
                 <hr>
                 <li class="shop-category-subtitle">
-                    <a href="#"></a>General
+                    <a href="#">General</a>
                     <ul class="shop-category-items">
                         <li class="list-unstyled"><a href="list.php?category=WD">Dog Walking</a></li>
                         <li class="list-unstyled"><a href="list.php?category=CD">Chauffeur Driving</a></li>

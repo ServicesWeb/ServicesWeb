@@ -26,15 +26,13 @@
             while(list($id,$category,$name,$price,$in_stock,$description,$img) = $result->fetch_row()) {
                 $catNsubcat = explode(":", $categoryList[$category]);
         ?>
+
         <div class="row">
             <div>
                 <ol class="breadcrumb">
-
-                          <!--<li><a href="#">Home</a></li>-->
-                          <li><?=$catNsubcat[0]?></li>
-                          <li><a href = "list.php?category=<?=$category?>"><?=$catNsubcat[1]?></a></li>
-                          <li class="active"><?=$name?></li>
-
+                    <li><?=$catNsubcat[0]?></li>
+                    <li><a href = "list.php?category=<?=$category?>"><?=$catNsubcat[1]?></a></li>
+                    <li class="active"><?=$name?></li>
                 </ol>
             </div>
         </div>
@@ -43,8 +41,8 @@
           <?php
           include 'leftbar.php';
           ?>
-          <div class="col-md-10 item-main">
-              <div class="row" id="providerImgName">
+          <div class="col-md-10">
+              <div class="row" id="provider-img-name">
                 <div class="col-md-4" id="provider-img">
                   <img src="<?= $img?>" alt='sellers'>
                 </div>
@@ -57,7 +55,7 @@
 
                 <div class="col-md-4" id="calendar">
                   <form action="cart.php" method="post">
-                    <div class="shopPart">
+                    <div class="shop-part">
                       <input type="hidden" name=id value="<?=$id?>">
                       <input type="hidden" name=name value="<?=$name?>">
                       <input type="hidden" name=price value="<?=$price?>">
@@ -110,15 +108,12 @@
                 </div>
               </div>
 
-              <div class="sellerDescription" class="row">
+              <div class="row">
                 <hr>
                 <h5>Description:</h5>
                 <p id="description"><?= $description ?></p>
-                <!--<button type="button" class="btn btn-default" id="showMore" onclick="showMore()">Show More</button>-->
-                <!-- <br/> -->
                 <hr>
               </div>
-              <!--<div class="evaluation" class="row"><span>Evaluation</span><br /></div>-->
 
           </div>
         </div>

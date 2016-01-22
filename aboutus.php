@@ -47,7 +47,7 @@
                 <hr>
                 <h4>Find me:</h4>
                 <div>
-                    <span>LinkedIn: <a href="https://www.linkedin.com/in/sen-zhang-10207bb1">Sen Zhang</a>,</span>
+                    <span>LinkedIn: <a href="https://www.linkedin.com/in/senzhang1">Sen Zhang</a>,</span>
                     <span class="text-right">GitHub: <a href="https://github.com/jsongcat">jsongcat</a></span>
                 </div>
             </div>

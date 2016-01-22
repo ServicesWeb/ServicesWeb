@@ -54,6 +54,12 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 780px) {
+  .navbar-form .form-control {
+    width: 145px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .dropdown-menu .sub-menu {
     left: 100%;
@@ -96,11 +102,7 @@ h3 {
 }
 
 @media screen and (max-width: 750px) {
-  .deal .col-md-3 {
-    width: 100%;
-  }
-
-    .caption h3 {
+  .caption h3 {
     text-align: center;
   }
 
@@ -160,6 +162,12 @@ h3 {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .deal .col-md-3 {
+    width: 100%;
+  }
+}
+
 
 /****************************/
          /*header*/
@@ -196,27 +204,11 @@ a.navbar-brand {
   color: #003c66;
 }
 
-/*.dropdown-menu .sub-menu {
-  left: 100%;
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  margin-top: -1px;
-}
-
-.dropdown-menu li:hover .sub-menu {
-    visibility: visible;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}*/
-
 /****************************/
        /*body-main*/
 /*carousel-generic*/
 #carousel-generic {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 /*deal*/
@@ -299,7 +291,6 @@ div.thumbnail img {        /* Lifen modified*/
 /****************************/
         /*footer*/
 .footer {
-  /*position: absolute;*/
   margin-top: 50px;
   bottom: 0;
   width: 100%;
@@ -554,25 +545,20 @@ div.TextOnImg h1 {
   color: white;
   background-color: #C0C0C0;
 }
-/*-------------------------------------profile.php --------------------------*/
-.item-main {
-  /*margin-top: 20px;*/
-}
 
-#providerImgName {
+/*-------------------------------------profile.php --------------------------*/
+#provider-img-name {
   display: flex;
   flex-wrap: wrap;
-  /*width: 300px;*/
-  /*height: 400px;*/
-  /*float: left;*/
 }
-#providerImgName img{
+
+#provider-img-name img{
     border-radius: 10px;
-    /*float: left;*/
-    /*clear: right;*/
-    /*margin-right: 15px;*/
     width: 100%;
-    /*height: 100%;*/
+}
+
+div#provider-img-name h1 {
+   font-size: 40px;
 }
 
 #provider-img {
@@ -587,39 +573,15 @@ div.TextOnImg h1 {
   margin-top: 20px;
   float: right;
 }
-div#providerImgName h1 {
-   font-size: 40px;
-}
 
-div.sellerDescription {
-  /*float: left;*/
-  /*border-top: 1px solid black;*/
-  /*border-bottom: 1px solid black;*/
-  /*margin-top: 10px;*/
-}
 div.evaluation {
   float: left;
   border: 1px solid black;
   margin-top: 10px;
 }
-/*--.sellerDescription p{
-    height: 3em;
-    overflow: hidden;
-}--*/
-
-#categoryright h1{
-    color: #ffa036;
-    font-size: 30px;
-    padding-top: 8px;
-}
 
 /*------for calendar part in profile.php ------*/
-div.shopPart{
-  /*margin-left: 400px;*/
-  /*border: 1px solid black;*/
-  /*position: absolute;*/
-}
-div.shopPart span{
+div.shop-part span{
   font-size: 15px;
 }
 div.calendar {
@@ -782,17 +744,7 @@ input.resetButton {
 
 
 /* ------------------------------- contactus.php --------------------------------*/
-/*#contact>fieldset{
-    color: #20386E;
-    font-size: 16px;
-    font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
-    width: 31em;
-    margin-left: 250px;
-    margin-right: auto;
-    margin-top: 20px;
-    border-style: hidden;
-    margin-bottom: 50px;
-}*/
+
 #contact-us {
   margin-top: 130px;
   margin-bottom: 70px;
@@ -810,63 +762,11 @@ input.resetButton {
   margin-top: 30px;
 }
 
-/*#contact input{
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
-#contact input[type="submit"]{
-    font-weight: bold;
-    margin-left: 8em;
-}
-label.contactusheading{
-    float: left;
-    margin-right: 1em;
-    text-align: right;
-    width: 7em;
-}
-#contact legend{
-    border: 1px solid #20386E;
-    padding: 0.25em;
-    margin-left: 130px;
-    display: block;
-    margin-bottom: 30px;
-    font-size: 17px;
-    color: #333;
-    width:320px;
-    border-style: hidden;
-}
-
-#contact input[name="Subject"]{
-  width:304px;
-  margin-bottom: 10px;
-  border-style:ridge;
-  height:30px;
-  margin-bottom: 20px;
-}
-
-#contactus_submit{
-  color: #fff;
-  background-color: #ed9017;
-  padding: 14px 24px;
-  border: 0 none;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  width:302px;
-  margin-top: 20px;
-}*/
-
 #contactus_submit:hover{
   background-color: #ffd65e;
 }
 
 /* ------------------search.php, help.php, sitemap.php------------------------*/
-/*#searchdiv{*/
-    /*padding-left: 100px;*/
-    /*padding-right: 150px;*/
-    /*margin-top: 60px;*/
-    /*margin-bottom: 400px;*/
-/*}*/
 
 #search {
   margin-top: 100px;
@@ -945,8 +845,6 @@ p.helpanswers{
 
 /*-------------------------------- cart.php --------------------------------*/
 #cartdiv{
-  /*padding-left: 100px;*/
-  /*padding-right: 150px;*/
   margin-left: auto;
   margin-right: auto;
   font-family: 'Lato', 'Helvetica Neue', "Helvetica", 'Arial', sans-serif;
@@ -966,27 +864,13 @@ p.helpanswers{
   margin-top: 20px;
 }
 
-#paymentinformation{
-  /*width: 500px;*/
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-}
-#paymentinformation input{
+#payment-info input{
   width: 70%;
-  /*font-weight: bold;*/
-  /*margin-bottom: 0.5em;*/
 }
-#paymentinformation input[type="submit"]{
+#payment-info input[type="submit"]{
   /*font-weight: bold;*/
   /*margin-left: 11em;*/
 }
-
-/*label.cartheading{
-  float: left;
-  margin-right: 1em;
-  text-align: right;
-  width: 10em;
-}*/
 
 .ckbutton {
   text-align: right;
@@ -1021,35 +905,6 @@ table#shopping-cart-subtable {
   margin-bottom: 0px;
 }
 
-/*.checkoutbtn{
-  color: #fff;
-  background-color: #ed9017;
-  padding: 14px 24px;
-  border: 0 none;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-.checkoutbtn:hover{
-  background-color: #ffd65e;
-}
-
-.checkoutbtn2{
-  color: #fff;
-  background-color: #DCDCDC;
-  padding: 14px 24px;
-  border: 0 none;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-.checkoutbtn2:hover{
-  background-color: #D3D3D3;
-}*/
-
 div#cartDay {
   width: 100px;
 }
@@ -1061,6 +916,7 @@ div.box {
   border:1px solid #999;
   padding:10px;
 }
+
 /* ----------------------------------login.php------------------------------ */
 #loginMainView{
     width:30%;
@@ -1152,7 +1008,6 @@ p.shipAddr {
 .receiptTable {
   text-align: center;
   border-collapse: collapse;
-  /*margin: 10px;*/
   margin-bottom: 0px;
   font-family: "arial";
   font-size: 14px;
@@ -1164,7 +1019,6 @@ p.shipAddr {
 .receiptTable td, tr{
     border: 1px solid #dfdfdf;
     border-collapse: collapse;
-    /*width: 30%;*/
 }
 
 td#track-order-subcell {

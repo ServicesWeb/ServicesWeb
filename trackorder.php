@@ -33,7 +33,7 @@
           ?>
               <legend><h2>Order record of <?= $param ?>:</h2></legend>
               <div class="table-responsive">
-                <table class="table receiptTableOuter" border="1">
+                <table class="table receiptTableOuter">
                   <tr>
                     <th>Order#</th>
                     <th>Order Details</th>
@@ -46,7 +46,7 @@
                  <tr>
                     <td><?=$orderid?></td>
                     <td id="track-order-subcell">
-                       <table class="table receiptTable" border="1">
+                       <table class="table receiptTable">
                           <tr>
                              <th>Name</th>
                              <th>Price</th>
@@ -94,7 +94,6 @@
                            Address: <?=$address?> </br>
                            Zip code: <?=$zipcode?> </br>
                            Phone: <?=$tel?> </br>
-                           <!--Payment Method: <?=$payment?>-->
                          </p>
                      </td>
                  </tr>
@@ -114,7 +113,6 @@
                   <input type="text" class="form-control" placeholder="2016011100693" name="search">
                   <button type="submit" class="btn btn-default">Search</button>
                 </div>
-                  <!-- <input type="submit" value="Order #" class="searchsubmit"><input type="text" name="search" class="searchform"> -->
               </form>
           <?php
           }
