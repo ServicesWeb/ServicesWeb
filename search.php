@@ -17,7 +17,7 @@
     }
 ?>
 
-<main class="main">
+<main class="main" id="main">
     <div class="container" id="search">
         <div class="col-md-10 col-md-offset-1">
             <!-- if no result, do not show below -->

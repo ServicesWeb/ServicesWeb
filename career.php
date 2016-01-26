@@ -2,7 +2,7 @@
     include 'header.php';
 ?>
 
-<main class="main">
+<main class="main" id="main">
     <div class="career-bg"></div>
     <div class="jumbotron">
         <div class="container" id="career">

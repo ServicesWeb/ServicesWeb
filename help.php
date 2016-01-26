@@ -2,7 +2,7 @@
     include 'header.php';
 ?>
 
-<main class="main">
+<main class="main" id="main">
     <div class="container" id="profile">
         <div class="row" id="help-catalog">
             <div class="col-md-11 col-md-offset-1">

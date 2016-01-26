@@ -19,7 +19,7 @@
 ?>
 
 
-<main class="main">
+<main class="main" id="main">
     <div class="container" id="profile">
 
         <?php

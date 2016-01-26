@@ -2,7 +2,7 @@
     include 'header.php';
 ?>
 
-<main class="main">
+<main class="main" id="main">
     <div class="container" id="contact-us">
         <div class="row">
             <form class="col-md-6 col-md-offset-3" role="form" id="contact-us-form" action="mailto:lyan@scu.edu" enctype="text/plain" method="post">

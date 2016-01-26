@@ -103,7 +103,7 @@ $signin_str = "";
    include 'header.php';            // must be placed after "setCookie" part, otherwise the link to index.php and setCookie won't work
 ?>
 
-<main class="main">
+<main class="main" id="main">
   <div class="container" id="sign-in">
       <div class="row">
           <div class="col-md-6 col-md-offset-3">

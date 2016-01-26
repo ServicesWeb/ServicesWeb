@@ -11,7 +11,7 @@
     }
 ?>
 
-<main class="main">
+<main class="main" id="main">
     <!-- carousel -->
     <div id="carousel-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->

@@ -1,3 +1,8 @@
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
 body {
   color: #49494a;
 }

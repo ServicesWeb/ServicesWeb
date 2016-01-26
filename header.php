@@ -11,6 +11,7 @@
     <body>
         <!-- navbar -->
         <header class="container-fluid">
+            <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
             <nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
                 <div class="navbar-header">
                     <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse">
