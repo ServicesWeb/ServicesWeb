@@ -89,7 +89,7 @@ function newCalendar(year, month, days){
 
   $(".update").remove();                    // clear the old calendar
 
-  for (var j = 0; j < Math.ceil(days.length/7); j++){
+  for (var j = 0; j < 6; j++){   // change j < Math.ceil(days.length/7)  to j < 6, to make calendar layout stable
     $("#calendarShow").append("<tr class='update'></tr>");
     for (var i = 0; i < 7; i++){
       var ind = j*7+i;
@@ -100,7 +100,7 @@ function newCalendar(year, month, days){
           $("#calendarShow tr:last-child").append("<td><label class='displayDays'><input type='checkbox' name='days_select[]' value="+days[j*7 + i]+">"+days[j*7 + i]+"</label></td>");
         }
       }else{
-        $("#calendarShow tr:last-child").append("<td></td>");
+        $("#calendarShow tr:last-child").append("<td>&nbsp;</td>");
       }
     }
   }

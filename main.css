@@ -634,7 +634,7 @@ div.calendar th {
 div.calendar td {
   border: 1px solid #ccc;
   color: #444;
-  line-height: 22px;
+  height: 27px;
   text-align: center;
 }
 div.calendar tr:first-child td {
